@@ -20,4 +20,7 @@ let mainSectionList: [NavigationData] = [
     NavigationData(title: "Notifications", icon: "bell.badge.circle.fill", primaryColor: .white, secondaryColor: .red, content: {
         AnyView(NotificationsView())
     }),
+    NavigationData(title: "General", icon: "gear.circle.fill", primaryColor: .white, secondaryColor: .gray, content: {
+        AnyView(GeneralView())
+    }),
 ]

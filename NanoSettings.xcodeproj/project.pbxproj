@@ -16,6 +16,11 @@
 		835DE60B2B6C134E00FC23C8 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DE60A2B6C134E00FC23C8 /* NotificationsView.swift */; };
 		836D6AB92B6C3FD1008DBB8F /* ShowNotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836D6AB82B6C3FD1008DBB8F /* ShowNotificationsView.swift */; };
 		836D6ABB2B6C408C008DBB8F /* IconToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836D6ABA2B6C408C008DBB8F /* IconToggle.swift */; };
+		836D6ABD2B6C42DD008DBB8F /* GeneralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836D6ABC2B6C42DD008DBB8F /* GeneralView.swift */; };
+		836D6AC02B6C43B0008DBB8F /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836D6ABF2B6C43B0008DBB8F /* AboutView.swift */; };
+		836D6AC22B6C4428008DBB8F /* ClearRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836D6AC12B6C4428008DBB8F /* ClearRow.swift */; };
+		836D6AC42B6C4682008DBB8F /* SoftwareUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836D6AC32B6C4682008DBB8F /* SoftwareUpdateView.swift */; };
+		836D6AC62B6C4715008DBB8F /* OrientationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836D6AC52B6C4715008DBB8F /* OrientationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,11 @@
 		835DE60A2B6C134E00FC23C8 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		836D6AB82B6C3FD1008DBB8F /* ShowNotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowNotificationsView.swift; sourceTree = "<group>"; };
 		836D6ABA2B6C408C008DBB8F /* IconToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconToggle.swift; sourceTree = "<group>"; };
+		836D6ABC2B6C42DD008DBB8F /* GeneralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralView.swift; sourceTree = "<group>"; };
+		836D6ABF2B6C43B0008DBB8F /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		836D6AC12B6C4428008DBB8F /* ClearRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearRow.swift; sourceTree = "<group>"; };
+		836D6AC32B6C4682008DBB8F /* SoftwareUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftwareUpdateView.swift; sourceTree = "<group>"; };
+		836D6AC52B6C4715008DBB8F /* OrientationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +96,9 @@
 			isa = PBXGroup;
 			children = (
 				836D6AB72B6C3F0D008DBB8F /* Notifications */,
+				836D6ABE2B6C43A6008DBB8F /* General */,
 				835DE60A2B6C134E00FC23C8 /* NotificationsView.swift */,
+				836D6ABC2B6C42DD008DBB8F /* GeneralView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -104,6 +116,7 @@
 			children = (
 				835DE6082B6C116100FC23C8 /* SettingsLink.swift */,
 				836D6ABA2B6C408C008DBB8F /* IconToggle.swift */,
+				836D6AC12B6C4428008DBB8F /* ClearRow.swift */,
 			);
 			path = Templates;
 			sourceTree = "<group>";
@@ -114,6 +127,16 @@
 				836D6AB82B6C3FD1008DBB8F /* ShowNotificationsView.swift */,
 			);
 			path = Notifications;
+			sourceTree = "<group>";
+		};
+		836D6ABE2B6C43A6008DBB8F /* General */ = {
+			isa = PBXGroup;
+			children = (
+				836D6ABF2B6C43B0008DBB8F /* AboutView.swift */,
+				836D6AC32B6C4682008DBB8F /* SoftwareUpdateView.swift */,
+				836D6AC52B6C4715008DBB8F /* OrientationView.swift */,
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,9 +213,14 @@
 				835DE6092B6C116100FC23C8 /* SettingsLink.swift in Sources */,
 				835DE60B2B6C134E00FC23C8 /* NotificationsView.swift in Sources */,
 				836D6AB92B6C3FD1008DBB8F /* ShowNotificationsView.swift in Sources */,
+				836D6AC22B6C4428008DBB8F /* ClearRow.swift in Sources */,
+				836D6AC02B6C43B0008DBB8F /* AboutView.swift in Sources */,
 				832895822B6C014300A9CB97 /* ContentView.swift in Sources */,
+				836D6ABD2B6C42DD008DBB8F /* GeneralView.swift in Sources */,
 				832895802B6C014300A9CB97 /* NanoSettingsApp.swift in Sources */,
+				836D6AC42B6C4682008DBB8F /* SoftwareUpdateView.swift in Sources */,
 				835DE6072B6C105B00FC23C8 /* NanoSettingsModel.swift in Sources */,
+				836D6AC62B6C4715008DBB8F /* OrientationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

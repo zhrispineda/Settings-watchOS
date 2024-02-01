@@ -12,7 +12,7 @@ struct ContentView: View {
         NavigationStack {
             List {
                 // MARK: Main Section
-                /// Notifications
+                // Notifications, General
                 Section {
                     ForEach(mainSectionList) { item in
                         SettingsLink(title: item.title, icon: item.icon, primaryColor: item.primaryColor, secondaryColor: item.secondaryColor, content: item.content)
