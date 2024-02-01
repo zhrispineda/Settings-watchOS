@@ -9,13 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            List {
+                // MARK: Main Section
+                /// Notifications
+                Section {
+                    ForEach(mainSectionList) { item in
+                        SettingsLink(title: item.title, icon: item.icon, primaryColor: item.primaryColor, secondaryColor: item.secondaryColor, content: item.content)
+                    }
+                }
+            }
+            .navigationTitle("Settings")
         }
-        .padding()
     }
 }
 

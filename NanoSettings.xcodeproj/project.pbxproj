@@ -11,6 +11,9 @@
 		832895822B6C014300A9CB97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832895812B6C014300A9CB97 /* ContentView.swift */; };
 		832895842B6C014400A9CB97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 832895832B6C014400A9CB97 /* Assets.xcassets */; };
 		832895872B6C014400A9CB97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 832895862B6C014400A9CB97 /* Preview Assets.xcassets */; };
+		835DE6072B6C105B00FC23C8 /* NanoSettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DE6062B6C105B00FC23C8 /* NanoSettingsModel.swift */; };
+		835DE6092B6C116100FC23C8 /* SettingsLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DE6082B6C116100FC23C8 /* SettingsLink.swift */; };
+		835DE60B2B6C134E00FC23C8 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DE60A2B6C134E00FC23C8 /* NotificationsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		832895832B6C014400A9CB97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		832895862B6C014400A9CB97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		835DE6052B6C0B1600FC23C8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		835DE6062B6C105B00FC23C8 /* NanoSettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanoSettingsModel.swift; sourceTree = "<group>"; };
+		835DE6082B6C116100FC23C8 /* SettingsLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLink.swift; sourceTree = "<group>"; };
+		835DE60A2B6C134E00FC23C8 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,7 @@
 		835DE6022B6C09F300FC23C8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				835DE60A2B6C134E00FC23C8 /* NotificationsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -82,6 +89,7 @@
 		835DE6032B6C09F900FC23C8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				835DE6062B6C105B00FC23C8 /* NanoSettingsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -89,6 +97,7 @@
 		835DE6042B6C0A0F00FC23C8 /* Templates */ = {
 			isa = PBXGroup;
 			children = (
+				835DE6082B6C116100FC23C8 /* SettingsLink.swift */,
 			);
 			path = Templates;
 			sourceTree = "<group>";
@@ -163,8 +172,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				835DE6092B6C116100FC23C8 /* SettingsLink.swift in Sources */,
+				835DE60B2B6C134E00FC23C8 /* NotificationsView.swift in Sources */,
 				832895822B6C014300A9CB97 /* ContentView.swift in Sources */,
 				832895802B6C014300A9CB97 /* NanoSettingsApp.swift in Sources */,
+				835DE6072B6C105B00FC23C8 /* NanoSettingsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
