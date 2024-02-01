@@ -1,6 +1,6 @@
 //
 //  NanoSettingsApp.swift
-//  NanoSettings Watch App
+//  NanoSettings
 //
 //  Settings
 //
