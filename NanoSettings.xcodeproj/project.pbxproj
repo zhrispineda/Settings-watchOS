@@ -14,10 +14,12 @@
 		835DE6072B6C105B00FC23C8 /* NanoSettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DE6062B6C105B00FC23C8 /* NanoSettingsModel.swift */; };
 		835DE6092B6C116100FC23C8 /* SettingsLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DE6082B6C116100FC23C8 /* SettingsLink.swift */; };
 		835DE60B2B6C134E00FC23C8 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DE60A2B6C134E00FC23C8 /* NotificationsView.swift */; };
+		836D6AB92B6C3FD1008DBB8F /* ShowNotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836D6AB82B6C3FD1008DBB8F /* ShowNotificationsView.swift */; };
+		836D6ABB2B6C408C008DBB8F /* IconToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836D6ABA2B6C408C008DBB8F /* IconToggle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8328957A2B6C014300A9CB97 /* NanoSettings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoSettings.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8328957A2B6C014300A9CB97 /* Settings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Settings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8328957F2B6C014300A9CB97 /* NanoSettingsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanoSettingsApp.swift; sourceTree = "<group>"; };
 		832895812B6C014300A9CB97 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		832895832B6C014400A9CB97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		835DE6062B6C105B00FC23C8 /* NanoSettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanoSettingsModel.swift; sourceTree = "<group>"; };
 		835DE6082B6C116100FC23C8 /* SettingsLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLink.swift; sourceTree = "<group>"; };
 		835DE60A2B6C134E00FC23C8 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		836D6AB82B6C3FD1008DBB8F /* ShowNotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowNotificationsView.swift; sourceTree = "<group>"; };
+		836D6ABA2B6C408C008DBB8F /* IconToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconToggle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +55,7 @@
 		832895752B6C014300A9CB97 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8328957A2B6C014300A9CB97 /* NanoSettings.app */,
+				8328957A2B6C014300A9CB97 /* Settings.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +85,7 @@
 		835DE6022B6C09F300FC23C8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				836D6AB72B6C3F0D008DBB8F /* Notifications */,
 				835DE60A2B6C134E00FC23C8 /* NotificationsView.swift */,
 			);
 			path = Views;
@@ -98,8 +103,17 @@
 			isa = PBXGroup;
 			children = (
 				835DE6082B6C116100FC23C8 /* SettingsLink.swift */,
+				836D6ABA2B6C408C008DBB8F /* IconToggle.swift */,
 			);
 			path = Templates;
+			sourceTree = "<group>";
+		};
+		836D6AB72B6C3F0D008DBB8F /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				836D6AB82B6C3FD1008DBB8F /* ShowNotificationsView.swift */,
+			);
+			path = Notifications;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +133,7 @@
 			);
 			name = NanoSettings;
 			productName = "NanoSettings Watch App";
-			productReference = 8328957A2B6C014300A9CB97 /* NanoSettings.app */;
+			productReference = 8328957A2B6C014300A9CB97 /* Settings.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -172,8 +186,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				836D6ABB2B6C408C008DBB8F /* IconToggle.swift in Sources */,
 				835DE6092B6C116100FC23C8 /* SettingsLink.swift in Sources */,
 				835DE60B2B6C134E00FC23C8 /* NotificationsView.swift in Sources */,
+				836D6AB92B6C3FD1008DBB8F /* ShowNotificationsView.swift in Sources */,
 				832895822B6C014300A9CB97 /* ContentView.swift in Sources */,
 				832895802B6C014300A9CB97 /* NanoSettingsApp.swift in Sources */,
 				835DE6072B6C105B00FC23C8 /* NanoSettingsModel.swift in Sources */,
@@ -307,7 +323,6 @@
 				DEVELOPMENT_ASSET_PATHS = "\"NanoSettings/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = NanoSettings;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -316,7 +331,7 @@
 				);
 				MARKETING_VERSION = 10.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.exaple.NanoSettings;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Settings;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -336,7 +351,6 @@
 				DEVELOPMENT_ASSET_PATHS = "\"NanoSettings/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = NanoSettings;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -345,7 +359,7 @@
 				);
 				MARKETING_VERSION = 10.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.exaple.NanoSettings;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Settings;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;

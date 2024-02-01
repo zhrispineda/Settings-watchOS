@@ -7,7 +7,7 @@
 //  Parameters:
 //
 //  title: Text for the cell
-//  symbol: Name of SF Symbol or Image
+//  icon: Name of SF Symbol or Image
 //  primaryColor: Color of primary color
 //  secondaryColor: Color of secondary color (Optional)
 //  content: View for cell navigate to
@@ -15,6 +15,7 @@
 import SwiftUI
 
 struct SettingsLink<Content: View>: View {
+    // Variables
     let title: String
     let icon: String
     let primaryColor: Color

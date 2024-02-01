@@ -41,7 +41,7 @@ struct NotificationsView: View {
             
             Section(content: {
                 // TODO: Destination view
-                NavigationLink("Show Notifications on Wrist Down", destination: {})
+                NavigationLink("Show Notifications on Wrist Down", destination: ShowNotificationsView())
             }, footer: {
                 Text("Apple Watch can show your notifications even when your wrist is down.")
             })
