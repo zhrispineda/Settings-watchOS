@@ -19,6 +19,7 @@
 		832895812B6C014300A9CB97 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		832895832B6C014400A9CB97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		832895862B6C014400A9CB97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		835DE6052B6C0B1600FC23C8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +36,7 @@
 		8328956D2B6C014300A9CB97 = {
 			isa = PBXGroup;
 			children = (
+				835DE6052B6C0B1600FC23C8 /* README.md */,
 				8328957E2B6C014300A9CB97 /* NanoSettings */,
 				832895752B6C014300A9CB97 /* Products */,
 			);
@@ -51,6 +53,9 @@
 		8328957E2B6C014300A9CB97 /* NanoSettings */ = {
 			isa = PBXGroup;
 			children = (
+				835DE6032B6C09F900FC23C8 /* Models */,
+				835DE6042B6C0A0F00FC23C8 /* Templates */,
+				835DE6022B6C09F300FC23C8 /* Views */,
 				8328957F2B6C014300A9CB97 /* NanoSettingsApp.swift */,
 				832895812B6C014300A9CB97 /* ContentView.swift */,
 				832895832B6C014400A9CB97 /* Assets.xcassets */,
@@ -65,6 +70,27 @@
 				832895862B6C014400A9CB97 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		835DE6022B6C09F300FC23C8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		835DE6032B6C09F900FC23C8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		835DE6042B6C0A0F00FC23C8 /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Templates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
