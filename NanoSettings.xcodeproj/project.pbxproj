@@ -11,6 +11,14 @@
 		832895822B6C014300A9CB97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832895812B6C014300A9CB97 /* ContentView.swift */; };
 		832895842B6C014400A9CB97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 832895832B6C014400A9CB97 /* Assets.xcassets */; };
 		832895872B6C014400A9CB97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 832895862B6C014400A9CB97 /* Preview Assets.xcassets */; };
+		833936902B6C57F50049FDC7 /* AutoLaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8339368F2B6C57F50049FDC7 /* AutoLaunchView.swift */; };
+		833936922B6C58F30049FDC7 /* BackgroundAppRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833936912B6C58F30049FDC7 /* BackgroundAppRefreshView.swift */; };
+		833936942B6C5A1B0049FDC7 /* ReturnClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833936932B6C5A1B0049FDC7 /* ReturnClockView.swift */; };
+		833936962B6C68890049FDC7 /* IconLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833936952B6C68890049FDC7 /* IconLabel.swift */; };
+		833936982B6C69C00049FDC7 /* NightstandModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833936972B6C69C00049FDC7 /* NightstandModeView.swift */; };
+		8339369A2B6C6A420049FDC7 /* HandoffView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833936992B6C6A420049FDC7 /* HandoffView.swift */; };
+		8339369C2B6C6ACF0049FDC7 /* WebsiteDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8339369B2B6C6ACF0049FDC7 /* WebsiteDataView.swift */; };
+		8339369E2B6C6B720049FDC7 /* ProfilesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8339369D2B6C6B720049FDC7 /* ProfilesView.swift */; };
 		835DE6072B6C105B00FC23C8 /* NanoSettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DE6062B6C105B00FC23C8 /* NanoSettingsModel.swift */; };
 		835DE6092B6C116100FC23C8 /* SettingsLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DE6082B6C116100FC23C8 /* SettingsLink.swift */; };
 		835DE60B2B6C134E00FC23C8 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DE60A2B6C134E00FC23C8 /* NotificationsView.swift */; };
@@ -29,6 +37,14 @@
 		832895812B6C014300A9CB97 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		832895832B6C014400A9CB97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		832895862B6C014400A9CB97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8339368F2B6C57F50049FDC7 /* AutoLaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLaunchView.swift; sourceTree = "<group>"; };
+		833936912B6C58F30049FDC7 /* BackgroundAppRefreshView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundAppRefreshView.swift; sourceTree = "<group>"; };
+		833936932B6C5A1B0049FDC7 /* ReturnClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnClockView.swift; sourceTree = "<group>"; };
+		833936952B6C68890049FDC7 /* IconLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconLabel.swift; sourceTree = "<group>"; };
+		833936972B6C69C00049FDC7 /* NightstandModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightstandModeView.swift; sourceTree = "<group>"; };
+		833936992B6C6A420049FDC7 /* HandoffView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandoffView.swift; sourceTree = "<group>"; };
+		8339369B2B6C6ACF0049FDC7 /* WebsiteDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteDataView.swift; sourceTree = "<group>"; };
+		8339369D2B6C6B720049FDC7 /* ProfilesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilesView.swift; sourceTree = "<group>"; };
 		835DE6052B6C0B1600FC23C8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		835DE6062B6C105B00FC23C8 /* NanoSettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanoSettingsModel.swift; sourceTree = "<group>"; };
 		835DE6082B6C116100FC23C8 /* SettingsLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLink.swift; sourceTree = "<group>"; };
@@ -117,6 +133,7 @@
 				835DE6082B6C116100FC23C8 /* SettingsLink.swift */,
 				836D6ABA2B6C408C008DBB8F /* IconToggle.swift */,
 				836D6AC12B6C4428008DBB8F /* ClearRow.swift */,
+				833936952B6C68890049FDC7 /* IconLabel.swift */,
 			);
 			path = Templates;
 			sourceTree = "<group>";
@@ -135,6 +152,13 @@
 				836D6ABF2B6C43B0008DBB8F /* AboutView.swift */,
 				836D6AC32B6C4682008DBB8F /* SoftwareUpdateView.swift */,
 				836D6AC52B6C4715008DBB8F /* OrientationView.swift */,
+				8339368F2B6C57F50049FDC7 /* AutoLaunchView.swift */,
+				833936912B6C58F30049FDC7 /* BackgroundAppRefreshView.swift */,
+				833936932B6C5A1B0049FDC7 /* ReturnClockView.swift */,
+				833936972B6C69C00049FDC7 /* NightstandModeView.swift */,
+				833936992B6C6A420049FDC7 /* HandoffView.swift */,
+				8339369B2B6C6ACF0049FDC7 /* WebsiteDataView.swift */,
+				8339369D2B6C6B720049FDC7 /* ProfilesView.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -209,8 +233,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8339369E2B6C6B720049FDC7 /* ProfilesView.swift in Sources */,
 				836D6ABB2B6C408C008DBB8F /* IconToggle.swift in Sources */,
+				833936942B6C5A1B0049FDC7 /* ReturnClockView.swift in Sources */,
 				835DE6092B6C116100FC23C8 /* SettingsLink.swift in Sources */,
+				833936962B6C68890049FDC7 /* IconLabel.swift in Sources */,
 				835DE60B2B6C134E00FC23C8 /* NotificationsView.swift in Sources */,
 				836D6AB92B6C3FD1008DBB8F /* ShowNotificationsView.swift in Sources */,
 				836D6AC22B6C4428008DBB8F /* ClearRow.swift in Sources */,
@@ -219,7 +246,12 @@
 				836D6ABD2B6C42DD008DBB8F /* GeneralView.swift in Sources */,
 				832895802B6C014300A9CB97 /* NanoSettingsApp.swift in Sources */,
 				836D6AC42B6C4682008DBB8F /* SoftwareUpdateView.swift in Sources */,
+				833936902B6C57F50049FDC7 /* AutoLaunchView.swift in Sources */,
 				835DE6072B6C105B00FC23C8 /* NanoSettingsModel.swift in Sources */,
+				833936922B6C58F30049FDC7 /* BackgroundAppRefreshView.swift in Sources */,
+				8339369A2B6C6A420049FDC7 /* HandoffView.swift in Sources */,
+				833936982B6C69C00049FDC7 /* NightstandModeView.swift in Sources */,
+				8339369C2B6C6ACF0049FDC7 /* WebsiteDataView.swift in Sources */,
 				836D6AC62B6C4715008DBB8F /* OrientationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
