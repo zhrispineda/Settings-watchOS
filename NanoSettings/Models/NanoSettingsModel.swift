@@ -26,4 +26,16 @@ let mainSectionList: [NavigationData] = [
     NavigationData(title: "Focus", icon: "moon.circle.fill", primaryColor: .white, secondaryColor: .indigo, content: {
         AnyView(FocusView())
     }),
+    NavigationData(title: "Airplane Mode", icon: "airplane.circle.fill", primaryColor: .white, secondaryColor: .orange, content: {
+        AnyView(AirplaneModeView())
+    }),
+    NavigationData(title: "Cellular", icon: "antenna.radiowaves.left.and.right.circle.fill", primaryColor: .white, secondaryColor: .green, content: {
+        AnyView(EmptyView())
+    }),
+    NavigationData(title: "Wi-Fi", icon: "wifi.circle.fill", primaryColor: .white, secondaryColor: .blue, content: {
+        AnyView(EmptyView())
+    }),
+    NavigationData(title: "Bluetooth", icon: "logo.bluetooth", primaryColor: .white, secondaryColor: .blue, content: {
+        AnyView(EmptyView())
+    }),
 ]

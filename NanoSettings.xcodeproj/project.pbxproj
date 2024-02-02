@@ -23,6 +23,7 @@
 		833936A42B6C73580049FDC7 /* DoNotDisturbView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833936A32B6C73580049FDC7 /* DoNotDisturbView.swift */; };
 		833936A62B6C75D10049FDC7 /* SymbolLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833936A52B6C75D10049FDC7 /* SymbolLink.swift */; };
 		833936A82B6C77EA0049FDC7 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833936A72B6C77EA0049FDC7 /* ScheduleView.swift */; };
+		833936AB2B6C80FF0049FDC7 /* AirplaneModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833936AA2B6C80FF0049FDC7 /* AirplaneModeView.swift */; };
 		835DE6072B6C105B00FC23C8 /* NanoSettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DE6062B6C105B00FC23C8 /* NanoSettingsModel.swift */; };
 		835DE6092B6C116100FC23C8 /* SettingsLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DE6082B6C116100FC23C8 /* SettingsLink.swift */; };
 		835DE60B2B6C134E00FC23C8 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DE60A2B6C134E00FC23C8 /* NotificationsView.swift */; };
@@ -53,6 +54,7 @@
 		833936A32B6C73580049FDC7 /* DoNotDisturbView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoNotDisturbView.swift; sourceTree = "<group>"; };
 		833936A52B6C75D10049FDC7 /* SymbolLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolLink.swift; sourceTree = "<group>"; };
 		833936A72B6C77EA0049FDC7 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		833936AA2B6C80FF0049FDC7 /* AirplaneModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirplaneModeView.swift; sourceTree = "<group>"; };
 		835DE6052B6C0B1600FC23C8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		835DE6062B6C105B00FC23C8 /* NanoSettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanoSettingsModel.swift; sourceTree = "<group>"; };
 		835DE6082B6C116100FC23C8 /* SettingsLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLink.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				835DE60A2B6C134E00FC23C8 /* NotificationsView.swift */,
 				836D6ABC2B6C42DD008DBB8F /* GeneralView.swift */,
 				833936A02B6C716D0049FDC7 /* FocusView.swift */,
+				833936AA2B6C80FF0049FDC7 /* AirplaneModeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				832895802B6C014300A9CB97 /* NanoSettingsApp.swift in Sources */,
 				836D6AC42B6C4682008DBB8F /* SoftwareUpdateView.swift in Sources */,
 				833936902B6C57F50049FDC7 /* AutoLaunchView.swift in Sources */,
+				833936AB2B6C80FF0049FDC7 /* AirplaneModeView.swift in Sources */,
 				835DE6072B6C105B00FC23C8 /* NanoSettingsModel.swift in Sources */,
 				833936922B6C58F30049FDC7 /* BackgroundAppRefreshView.swift in Sources */,
 				833936A62B6C75D10049FDC7 /* SymbolLink.swift in Sources */,

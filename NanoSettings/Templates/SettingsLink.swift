@@ -62,5 +62,5 @@ struct SettingsLink<Content: View>: View {
 }
 
 #Preview {
-    SettingsLink(title: "Notifications", icon: "bell.circle.fill", primaryColor: .white, secondaryColor: .red, content: {})
+    SettingsLink(title: "Bluetooth", icon: "logo.bluetooth", primaryColor: .white, secondaryColor: .blue, content: {})
 }
