@@ -49,7 +49,7 @@ struct SettingsLink<Content: View>: View {
                             .foregroundStyle(secondaryColor)
                         Image(icon)
                             .imageScale(.small)
-                        }
+                    }
                 default:
                     Image(systemName: icon)
                         .symbolRenderingMode(.palette)

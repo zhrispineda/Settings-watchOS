@@ -41,4 +41,10 @@ let mainSectionList: [NavigationData] = [
     NavigationData(title: "Display & Brightness", icon: "sun.max.circle.fill", primaryColor: .white, secondaryColor: .blue, content: {
         AnyView(DisplayBrightnessView())
     }),
+    NavigationData(title: "App View", icon: "circle.hexagongrid.circle.fill", primaryColor: .white, secondaryColor: .blue, content: {
+        AnyView(AppView())
+    }),
+    NavigationData(title: "Gestures", icon: "hand.thumbsup.circle.fill", primaryColor: .white, secondaryColor: .blue, content: {
+        AnyView(GesturesView())
+    }),
 ]

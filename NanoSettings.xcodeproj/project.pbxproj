@@ -41,6 +41,9 @@
 		83EDDA8C2B6D339900DC2F2B /* ReturnClockDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDDA8B2B6D339900DC2F2B /* ReturnClockDetailView.swift */; };
 		83EDDA8E2B6D9E2E00DC2F2B /* ShowAppsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDDA8D2B6D9E2E00DC2F2B /* ShowAppsView.swift */; };
 		83EDDA902B6D9F5800DC2F2B /* WakeDurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDDA8F2B6D9F5800DC2F2B /* WakeDurationView.swift */; };
+		83EDDA922B6DA1A800DC2F2B /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDDA912B6DA1A800DC2F2B /* AppView.swift */; };
+		83EDDA942B6DA5FE00DC2F2B /* GesturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDDA932B6DA5FE00DC2F2B /* GesturesView.swift */; };
+		83EDDA962B6DA6E900DC2F2B /* DoubleTapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDDA952B6DA6E900DC2F2B /* DoubleTapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +83,9 @@
 		83EDDA8B2B6D339900DC2F2B /* ReturnClockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnClockDetailView.swift; sourceTree = "<group>"; };
 		83EDDA8D2B6D9E2E00DC2F2B /* ShowAppsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAppsView.swift; sourceTree = "<group>"; };
 		83EDDA8F2B6D9F5800DC2F2B /* WakeDurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeDurationView.swift; sourceTree = "<group>"; };
+		83EDDA912B6DA1A800DC2F2B /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		83EDDA932B6DA5FE00DC2F2B /* GesturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturesView.swift; sourceTree = "<group>"; };
+		83EDDA952B6DA6E900DC2F2B /* DoubleTapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleTapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +167,9 @@
 				833936A02B6C716D0049FDC7 /* FocusView.swift */,
 				833936AA2B6C80FF0049FDC7 /* AirplaneModeView.swift */,
 				83EDDA7E2B6D267500DC2F2B /* DisplayBrightnessView.swift */,
+				83EDDA912B6DA1A800DC2F2B /* AppView.swift */,
+				83EDDA932B6DA5FE00DC2F2B /* GesturesView.swift */,
+				83EDDA952B6DA6E900DC2F2B /* DoubleTapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -315,10 +324,12 @@
 				833936942B6C5A1B0049FDC7 /* ReturnClockView.swift in Sources */,
 				835DE6092B6C116100FC23C8 /* SettingsLink.swift in Sources */,
 				83EDDA8E2B6D9E2E00DC2F2B /* ShowAppsView.swift in Sources */,
+				83EDDA942B6DA5FE00DC2F2B /* GesturesView.swift in Sources */,
 				833936962B6C68890049FDC7 /* IconLabel.swift in Sources */,
 				833936A82B6C77EA0049FDC7 /* ScheduleView.swift in Sources */,
 				833936A42B6C73580049FDC7 /* DoNotDisturbView.swift in Sources */,
 				83EDDA872B6D30A000DC2F2B /* ShowComplicationDataView.swift in Sources */,
+				83EDDA962B6DA6E900DC2F2B /* DoubleTapView.swift in Sources */,
 				835DE60B2B6C134E00FC23C8 /* NotificationsView.swift in Sources */,
 				836D6AB92B6C3FD1008DBB8F /* ShowNotificationsView.swift in Sources */,
 				83EDDA842B6D2FC200DC2F2B /* AlwaysOnView.swift in Sources */,
@@ -335,6 +346,7 @@
 				835DE6072B6C105B00FC23C8 /* NanoSettingsModel.swift in Sources */,
 				833936922B6C58F30049FDC7 /* BackgroundAppRefreshView.swift in Sources */,
 				833936A62B6C75D10049FDC7 /* SymbolLink.swift in Sources */,
+				83EDDA922B6DA1A800DC2F2B /* AppView.swift in Sources */,
 				83EDDA902B6D9F5800DC2F2B /* WakeDurationView.swift in Sources */,
 				83EDDA822B6D2EBE00DC2F2B /* TextSizeView.swift in Sources */,
 				8339369A2B6C6A420049FDC7 /* HandoffView.swift in Sources */,
