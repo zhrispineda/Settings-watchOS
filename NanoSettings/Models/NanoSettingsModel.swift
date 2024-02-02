@@ -23,4 +23,7 @@ let mainSectionList: [NavigationData] = [
     NavigationData(title: "General", icon: "gear.circle.fill", primaryColor: .white, secondaryColor: .gray, content: {
         AnyView(GeneralView())
     }),
+    NavigationData(title: "Focus", icon: "moon.circle.fill", primaryColor: .white, secondaryColor: .indigo, content: {
+        AnyView(FocusView())
+    }),
 ]
