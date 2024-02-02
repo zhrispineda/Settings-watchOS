@@ -16,7 +16,7 @@ struct ContentView: View {
         NavigationStack {
             List {
                 // MARK: Main Section
-                // Notifications, General, Focus, Airplane Mode, Cellular, Wi-Fi, Bluetooth
+                // Notifications, General, Focus, Airplane Mode, Cellular, Wi-Fi, Bluetooth, Display & Brightness
                 Section {
                     ForEach(mainSectionList) { item in
                         SettingsLink(title: item.title, icon: item.icon, primaryColor: item.primaryColor, secondaryColor: item.secondaryColor, content: item.content)

@@ -1,27 +1,25 @@
 //
-//  ShowNotificationsView.swift
+//  ShowAppsView.swift
 //  NanoSettings
 //
-//  Settings > Notifications > Show Notifications on Wrist Down
+//  Settings > Display & Brightness > Always On > Show Apps
 //
 
 import SwiftUI
 
-struct ShowNotificationsView: View {
+struct ShowAppsView: View {
     // Variables
-    @State private var showNotificationsEnabled = true
+    @State private var showAppsEnabled = true
     
     var body: some View {
         List {
             Section(content: {
-                Toggle("Show Notifications", isOn: $showNotificationsEnabled)
+                Toggle("Show Apps", isOn: $showAppsEnabled)
             }, footer: {
-                if showNotificationsEnabled {
-                    Text("You can choose which notifications are visible when your wrist is down.")
-                }
+                Text("You can choose which apps are visible when your wrist is down.")
             })
             
-            if showNotificationsEnabled {
+            if showAppsEnabled {
                 Section(content: {
                     IconToggle(title: "Calculator", icon: "applecalculator")
                     IconToggle(title: "Contacts", icon: "applecontacts")
@@ -36,10 +34,12 @@ struct ShowNotificationsView: View {
                 })
             }
         }
-        .navigationTitle("Show Notifications")
+        .navigationTitle("Show Apps")
     }
 }
 
 #Preview {
-    ShowNotificationsView()
+    NavigationStack {
+        ShowAppsView()
+    }
 }

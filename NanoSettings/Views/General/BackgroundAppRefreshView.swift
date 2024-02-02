@@ -27,9 +27,7 @@ struct BackgroundAppRefreshView: View {
                     IconToggle(title: "Medications", icon: "applemedications")
                     IconToggle(title: "Now Playing", icon: "applenow playing")
                     IconToggle(title: "Shortcuts", icon: "appleshortcuts")
-                    if WKInterfaceDevice().name.contains("Ultra") {
-                        IconToggle(title: "Siren", icon: "applesiren")
-                    }
+                    IconToggle(title: "Siren", icon: "applesiren")
                 }
             }
         }

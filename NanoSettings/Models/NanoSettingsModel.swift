@@ -38,4 +38,7 @@ let mainSectionList: [NavigationData] = [
     NavigationData(title: "Bluetooth", icon: "logo.bluetooth", primaryColor: .white, secondaryColor: .blue, content: {
         AnyView(EmptyView())
     }),
+    NavigationData(title: "Display & Brightness", icon: "sun.max.circle.fill", primaryColor: .white, secondaryColor: .blue, content: {
+        AnyView(DisplayBrightnessView())
+    }),
 ]

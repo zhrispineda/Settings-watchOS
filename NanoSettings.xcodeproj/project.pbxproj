@@ -34,6 +34,13 @@
 		836D6AC22B6C4428008DBB8F /* ClearRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836D6AC12B6C4428008DBB8F /* ClearRow.swift */; };
 		836D6AC42B6C4682008DBB8F /* SoftwareUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836D6AC32B6C4682008DBB8F /* SoftwareUpdateView.swift */; };
 		836D6AC62B6C4715008DBB8F /* OrientationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836D6AC52B6C4715008DBB8F /* OrientationView.swift */; };
+		83EDDA7F2B6D267500DC2F2B /* DisplayBrightnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDDA7E2B6D267500DC2F2B /* DisplayBrightnessView.swift */; };
+		83EDDA822B6D2EBE00DC2F2B /* TextSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDDA812B6D2EBE00DC2F2B /* TextSizeView.swift */; };
+		83EDDA842B6D2FC200DC2F2B /* AlwaysOnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDDA832B6D2FC200DC2F2B /* AlwaysOnView.swift */; };
+		83EDDA872B6D30A000DC2F2B /* ShowComplicationDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDDA862B6D30A000DC2F2B /* ShowComplicationDataView.swift */; };
+		83EDDA8C2B6D339900DC2F2B /* ReturnClockDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDDA8B2B6D339900DC2F2B /* ReturnClockDetailView.swift */; };
+		83EDDA8E2B6D9E2E00DC2F2B /* ShowAppsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDDA8D2B6D9E2E00DC2F2B /* ShowAppsView.swift */; };
+		83EDDA902B6D9F5800DC2F2B /* WakeDurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDDA8F2B6D9F5800DC2F2B /* WakeDurationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +73,13 @@
 		836D6AC12B6C4428008DBB8F /* ClearRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearRow.swift; sourceTree = "<group>"; };
 		836D6AC32B6C4682008DBB8F /* SoftwareUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftwareUpdateView.swift; sourceTree = "<group>"; };
 		836D6AC52B6C4715008DBB8F /* OrientationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationView.swift; sourceTree = "<group>"; };
+		83EDDA7E2B6D267500DC2F2B /* DisplayBrightnessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayBrightnessView.swift; sourceTree = "<group>"; };
+		83EDDA812B6D2EBE00DC2F2B /* TextSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSizeView.swift; sourceTree = "<group>"; };
+		83EDDA832B6D2FC200DC2F2B /* AlwaysOnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlwaysOnView.swift; sourceTree = "<group>"; };
+		83EDDA862B6D30A000DC2F2B /* ShowComplicationDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowComplicationDataView.swift; sourceTree = "<group>"; };
+		83EDDA8B2B6D339900DC2F2B /* ReturnClockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnClockDetailView.swift; sourceTree = "<group>"; };
+		83EDDA8D2B6D9E2E00DC2F2B /* ShowAppsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAppsView.swift; sourceTree = "<group>"; };
+		83EDDA8F2B6D9F5800DC2F2B /* WakeDurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeDurationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,10 +155,12 @@
 				836D6AB72B6C3F0D008DBB8F /* Notifications */,
 				836D6ABE2B6C43A6008DBB8F /* General */,
 				8339369F2B6C715E0049FDC7 /* Focus */,
+				83EDDA802B6D2EA800DC2F2B /* Display & Brightness */,
 				835DE60A2B6C134E00FC23C8 /* NotificationsView.swift */,
 				836D6ABC2B6C42DD008DBB8F /* GeneralView.swift */,
 				833936A02B6C716D0049FDC7 /* FocusView.swift */,
 				833936AA2B6C80FF0049FDC7 /* AirplaneModeView.swift */,
+				83EDDA7E2B6D267500DC2F2B /* DisplayBrightnessView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -180,6 +196,7 @@
 		836D6ABE2B6C43A6008DBB8F /* General */ = {
 			isa = PBXGroup;
 			children = (
+				83EDDA8A2B6D338600DC2F2B /* Return to Clock */,
 				836D6ABF2B6C43B0008DBB8F /* AboutView.swift */,
 				836D6AC32B6C4682008DBB8F /* SoftwareUpdateView.swift */,
 				836D6AC52B6C4715008DBB8F /* OrientationView.swift */,
@@ -192,6 +209,34 @@
 				8339369D2B6C6B720049FDC7 /* ProfilesView.swift */,
 			);
 			path = General;
+			sourceTree = "<group>";
+		};
+		83EDDA802B6D2EA800DC2F2B /* Display & Brightness */ = {
+			isa = PBXGroup;
+			children = (
+				83EDDA852B6D309500DC2F2B /* Always On */,
+				83EDDA812B6D2EBE00DC2F2B /* TextSizeView.swift */,
+				83EDDA832B6D2FC200DC2F2B /* AlwaysOnView.swift */,
+				83EDDA8F2B6D9F5800DC2F2B /* WakeDurationView.swift */,
+			);
+			path = "Display & Brightness";
+			sourceTree = "<group>";
+		};
+		83EDDA852B6D309500DC2F2B /* Always On */ = {
+			isa = PBXGroup;
+			children = (
+				83EDDA862B6D30A000DC2F2B /* ShowComplicationDataView.swift */,
+				83EDDA8D2B6D9E2E00DC2F2B /* ShowAppsView.swift */,
+			);
+			path = "Always On";
+			sourceTree = "<group>";
+		};
+		83EDDA8A2B6D338600DC2F2B /* Return to Clock */ = {
+			isa = PBXGroup;
+			children = (
+				83EDDA8B2B6D339900DC2F2B /* ReturnClockDetailView.swift */,
+			);
+			path = "Return to Clock";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,15 +311,20 @@
 			files = (
 				8339369E2B6C6B720049FDC7 /* ProfilesView.swift in Sources */,
 				836D6ABB2B6C408C008DBB8F /* IconToggle.swift in Sources */,
+				83EDDA7F2B6D267500DC2F2B /* DisplayBrightnessView.swift in Sources */,
 				833936942B6C5A1B0049FDC7 /* ReturnClockView.swift in Sources */,
 				835DE6092B6C116100FC23C8 /* SettingsLink.swift in Sources */,
+				83EDDA8E2B6D9E2E00DC2F2B /* ShowAppsView.swift in Sources */,
 				833936962B6C68890049FDC7 /* IconLabel.swift in Sources */,
 				833936A82B6C77EA0049FDC7 /* ScheduleView.swift in Sources */,
 				833936A42B6C73580049FDC7 /* DoNotDisturbView.swift in Sources */,
+				83EDDA872B6D30A000DC2F2B /* ShowComplicationDataView.swift in Sources */,
 				835DE60B2B6C134E00FC23C8 /* NotificationsView.swift in Sources */,
 				836D6AB92B6C3FD1008DBB8F /* ShowNotificationsView.swift in Sources */,
+				83EDDA842B6D2FC200DC2F2B /* AlwaysOnView.swift in Sources */,
 				836D6AC22B6C4428008DBB8F /* ClearRow.swift in Sources */,
 				833936A12B6C716D0049FDC7 /* FocusView.swift in Sources */,
+				83EDDA8C2B6D339900DC2F2B /* ReturnClockDetailView.swift in Sources */,
 				836D6AC02B6C43B0008DBB8F /* AboutView.swift in Sources */,
 				832895822B6C014300A9CB97 /* ContentView.swift in Sources */,
 				836D6ABD2B6C42DD008DBB8F /* GeneralView.swift in Sources */,
@@ -285,6 +335,8 @@
 				835DE6072B6C105B00FC23C8 /* NanoSettingsModel.swift in Sources */,
 				833936922B6C58F30049FDC7 /* BackgroundAppRefreshView.swift in Sources */,
 				833936A62B6C75D10049FDC7 /* SymbolLink.swift in Sources */,
+				83EDDA902B6D9F5800DC2F2B /* WakeDurationView.swift in Sources */,
+				83EDDA822B6D2EBE00DC2F2B /* TextSizeView.swift in Sources */,
 				8339369A2B6C6A420049FDC7 /* HandoffView.swift in Sources */,
 				833936982B6C69C00049FDC7 /* NightstandModeView.swift in Sources */,
 				8339369C2B6C6ACF0049FDC7 /* WebsiteDataView.swift in Sources */,

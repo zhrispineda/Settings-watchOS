@@ -11,7 +11,7 @@ struct ReturnClockView: View {
     // Variables
     @State private var selected = "After 2 minutes"
     let options = ["Always", "After 2 minutes", "After 1 hour"]
-    let apps = ["Calculator", "Contacts", "Maps", "Medications", "Now Playing", "Shortcuts", "Siren"]
+    let apps = ["Calculator", "Contacts", "Maps", "Medications", "Now Playing", "Settings", "Shortcuts", "Siren"]
     
     var body: some View {
         List {
@@ -38,13 +38,11 @@ struct ReturnClockView: View {
             
             Section(content: {
                 ForEach(apps, id: \.self) { app in
-                    if app == "Siren" {
-                        if WKInterfaceDevice().name.contains("Ultra") {
-                            IconLabel(title: app, icon: "apple\(app.lowercased())")
-                        }
-                    } else {
+                    NavigationLink(destination: {
+                        ReturnClockDetailView(title: app)
+                    }, label: {
                         IconLabel(title: app, icon: "apple\(app.lowercased())")
-                    }
+                    })
                 }
             }, header: {
                 Text("Apps")
