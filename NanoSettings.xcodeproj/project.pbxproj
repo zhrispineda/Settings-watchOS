@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8319878D2B6ECBD9009937B0 /* TouchAccommodationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319878C2B6ECBD9009937B0 /* TouchAccommodationsView.swift */; };
+		831987902B6ECF10009937B0 /* SwipeGesturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319878F2B6ECF10009937B0 /* SwipeGesturesView.swift */; };
+		831987922B6EEC10009937B0 /* AccessibilitySiriView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831987912B6EEC10009937B0 /* AccessibilitySiriView.swift */; };
+		831987942B6EF020009937B0 /* LiveSpeechView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831987932B6EF020009937B0 /* LiveSpeechView.swift */; };
+		831987972B6EF289009937B0 /* FavoritePhrasesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831987962B6EF289009937B0 /* FavoritePhrasesView.swift */; };
+		831987992B6EF4DF009937B0 /* VoicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831987982B6EF4DF009937B0 /* VoicesView.swift */; };
+		8319879C2B6EF808009937B0 /* VoicesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319879B2B6EF808009937B0 /* VoicesDetailView.swift */; };
+		8319879E2B6EFA76009937B0 /* AccessibilityShortcutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319879D2B6EFA76009937B0 /* AccessibilityShortcutView.swift */; };
 		832895802B6C014300A9CB97 /* NanoSettingsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8328957F2B6C014300A9CB97 /* NanoSettingsApp.swift */; };
 		832895822B6C014300A9CB97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832895812B6C014300A9CB97 /* ContentView.swift */; };
 		832895842B6C014400A9CB97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 832895832B6C014400A9CB97 /* Assets.xcassets */; };
@@ -34,6 +42,10 @@
 		836D6AC22B6C4428008DBB8F /* ClearRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836D6AC12B6C4428008DBB8F /* ClearRow.swift */; };
 		836D6AC42B6C4682008DBB8F /* SoftwareUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836D6AC32B6C4682008DBB8F /* SoftwareUpdateView.swift */; };
 		836D6AC62B6C4715008DBB8F /* OrientationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836D6AC52B6C4715008DBB8F /* OrientationView.swift */; };
+		83A04AE72B6E124900C34E53 /* ChimesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A04AE62B6E124900C34E53 /* ChimesView.swift */; };
+		83A04AEA2B6E131400C34E53 /* ChimesScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A04AE92B6E131400C34E53 /* ChimesScheduleView.swift */; };
+		83A04AEC2B6E147200C34E53 /* ChimesSoundsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A04AEB2B6E147200C34E53 /* ChimesSoundsView.swift */; };
+		83A04AEE2B6E164D00C34E53 /* QuickActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A04AED2B6E164D00C34E53 /* QuickActionsView.swift */; };
 		83EDDA7F2B6D267500DC2F2B /* DisplayBrightnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDDA7E2B6D267500DC2F2B /* DisplayBrightnessView.swift */; };
 		83EDDA822B6D2EBE00DC2F2B /* TextSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDDA812B6D2EBE00DC2F2B /* TextSizeView.swift */; };
 		83EDDA842B6D2FC200DC2F2B /* AlwaysOnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDDA832B6D2FC200DC2F2B /* AlwaysOnView.swift */; };
@@ -44,9 +56,19 @@
 		83EDDA922B6DA1A800DC2F2B /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDDA912B6DA1A800DC2F2B /* AppView.swift */; };
 		83EDDA942B6DA5FE00DC2F2B /* GesturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDDA932B6DA5FE00DC2F2B /* GesturesView.swift */; };
 		83EDDA962B6DA6E900DC2F2B /* DoubleTapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDDA952B6DA6E900DC2F2B /* DoubleTapView.swift */; };
+		83EDDA982B6DA8E800DC2F2B /* AccessibilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDDA972B6DA8E800DC2F2B /* AccessibilityView.swift */; };
+		83EDDA9B2B6DAAF400DC2F2B /* ReduceMotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDDA9A2B6DAAF400DC2F2B /* ReduceMotionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8319878C2B6ECBD9009937B0 /* TouchAccommodationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchAccommodationsView.swift; sourceTree = "<group>"; };
+		8319878F2B6ECF10009937B0 /* SwipeGesturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeGesturesView.swift; sourceTree = "<group>"; };
+		831987912B6EEC10009937B0 /* AccessibilitySiriView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilitySiriView.swift; sourceTree = "<group>"; };
+		831987932B6EF020009937B0 /* LiveSpeechView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveSpeechView.swift; sourceTree = "<group>"; };
+		831987962B6EF289009937B0 /* FavoritePhrasesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePhrasesView.swift; sourceTree = "<group>"; };
+		831987982B6EF4DF009937B0 /* VoicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicesView.swift; sourceTree = "<group>"; };
+		8319879B2B6EF808009937B0 /* VoicesDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicesDetailView.swift; sourceTree = "<group>"; };
+		8319879D2B6EFA76009937B0 /* AccessibilityShortcutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityShortcutView.swift; sourceTree = "<group>"; };
 		8328957A2B6C014300A9CB97 /* Settings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Settings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8328957F2B6C014300A9CB97 /* NanoSettingsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanoSettingsApp.swift; sourceTree = "<group>"; };
 		832895812B6C014300A9CB97 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,6 +98,10 @@
 		836D6AC12B6C4428008DBB8F /* ClearRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearRow.swift; sourceTree = "<group>"; };
 		836D6AC32B6C4682008DBB8F /* SoftwareUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftwareUpdateView.swift; sourceTree = "<group>"; };
 		836D6AC52B6C4715008DBB8F /* OrientationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationView.swift; sourceTree = "<group>"; };
+		83A04AE62B6E124900C34E53 /* ChimesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChimesView.swift; sourceTree = "<group>"; };
+		83A04AE92B6E131400C34E53 /* ChimesScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChimesScheduleView.swift; sourceTree = "<group>"; };
+		83A04AEB2B6E147200C34E53 /* ChimesSoundsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChimesSoundsView.swift; sourceTree = "<group>"; };
+		83A04AED2B6E164D00C34E53 /* QuickActionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickActionsView.swift; sourceTree = "<group>"; };
 		83EDDA7E2B6D267500DC2F2B /* DisplayBrightnessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayBrightnessView.swift; sourceTree = "<group>"; };
 		83EDDA812B6D2EBE00DC2F2B /* TextSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSizeView.swift; sourceTree = "<group>"; };
 		83EDDA832B6D2FC200DC2F2B /* AlwaysOnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlwaysOnView.swift; sourceTree = "<group>"; };
@@ -86,6 +112,8 @@
 		83EDDA912B6DA1A800DC2F2B /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		83EDDA932B6DA5FE00DC2F2B /* GesturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturesView.swift; sourceTree = "<group>"; };
 		83EDDA952B6DA6E900DC2F2B /* DoubleTapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleTapView.swift; sourceTree = "<group>"; };
+		83EDDA972B6DA8E800DC2F2B /* AccessibilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityView.swift; sourceTree = "<group>"; };
+		83EDDA9A2B6DAAF400DC2F2B /* ReduceMotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduceMotionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +127,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8319878E2B6ECF03009937B0 /* Touch Accommodations */ = {
+			isa = PBXGroup;
+			children = (
+				8319878F2B6ECF10009937B0 /* SwipeGesturesView.swift */,
+			);
+			path = "Touch Accommodations";
+			sourceTree = "<group>";
+		};
+		831987952B6EF27C009937B0 /* Live Speech */ = {
+			isa = PBXGroup;
+			children = (
+				8319879A2B6EF7F6009937B0 /* Voice Language */,
+				831987962B6EF289009937B0 /* FavoritePhrasesView.swift */,
+				831987982B6EF4DF009937B0 /* VoicesView.swift */,
+			);
+			path = "Live Speech";
+			sourceTree = "<group>";
+		};
+		8319879A2B6EF7F6009937B0 /* Voice Language */ = {
+			isa = PBXGroup;
+			children = (
+				8319879B2B6EF808009937B0 /* VoicesDetailView.swift */,
+			);
+			path = "Voice Language";
+			sourceTree = "<group>";
+		};
 		8328956D2B6C014300A9CB97 = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +216,7 @@
 				836D6ABE2B6C43A6008DBB8F /* General */,
 				8339369F2B6C715E0049FDC7 /* Focus */,
 				83EDDA802B6D2EA800DC2F2B /* Display & Brightness */,
+				83EDDA992B6DAAE300DC2F2B /* Accessibility */,
 				835DE60A2B6C134E00FC23C8 /* NotificationsView.swift */,
 				836D6ABC2B6C42DD008DBB8F /* GeneralView.swift */,
 				833936A02B6C716D0049FDC7 /* FocusView.swift */,
@@ -170,6 +225,7 @@
 				83EDDA912B6DA1A800DC2F2B /* AppView.swift */,
 				83EDDA932B6DA5FE00DC2F2B /* GesturesView.swift */,
 				83EDDA952B6DA6E900DC2F2B /* DoubleTapView.swift */,
+				83EDDA972B6DA8E800DC2F2B /* AccessibilityView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -220,6 +276,15 @@
 			path = General;
 			sourceTree = "<group>";
 		};
+		83A04AE82B6E12FD00C34E53 /* Chimes */ = {
+			isa = PBXGroup;
+			children = (
+				83A04AE92B6E131400C34E53 /* ChimesScheduleView.swift */,
+				83A04AEB2B6E147200C34E53 /* ChimesSoundsView.swift */,
+			);
+			path = Chimes;
+			sourceTree = "<group>";
+		};
 		83EDDA802B6D2EA800DC2F2B /* Display & Brightness */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,6 +311,23 @@
 				83EDDA8B2B6D339900DC2F2B /* ReturnClockDetailView.swift */,
 			);
 			path = "Return to Clock";
+			sourceTree = "<group>";
+		};
+		83EDDA992B6DAAE300DC2F2B /* Accessibility */ = {
+			isa = PBXGroup;
+			children = (
+				83A04AE82B6E12FD00C34E53 /* Chimes */,
+				8319878E2B6ECF03009937B0 /* Touch Accommodations */,
+				831987952B6EF27C009937B0 /* Live Speech */,
+				83EDDA9A2B6DAAF400DC2F2B /* ReduceMotionView.swift */,
+				83A04AE62B6E124900C34E53 /* ChimesView.swift */,
+				83A04AED2B6E164D00C34E53 /* QuickActionsView.swift */,
+				8319878C2B6ECBD9009937B0 /* TouchAccommodationsView.swift */,
+				831987912B6EEC10009937B0 /* AccessibilitySiriView.swift */,
+				831987932B6EF020009937B0 /* LiveSpeechView.swift */,
+				8319879D2B6EFA76009937B0 /* AccessibilityShortcutView.swift */,
+			);
+			path = Accessibility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,18 +406,27 @@
 				833936942B6C5A1B0049FDC7 /* ReturnClockView.swift in Sources */,
 				835DE6092B6C116100FC23C8 /* SettingsLink.swift in Sources */,
 				83EDDA8E2B6D9E2E00DC2F2B /* ShowAppsView.swift in Sources */,
+				831987902B6ECF10009937B0 /* SwipeGesturesView.swift in Sources */,
+				831987972B6EF289009937B0 /* FavoritePhrasesView.swift in Sources */,
 				83EDDA942B6DA5FE00DC2F2B /* GesturesView.swift in Sources */,
 				833936962B6C68890049FDC7 /* IconLabel.swift in Sources */,
 				833936A82B6C77EA0049FDC7 /* ScheduleView.swift in Sources */,
+				83A04AEC2B6E147200C34E53 /* ChimesSoundsView.swift in Sources */,
+				83A04AEE2B6E164D00C34E53 /* QuickActionsView.swift in Sources */,
 				833936A42B6C73580049FDC7 /* DoNotDisturbView.swift in Sources */,
 				83EDDA872B6D30A000DC2F2B /* ShowComplicationDataView.swift in Sources */,
+				83A04AEA2B6E131400C34E53 /* ChimesScheduleView.swift in Sources */,
 				83EDDA962B6DA6E900DC2F2B /* DoubleTapView.swift in Sources */,
+				831987992B6EF4DF009937B0 /* VoicesView.swift in Sources */,
 				835DE60B2B6C134E00FC23C8 /* NotificationsView.swift in Sources */,
 				836D6AB92B6C3FD1008DBB8F /* ShowNotificationsView.swift in Sources */,
 				83EDDA842B6D2FC200DC2F2B /* AlwaysOnView.swift in Sources */,
 				836D6AC22B6C4428008DBB8F /* ClearRow.swift in Sources */,
+				831987922B6EEC10009937B0 /* AccessibilitySiriView.swift in Sources */,
 				833936A12B6C716D0049FDC7 /* FocusView.swift in Sources */,
+				8319879C2B6EF808009937B0 /* VoicesDetailView.swift in Sources */,
 				83EDDA8C2B6D339900DC2F2B /* ReturnClockDetailView.swift in Sources */,
+				83EDDA9B2B6DAAF400DC2F2B /* ReduceMotionView.swift in Sources */,
 				836D6AC02B6C43B0008DBB8F /* AboutView.swift in Sources */,
 				832895822B6C014300A9CB97 /* ContentView.swift in Sources */,
 				836D6ABD2B6C42DD008DBB8F /* GeneralView.swift in Sources */,
@@ -343,15 +434,20 @@
 				836D6AC42B6C4682008DBB8F /* SoftwareUpdateView.swift in Sources */,
 				833936902B6C57F50049FDC7 /* AutoLaunchView.swift in Sources */,
 				833936AB2B6C80FF0049FDC7 /* AirplaneModeView.swift in Sources */,
+				83EDDA982B6DA8E800DC2F2B /* AccessibilityView.swift in Sources */,
+				83A04AE72B6E124900C34E53 /* ChimesView.swift in Sources */,
 				835DE6072B6C105B00FC23C8 /* NanoSettingsModel.swift in Sources */,
 				833936922B6C58F30049FDC7 /* BackgroundAppRefreshView.swift in Sources */,
 				833936A62B6C75D10049FDC7 /* SymbolLink.swift in Sources */,
+				831987942B6EF020009937B0 /* LiveSpeechView.swift in Sources */,
 				83EDDA922B6DA1A800DC2F2B /* AppView.swift in Sources */,
+				8319878D2B6ECBD9009937B0 /* TouchAccommodationsView.swift in Sources */,
 				83EDDA902B6D9F5800DC2F2B /* WakeDurationView.swift in Sources */,
 				83EDDA822B6D2EBE00DC2F2B /* TextSizeView.swift in Sources */,
 				8339369A2B6C6A420049FDC7 /* HandoffView.swift in Sources */,
 				833936982B6C69C00049FDC7 /* NightstandModeView.swift in Sources */,
 				8339369C2B6C6ACF0049FDC7 /* WebsiteDataView.swift in Sources */,
+				8319879E2B6EFA76009937B0 /* AccessibilityShortcutView.swift in Sources */,
 				836D6AC62B6C4715008DBB8F /* OrientationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

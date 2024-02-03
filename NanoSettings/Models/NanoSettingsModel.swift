@@ -47,4 +47,7 @@ let mainSectionList: [NavigationData] = [
     NavigationData(title: "Gestures", icon: "hand.thumbsup.circle.fill", primaryColor: .white, secondaryColor: .blue, content: {
         AnyView(GesturesView())
     }),
+    NavigationData(title: "Accessibility", icon: "accessibility.fill", primaryColor: .white, secondaryColor: .blue, content: {
+        AnyView(AccessibilityView())
+    }),
 ]
