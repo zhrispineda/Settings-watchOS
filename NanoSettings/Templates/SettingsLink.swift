@@ -38,7 +38,7 @@ struct SettingsLink<Content: View>: View {
                 Text(title)
             } icon: {
                 switch icon {
-                case "applesiri":
+                case "siri-masked_Normal":
                     Image(icon)
                         .resizable()
                         .scaledToFit()
@@ -62,5 +62,5 @@ struct SettingsLink<Content: View>: View {
 }
 
 #Preview {
-    SettingsLink(title: "Bluetooth", icon: "logo.bluetooth", primaryColor: .white, secondaryColor: .blue, content: {})
+    SettingsLink(title: "Bluetooth", icon: "siri-masked_Normal", primaryColor: .white, secondaryColor: .blue, content: {})
 }

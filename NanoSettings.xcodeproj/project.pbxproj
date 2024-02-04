@@ -46,6 +46,11 @@
 		83A04AEA2B6E131400C34E53 /* ChimesScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A04AE92B6E131400C34E53 /* ChimesScheduleView.swift */; };
 		83A04AEC2B6E147200C34E53 /* ChimesSoundsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A04AEB2B6E147200C34E53 /* ChimesSoundsView.swift */; };
 		83A04AEE2B6E164D00C34E53 /* QuickActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A04AED2B6E164D00C34E53 /* QuickActionsView.swift */; };
+		83B7CD3A2B7019860024307F /* LanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B7CD392B7019860024307F /* LanguageView.swift */; };
+		83B7CD3C2B701D1A0024307F /* SiriResponsesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B7CD3B2B701D1A0024307F /* SiriResponsesView.swift */; };
+		83B7CD3E2B701E420024307F /* SiriSuggestionsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B7CD3D2B701E420024307F /* SiriSuggestionsDetailView.swift */; };
+		83E6C38E2B6F1152003DDBC7 /* SiriView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E6C38D2B6F1152003DDBC7 /* SiriView.swift */; };
+		83E6C3912B6F16D4003DDBC7 /* SiriHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E6C3902B6F16D4003DDBC7 /* SiriHistoryView.swift */; };
 		83EDDA7F2B6D267500DC2F2B /* DisplayBrightnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDDA7E2B6D267500DC2F2B /* DisplayBrightnessView.swift */; };
 		83EDDA822B6D2EBE00DC2F2B /* TextSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDDA812B6D2EBE00DC2F2B /* TextSizeView.swift */; };
 		83EDDA842B6D2FC200DC2F2B /* AlwaysOnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDDA832B6D2FC200DC2F2B /* AlwaysOnView.swift */; };
@@ -102,6 +107,11 @@
 		83A04AE92B6E131400C34E53 /* ChimesScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChimesScheduleView.swift; sourceTree = "<group>"; };
 		83A04AEB2B6E147200C34E53 /* ChimesSoundsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChimesSoundsView.swift; sourceTree = "<group>"; };
 		83A04AED2B6E164D00C34E53 /* QuickActionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickActionsView.swift; sourceTree = "<group>"; };
+		83B7CD392B7019860024307F /* LanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageView.swift; sourceTree = "<group>"; };
+		83B7CD3B2B701D1A0024307F /* SiriResponsesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriResponsesView.swift; sourceTree = "<group>"; };
+		83B7CD3D2B701E420024307F /* SiriSuggestionsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriSuggestionsDetailView.swift; sourceTree = "<group>"; };
+		83E6C38D2B6F1152003DDBC7 /* SiriView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriView.swift; sourceTree = "<group>"; };
+		83E6C3902B6F16D4003DDBC7 /* SiriHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriHistoryView.swift; sourceTree = "<group>"; };
 		83EDDA7E2B6D267500DC2F2B /* DisplayBrightnessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayBrightnessView.swift; sourceTree = "<group>"; };
 		83EDDA812B6D2EBE00DC2F2B /* TextSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSizeView.swift; sourceTree = "<group>"; };
 		83EDDA832B6D2FC200DC2F2B /* AlwaysOnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlwaysOnView.swift; sourceTree = "<group>"; };
@@ -217,6 +227,7 @@
 				8339369F2B6C715E0049FDC7 /* Focus */,
 				83EDDA802B6D2EA800DC2F2B /* Display & Brightness */,
 				83EDDA992B6DAAE300DC2F2B /* Accessibility */,
+				83E6C38F2B6F163B003DDBC7 /* Siri */,
 				835DE60A2B6C134E00FC23C8 /* NotificationsView.swift */,
 				836D6ABC2B6C42DD008DBB8F /* GeneralView.swift */,
 				833936A02B6C716D0049FDC7 /* FocusView.swift */,
@@ -226,6 +237,7 @@
 				83EDDA932B6DA5FE00DC2F2B /* GesturesView.swift */,
 				83EDDA952B6DA6E900DC2F2B /* DoubleTapView.swift */,
 				83EDDA972B6DA8E800DC2F2B /* AccessibilityView.swift */,
+				83E6C38D2B6F1152003DDBC7 /* SiriView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -283,6 +295,17 @@
 				83A04AEB2B6E147200C34E53 /* ChimesSoundsView.swift */,
 			);
 			path = Chimes;
+			sourceTree = "<group>";
+		};
+		83E6C38F2B6F163B003DDBC7 /* Siri */ = {
+			isa = PBXGroup;
+			children = (
+				83E6C3902B6F16D4003DDBC7 /* SiriHistoryView.swift */,
+				83B7CD392B7019860024307F /* LanguageView.swift */,
+				83B7CD3B2B701D1A0024307F /* SiriResponsesView.swift */,
+				83B7CD3D2B701E420024307F /* SiriSuggestionsDetailView.swift */,
+			);
+			path = Siri;
 			sourceTree = "<group>";
 		};
 		83EDDA802B6D2EA800DC2F2B /* Display & Brightness */ = {
@@ -403,6 +426,7 @@
 				8339369E2B6C6B720049FDC7 /* ProfilesView.swift in Sources */,
 				836D6ABB2B6C408C008DBB8F /* IconToggle.swift in Sources */,
 				83EDDA7F2B6D267500DC2F2B /* DisplayBrightnessView.swift in Sources */,
+				83E6C38E2B6F1152003DDBC7 /* SiriView.swift in Sources */,
 				833936942B6C5A1B0049FDC7 /* ReturnClockView.swift in Sources */,
 				835DE6092B6C116100FC23C8 /* SettingsLink.swift in Sources */,
 				83EDDA8E2B6D9E2E00DC2F2B /* ShowAppsView.swift in Sources */,
@@ -411,6 +435,8 @@
 				83EDDA942B6DA5FE00DC2F2B /* GesturesView.swift in Sources */,
 				833936962B6C68890049FDC7 /* IconLabel.swift in Sources */,
 				833936A82B6C77EA0049FDC7 /* ScheduleView.swift in Sources */,
+				83B7CD3E2B701E420024307F /* SiriSuggestionsDetailView.swift in Sources */,
+				83B7CD3C2B701D1A0024307F /* SiriResponsesView.swift in Sources */,
 				83A04AEC2B6E147200C34E53 /* ChimesSoundsView.swift in Sources */,
 				83A04AEE2B6E164D00C34E53 /* QuickActionsView.swift in Sources */,
 				833936A42B6C73580049FDC7 /* DoNotDisturbView.swift in Sources */,
@@ -427,6 +453,7 @@
 				8319879C2B6EF808009937B0 /* VoicesDetailView.swift in Sources */,
 				83EDDA8C2B6D339900DC2F2B /* ReturnClockDetailView.swift in Sources */,
 				83EDDA9B2B6DAAF400DC2F2B /* ReduceMotionView.swift in Sources */,
+				83B7CD3A2B7019860024307F /* LanguageView.swift in Sources */,
 				836D6AC02B6C43B0008DBB8F /* AboutView.swift in Sources */,
 				832895822B6C014300A9CB97 /* ContentView.swift in Sources */,
 				836D6ABD2B6C42DD008DBB8F /* GeneralView.swift in Sources */,
@@ -442,6 +469,7 @@
 				831987942B6EF020009937B0 /* LiveSpeechView.swift in Sources */,
 				83EDDA922B6DA1A800DC2F2B /* AppView.swift in Sources */,
 				8319878D2B6ECBD9009937B0 /* TouchAccommodationsView.swift in Sources */,
+				83E6C3912B6F16D4003DDBC7 /* SiriHistoryView.swift in Sources */,
 				83EDDA902B6D9F5800DC2F2B /* WakeDurationView.swift in Sources */,
 				83EDDA822B6D2EBE00DC2F2B /* TextSizeView.swift in Sources */,
 				8339369A2B6C6A420049FDC7 /* HandoffView.swift in Sources */,

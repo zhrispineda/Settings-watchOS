@@ -14,6 +14,14 @@ struct NavigationData: Identifiable {
     let primaryColor: Color
     let secondaryColor: Color
     let content: () -> AnyView
+    
+    init(title: String, icon: String, primaryColor: Color = Color.clear, secondaryColor: Color = Color.clear, content: @escaping () -> AnyView) {
+        self.title = title
+        self.icon = icon
+        self.primaryColor = primaryColor
+        self.secondaryColor = secondaryColor
+        self.content = content
+    }
 }
 
 let mainSectionList: [NavigationData] = [
@@ -49,5 +57,8 @@ let mainSectionList: [NavigationData] = [
     }),
     NavigationData(title: "Accessibility", icon: "accessibility.fill", primaryColor: .white, secondaryColor: .blue, content: {
         AnyView(AccessibilityView())
+    }),
+    NavigationData(title: "Siri", icon: "siri-masked_Normal", content: {
+        AnyView(SiriView())
     }),
 ]
