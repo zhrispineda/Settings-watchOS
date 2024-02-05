@@ -52,7 +52,6 @@ struct SettingsLink<Content: View>: View {
                     }
                 default:
                     Image(systemName: icon)
-                        .symbolRenderingMode(.palette)
                         .foregroundStyle(primaryColor, secondaryColor)
                     
                 }
@@ -62,5 +61,5 @@ struct SettingsLink<Content: View>: View {
 }
 
 #Preview {
-    SettingsLink(title: "Bluetooth", icon: "siri-masked_Normal", primaryColor: .white, secondaryColor: .blue, content: {})
+    SettingsLink(title: "Bluetooth", icon: "custom.speaker.wave.3.circle.fill", primaryColor: .white, secondaryColor: .blue, content: {})
 }

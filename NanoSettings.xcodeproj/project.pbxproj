@@ -32,6 +32,10 @@
 		833936A62B6C75D10049FDC7 /* SymbolLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833936A52B6C75D10049FDC7 /* SymbolLink.swift */; };
 		833936A82B6C77EA0049FDC7 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833936A72B6C77EA0049FDC7 /* ScheduleView.swift */; };
 		833936AB2B6C80FF0049FDC7 /* AirplaneModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833936AA2B6C80FF0049FDC7 /* AirplaneModeView.swift */; };
+		833D23152B70442A00EB3E8F /* SoundsHapticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833D23142B70442A00EB3E8F /* SoundsHapticsView.swift */; };
+		833D23182B70456F00EB3E8F /* HeadphoneSafetyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833D23172B70456F00EB3E8F /* HeadphoneSafetyView.swift */; };
+		833D231B2B70463000EB3E8F /* HeadphoneNotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833D231A2B70463000EB3E8F /* HeadphoneNotificationsView.swift */; };
+		833D231D2B70478200EB3E8F /* ReduceLoudSoundsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833D231C2B70478200EB3E8F /* ReduceLoudSoundsView.swift */; };
 		835DE6072B6C105B00FC23C8 /* NanoSettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DE6062B6C105B00FC23C8 /* NanoSettingsModel.swift */; };
 		835DE6092B6C116100FC23C8 /* SettingsLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DE6082B6C116100FC23C8 /* SettingsLink.swift */; };
 		835DE60B2B6C134E00FC23C8 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DE60A2B6C134E00FC23C8 /* NotificationsView.swift */; };
@@ -92,6 +96,10 @@
 		833936A52B6C75D10049FDC7 /* SymbolLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolLink.swift; sourceTree = "<group>"; };
 		833936A72B6C77EA0049FDC7 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
 		833936AA2B6C80FF0049FDC7 /* AirplaneModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirplaneModeView.swift; sourceTree = "<group>"; };
+		833D23142B70442A00EB3E8F /* SoundsHapticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsHapticsView.swift; sourceTree = "<group>"; };
+		833D23172B70456F00EB3E8F /* HeadphoneSafetyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadphoneSafetyView.swift; sourceTree = "<group>"; };
+		833D231A2B70463000EB3E8F /* HeadphoneNotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadphoneNotificationsView.swift; sourceTree = "<group>"; };
+		833D231C2B70478200EB3E8F /* ReduceLoudSoundsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduceLoudSoundsView.swift; sourceTree = "<group>"; };
 		835DE6052B6C0B1600FC23C8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		835DE6062B6C105B00FC23C8 /* NanoSettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanoSettingsModel.swift; sourceTree = "<group>"; };
 		835DE6082B6C116100FC23C8 /* SettingsLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLink.swift; sourceTree = "<group>"; };
@@ -219,6 +227,24 @@
 			path = Subviews;
 			sourceTree = "<group>";
 		};
+		833D23162B70455900EB3E8F /* Sounds & Haptics */ = {
+			isa = PBXGroup;
+			children = (
+				833D23192B70461E00EB3E8F /* Headphone Safety */,
+				833D23172B70456F00EB3E8F /* HeadphoneSafetyView.swift */,
+			);
+			path = "Sounds & Haptics";
+			sourceTree = "<group>";
+		};
+		833D23192B70461E00EB3E8F /* Headphone Safety */ = {
+			isa = PBXGroup;
+			children = (
+				833D231A2B70463000EB3E8F /* HeadphoneNotificationsView.swift */,
+				833D231C2B70478200EB3E8F /* ReduceLoudSoundsView.swift */,
+			);
+			path = "Headphone Safety";
+			sourceTree = "<group>";
+		};
 		835DE6022B6C09F300FC23C8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +254,7 @@
 				83EDDA802B6D2EA800DC2F2B /* Display & Brightness */,
 				83EDDA992B6DAAE300DC2F2B /* Accessibility */,
 				83E6C38F2B6F163B003DDBC7 /* Siri */,
+				833D23162B70455900EB3E8F /* Sounds & Haptics */,
 				835DE60A2B6C134E00FC23C8 /* NotificationsView.swift */,
 				836D6ABC2B6C42DD008DBB8F /* GeneralView.swift */,
 				833936A02B6C716D0049FDC7 /* FocusView.swift */,
@@ -238,6 +265,7 @@
 				83EDDA952B6DA6E900DC2F2B /* DoubleTapView.swift */,
 				83EDDA972B6DA8E800DC2F2B /* AccessibilityView.swift */,
 				83E6C38D2B6F1152003DDBC7 /* SiriView.swift */,
+				833D23142B70442A00EB3E8F /* SoundsHapticsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -428,6 +456,7 @@
 				83EDDA7F2B6D267500DC2F2B /* DisplayBrightnessView.swift in Sources */,
 				83E6C38E2B6F1152003DDBC7 /* SiriView.swift in Sources */,
 				833936942B6C5A1B0049FDC7 /* ReturnClockView.swift in Sources */,
+				833D231B2B70463000EB3E8F /* HeadphoneNotificationsView.swift in Sources */,
 				835DE6092B6C116100FC23C8 /* SettingsLink.swift in Sources */,
 				83EDDA8E2B6D9E2E00DC2F2B /* ShowAppsView.swift in Sources */,
 				831987902B6ECF10009937B0 /* SwipeGesturesView.swift in Sources */,
@@ -454,6 +483,7 @@
 				83EDDA8C2B6D339900DC2F2B /* ReturnClockDetailView.swift in Sources */,
 				83EDDA9B2B6DAAF400DC2F2B /* ReduceMotionView.swift in Sources */,
 				83B7CD3A2B7019860024307F /* LanguageView.swift in Sources */,
+				833D23182B70456F00EB3E8F /* HeadphoneSafetyView.swift in Sources */,
 				836D6AC02B6C43B0008DBB8F /* AboutView.swift in Sources */,
 				832895822B6C014300A9CB97 /* ContentView.swift in Sources */,
 				836D6ABD2B6C42DD008DBB8F /* GeneralView.swift in Sources */,
@@ -462,6 +492,7 @@
 				833936902B6C57F50049FDC7 /* AutoLaunchView.swift in Sources */,
 				833936AB2B6C80FF0049FDC7 /* AirplaneModeView.swift in Sources */,
 				83EDDA982B6DA8E800DC2F2B /* AccessibilityView.swift in Sources */,
+				833D23152B70442A00EB3E8F /* SoundsHapticsView.swift in Sources */,
 				83A04AE72B6E124900C34E53 /* ChimesView.swift in Sources */,
 				835DE6072B6C105B00FC23C8 /* NanoSettingsModel.swift in Sources */,
 				833936922B6C58F30049FDC7 /* BackgroundAppRefreshView.swift in Sources */,
@@ -472,6 +503,7 @@
 				83E6C3912B6F16D4003DDBC7 /* SiriHistoryView.swift in Sources */,
 				83EDDA902B6D9F5800DC2F2B /* WakeDurationView.swift in Sources */,
 				83EDDA822B6D2EBE00DC2F2B /* TextSizeView.swift in Sources */,
+				833D231D2B70478200EB3E8F /* ReduceLoudSoundsView.swift in Sources */,
 				8339369A2B6C6A420049FDC7 /* HandoffView.swift in Sources */,
 				833936982B6C69C00049FDC7 /* NightstandModeView.swift in Sources */,
 				8339369C2B6C6ACF0049FDC7 /* WebsiteDataView.swift in Sources */,
