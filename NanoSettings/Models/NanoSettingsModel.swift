@@ -62,6 +62,9 @@ let mainSectionList: [NavigationData] = [
         AnyView(SiriView())
     }),
     NavigationData(title: "Sounds & Haptics", icon: "speaker.wave.2.circle.fill", primaryColor: .white, secondaryColor: .pink, content: {
+        AnyView(SoundsHapticsView())
+    }),
+    NavigationData(title: "Passcode", icon: "lock.circle.fill", primaryColor: .white, secondaryColor: .pink, content: {
         AnyView(EmptyView())
     }),
 ]
