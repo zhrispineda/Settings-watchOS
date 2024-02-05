@@ -65,6 +65,9 @@ let mainSectionList: [NavigationData] = [
         AnyView(SoundsHapticsView())
     }),
     NavigationData(title: "Passcode", icon: "lock.circle.fill", primaryColor: .white, secondaryColor: .pink, content: {
-        AnyView(EmptyView())
+        AnyView(PasscodeView())
+    }),
+    NavigationData(title: "SOS", icon: "sos.circle.fill", primaryColor: .white, secondaryColor: .red, content: {
+        AnyView(SOSView())
     }),
 ]

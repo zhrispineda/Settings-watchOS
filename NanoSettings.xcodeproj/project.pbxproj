@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8305D19F2B7145220031865E /* PasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305D19E2B7145220031865E /* PasscodeView.swift */; };
+		8305D1A12B7149130031865E /* SOSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305D1A02B7149130031865E /* SOSView.swift */; };
+		8305D1A42B7149D00031865E /* HoldSideButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305D1A32B7149D00031865E /* HoldSideButtonView.swift */; };
+		8305D1A62B714B740031865E /* MedicalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305D1A52B714B740031865E /* MedicalView.swift */; };
 		8319878D2B6ECBD9009937B0 /* TouchAccommodationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319878C2B6ECBD9009937B0 /* TouchAccommodationsView.swift */; };
 		831987902B6ECF10009937B0 /* SwipeGesturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319878F2B6ECF10009937B0 /* SwipeGesturesView.swift */; };
 		831987922B6EEC10009937B0 /* AccessibilitySiriView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831987912B6EEC10009937B0 /* AccessibilitySiriView.swift */; };
@@ -72,6 +75,9 @@
 
 /* Begin PBXFileReference section */
 		8305D19E2B7145220031865E /* PasscodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeView.swift; sourceTree = "<group>"; };
+		8305D1A02B7149130031865E /* SOSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSView.swift; sourceTree = "<group>"; };
+		8305D1A32B7149D00031865E /* HoldSideButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldSideButtonView.swift; sourceTree = "<group>"; };
+		8305D1A52B714B740031865E /* MedicalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalView.swift; sourceTree = "<group>"; };
 		8319878C2B6ECBD9009937B0 /* TouchAccommodationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchAccommodationsView.swift; sourceTree = "<group>"; };
 		8319878F2B6ECF10009937B0 /* SwipeGesturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeGesturesView.swift; sourceTree = "<group>"; };
 		831987912B6EEC10009937B0 /* AccessibilitySiriView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilitySiriView.swift; sourceTree = "<group>"; };
@@ -147,6 +153,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8305D1A22B7149BB0031865E /* SOS */ = {
+			isa = PBXGroup;
+			children = (
+				8305D1A32B7149D00031865E /* HoldSideButtonView.swift */,
+				8305D1A52B714B740031865E /* MedicalView.swift */,
+			);
+			path = SOS;
+			sourceTree = "<group>";
+		};
 		8319878E2B6ECF03009937B0 /* Touch Accommodations */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,6 +272,7 @@
 				83EDDA992B6DAAE300DC2F2B /* Accessibility */,
 				83E6C38F2B6F163B003DDBC7 /* Siri */,
 				833D23162B70455900EB3E8F /* Sounds & Haptics */,
+				8305D1A22B7149BB0031865E /* SOS */,
 				835DE60A2B6C134E00FC23C8 /* NotificationsView.swift */,
 				836D6ABC2B6C42DD008DBB8F /* GeneralView.swift */,
 				833936A02B6C716D0049FDC7 /* FocusView.swift */,
@@ -269,6 +285,7 @@
 				83E6C38D2B6F1152003DDBC7 /* SiriView.swift */,
 				833D23142B70442A00EB3E8F /* SoundsHapticsView.swift */,
 				8305D19E2B7145220031865E /* PasscodeView.swift */,
+				8305D1A02B7149130031865E /* SOSView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -454,6 +471,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8305D1A62B714B740031865E /* MedicalView.swift in Sources */,
 				8339369E2B6C6B720049FDC7 /* ProfilesView.swift in Sources */,
 				836D6ABB2B6C408C008DBB8F /* IconToggle.swift in Sources */,
 				83EDDA7F2B6D267500DC2F2B /* DisplayBrightnessView.swift in Sources */,
@@ -502,6 +520,8 @@
 				833936922B6C58F30049FDC7 /* BackgroundAppRefreshView.swift in Sources */,
 				833936A62B6C75D10049FDC7 /* SymbolLink.swift in Sources */,
 				831987942B6EF020009937B0 /* LiveSpeechView.swift in Sources */,
+				8305D1A12B7149130031865E /* SOSView.swift in Sources */,
+				8305D1A42B7149D00031865E /* HoldSideButtonView.swift in Sources */,
 				83EDDA922B6DA1A800DC2F2B /* AppView.swift in Sources */,
 				8319878D2B6ECBD9009937B0 /* TouchAccommodationsView.swift in Sources */,
 				83E6C3912B6F16D4003DDBC7 /* SiriHistoryView.swift in Sources */,
