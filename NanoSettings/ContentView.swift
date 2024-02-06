@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     // Variables
     @State private var loadingEnabled = false
-    let disabledLinks = ["Cellular", "Wi-Fi", "Bluetooth"]
+    let disabledLinks = ["Cellular", "Wi-Fi", "Bluetooth", "Battery"]
     
     var body: some View {
         NavigationStack {

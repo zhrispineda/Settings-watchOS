@@ -17,14 +17,24 @@ struct IconLabel: View {
     var icon: String = "applecalculator"
     
     var body: some View {
-        HStack {
-            Image(icon)
-                .resizable()
-                .scaledToFit()
-                .clipShape(Circle())
-                .frame(height: 20)
+        HStack(spacing: 8) {
+            if icon == "custom.chart.bar.xaxis.circle.fill" {
+                Image(icon)
+                    .resizable()
+                    .scaledToFit()
+                    .clipShape(Circle())
+                    .frame(height: 17)
+                    .foregroundStyle(.white, .blue)
+            } else {
+                Image(icon)
+                    .resizable()
+                    .scaledToFit()
+                    .clipShape(Circle())
+                    .frame(height: 17)
+            }
             Text(title)
         }
+        .padding(.leading, -1)
     }
 }
 

@@ -70,4 +70,10 @@ let mainSectionList: [NavigationData] = [
     NavigationData(title: "SOS", icon: "sos.circle.fill", primaryColor: .white, secondaryColor: .red, content: {
         AnyView(SOSView())
     }),
+    NavigationData(title: "Battery", icon: "bolt.circle.fill", primaryColor: .white, secondaryColor: .green, content: {
+        AnyView(EmptyView())
+    }),
+    NavigationData(title: "Privacy & Security", icon: "hand.raised.circle.fill", primaryColor: .white, secondaryColor: .blue, content: {
+        AnyView(PrivacySecurityView())
+    })
 ]

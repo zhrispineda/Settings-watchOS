@@ -22,7 +22,7 @@ struct SettingsLink<Content: View>: View {
     let secondaryColor: Color
     let content: Content
     
-    init(title: String, icon: String, primaryColor: Color, secondaryColor: Color = Color.clear, @ViewBuilder content: () -> Content) {
+    init(title: String, icon: String, primaryColor: Color = Color.clear, secondaryColor: Color = Color.clear, @ViewBuilder content: () -> Content) {
         self.title = title
         self.icon = icon
         self.primaryColor = primaryColor
@@ -50,6 +50,9 @@ struct SettingsLink<Content: View>: View {
                         Image(icon)
                             .imageScale(.small)
                     }
+                case "custom.chart.bar.xaxis.circle.fill":
+                    Image(icon)
+                        .foregroundStyle(primaryColor, secondaryColor)
                 default:
                     Image(systemName: icon)
                         .foregroundStyle(primaryColor, secondaryColor)
@@ -61,5 +64,5 @@ struct SettingsLink<Content: View>: View {
 }
 
 #Preview {
-    SettingsLink(title: "Bluetooth", icon: "custom.speaker.wave.3.circle.fill", primaryColor: .white, secondaryColor: .blue, content: {})
+    SettingsLink(title: "Bluetooth", icon: "applecontacts", primaryColor: .white, secondaryColor: .blue, content: {})
 }
