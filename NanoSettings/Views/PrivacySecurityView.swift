@@ -11,7 +11,7 @@ struct PrivacySecurityView: View {
     var body: some View {
         List {
             Section(content: {
-                SettingsLink(title: "Location Services", icon: "location.circle.fill", primaryColor: .white, secondaryColor: .blue, content: {})
+                SettingsLink(title: "Location Services", icon: "location.circle.fill", primaryColor: .white, secondaryColor: .blue, content: { LocationServicesView() })
                 NavigationLink(destination: {}, label: {
                     IconLabel(title: "Contacts", icon: "applecontacts")
                 })
