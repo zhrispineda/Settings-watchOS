@@ -58,6 +58,11 @@
 		83A292A52B728DD80028907F /* LocationServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A292A42B728DD80028907F /* LocationServicesView.swift */; };
 		83A292A72B7294DF0028907F /* LocationServicesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A292A62B7294DF0028907F /* LocationServicesDetailView.swift */; };
 		83A292A92B72960C0028907F /* SystemServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A292A82B72960C0028907F /* SystemServicesView.swift */; };
+		83A292AC2B72984B0028907F /* AppPermissionsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A292AB2B72984B0028907F /* AppPermissionsDetailView.swift */; };
+		83A292AE2B729CFF0028907F /* HealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A292AD2B729CFF0028907F /* HealthView.swift */; };
+		83A292B12B729D7A0028907F /* HeartRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A292B02B729D7A0028907F /* HeartRateView.swift */; };
+		83A292B32B729DE90028907F /* TimeDaylightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A292B22B729DE90028907F /* TimeDaylightView.swift */; };
+		83A292B52B729E2E0028907F /* HeadphoneAudioLevelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A292B42B729E2E0028907F /* HeadphoneAudioLevelsView.swift */; };
 		83B7CD3A2B7019860024307F /* LanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B7CD392B7019860024307F /* LanguageView.swift */; };
 		83B7CD3C2B701D1A0024307F /* SiriResponsesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B7CD3B2B701D1A0024307F /* SiriResponsesView.swift */; };
 		83B7CD3E2B701E420024307F /* SiriSuggestionsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B7CD3D2B701E420024307F /* SiriSuggestionsDetailView.swift */; };
@@ -131,6 +136,11 @@
 		83A292A42B728DD80028907F /* LocationServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServicesView.swift; sourceTree = "<group>"; };
 		83A292A62B7294DF0028907F /* LocationServicesDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServicesDetailView.swift; sourceTree = "<group>"; };
 		83A292A82B72960C0028907F /* SystemServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemServicesView.swift; sourceTree = "<group>"; };
+		83A292AB2B72984B0028907F /* AppPermissionsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPermissionsDetailView.swift; sourceTree = "<group>"; };
+		83A292AD2B729CFF0028907F /* HealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthView.swift; sourceTree = "<group>"; };
+		83A292B02B729D7A0028907F /* HeartRateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateView.swift; sourceTree = "<group>"; };
+		83A292B22B729DE90028907F /* TimeDaylightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDaylightView.swift; sourceTree = "<group>"; };
+		83A292B42B729E2E0028907F /* HeadphoneAudioLevelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadphoneAudioLevelsView.swift; sourceTree = "<group>"; };
 		83B7CD392B7019860024307F /* LanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageView.swift; sourceTree = "<group>"; };
 		83B7CD3B2B701D1A0024307F /* SiriResponsesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriResponsesView.swift; sourceTree = "<group>"; };
 		83B7CD3D2B701E420024307F /* SiriSuggestionsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriSuggestionsDetailView.swift; sourceTree = "<group>"; };
@@ -359,7 +369,10 @@
 			isa = PBXGroup;
 			children = (
 				83A292AA2B72962C0028907F /* Location Services */,
+				83A292AF2B729D5B0028907F /* Health */,
 				83A292A42B728DD80028907F /* LocationServicesView.swift */,
+				83A292AB2B72984B0028907F /* AppPermissionsDetailView.swift */,
+				83A292AD2B729CFF0028907F /* HealthView.swift */,
 			);
 			path = "Privacy & Security";
 			sourceTree = "<group>";
@@ -371,6 +384,16 @@
 				83A292A82B72960C0028907F /* SystemServicesView.swift */,
 			);
 			path = "Location Services";
+			sourceTree = "<group>";
+		};
+		83A292AF2B729D5B0028907F /* Health */ = {
+			isa = PBXGroup;
+			children = (
+				83A292B02B729D7A0028907F /* HeartRateView.swift */,
+				83A292B22B729DE90028907F /* TimeDaylightView.swift */,
+				83A292B42B729E2E0028907F /* HeadphoneAudioLevelsView.swift */,
+			);
+			path = Health;
 			sourceTree = "<group>";
 		};
 		83E6C38F2B6F163B003DDBC7 /* Siri */ = {
@@ -507,6 +530,7 @@
 				833936942B6C5A1B0049FDC7 /* ReturnClockView.swift in Sources */,
 				833D231B2B70463000EB3E8F /* HeadphoneNotificationsView.swift in Sources */,
 				835DE6092B6C116100FC23C8 /* SettingsLink.swift in Sources */,
+				83A292B12B729D7A0028907F /* HeartRateView.swift in Sources */,
 				83EDDA8E2B6D9E2E00DC2F2B /* ShowAppsView.swift in Sources */,
 				831987902B6ECF10009937B0 /* SwipeGesturesView.swift in Sources */,
 				831987972B6EF289009937B0 /* FavoritePhrasesView.swift in Sources */,
@@ -521,6 +545,7 @@
 				833936A42B6C73580049FDC7 /* DoNotDisturbView.swift in Sources */,
 				83EDDA872B6D30A000DC2F2B /* ShowComplicationDataView.swift in Sources */,
 				83A04AEA2B6E131400C34E53 /* ChimesScheduleView.swift in Sources */,
+				83A292AC2B72984B0028907F /* AppPermissionsDetailView.swift in Sources */,
 				83EDDA962B6DA6E900DC2F2B /* DoubleTapView.swift in Sources */,
 				831987992B6EF4DF009937B0 /* VoicesView.swift in Sources */,
 				835DE60B2B6C134E00FC23C8 /* NotificationsView.swift in Sources */,
@@ -550,6 +575,8 @@
 				835DE6072B6C105B00FC23C8 /* NanoSettingsModel.swift in Sources */,
 				833936922B6C58F30049FDC7 /* BackgroundAppRefreshView.swift in Sources */,
 				833936A62B6C75D10049FDC7 /* SymbolLink.swift in Sources */,
+				83A292B32B729DE90028907F /* TimeDaylightView.swift in Sources */,
+				83A292AE2B729CFF0028907F /* HealthView.swift in Sources */,
 				831987942B6EF020009937B0 /* LiveSpeechView.swift in Sources */,
 				8305D1A12B7149130031865E /* SOSView.swift in Sources */,
 				8305D1A42B7149D00031865E /* HoldSideButtonView.swift in Sources */,
@@ -561,6 +588,7 @@
 				833D231D2B70478200EB3E8F /* ReduceLoudSoundsView.swift in Sources */,
 				8339369A2B6C6A420049FDC7 /* HandoffView.swift in Sources */,
 				833936982B6C69C00049FDC7 /* NightstandModeView.swift in Sources */,
+				83A292B52B729E2E0028907F /* HeadphoneAudioLevelsView.swift in Sources */,
 				8339369C2B6C6ACF0049FDC7 /* WebsiteDataView.swift in Sources */,
 				83A2929F2B7280D20028907F /* PrivacySecurityView.swift in Sources */,
 				8319879E2B6EFA76009937B0 /* AccessibilityShortcutView.swift in Sources */,
