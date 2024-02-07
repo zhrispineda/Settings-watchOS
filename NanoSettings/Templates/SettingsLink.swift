@@ -55,11 +55,10 @@ struct SettingsLink<Content: View>: View {
                                 .resizable()
                                 .clipShape(Circle())
                                 .scaledToFit()
-                                .frame(height: 20)
-                            
                         }
                     }
                 }
+                .labelStyle(CustomStyle())
             })
         } else {
             NavigationLink {
@@ -73,24 +72,40 @@ struct SettingsLink<Content: View>: View {
                             .foregroundStyle(primaryColor, secondaryColor)
                     } else {
                         switch icon {
-                        case "custom.chart.bar.xaxis.circle.fill":
-                            Image(icon)
-                                .foregroundStyle(primaryColor, secondaryColor)
+                        case "logo.bluetooth":
+                            ZStack {
+                                Image(systemName: "circle.fill")
+                                    .foregroundStyle(secondaryColor)
+                                Image(icon)
+                                    .imageScale(.small)
+                            }
                         default:
                             Image(icon)
                                 .resizable()
                                 .clipShape(Circle())
                                 .scaledToFit()
-                                .frame(height: 20)
+                                .frame(height: 18)
+                                .padding(.horizontal, 1.5)
                             
                         }
                     }
                 }
+                .labelStyle(CustomStyle())
             }
         }
     }
 }
 
 #Preview {
-    SettingsLink(title: "Bluetooth", icon: "appleclock", primaryColor: .white, secondaryColor: .blue, content: {})
+    ContentView()
+}
+
+struct CustomStyle: LabelStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        HStack(alignment: .center) {
+            configuration.icon
+                .font(.title3)
+            configuration.title
+        }
+    }
 }
