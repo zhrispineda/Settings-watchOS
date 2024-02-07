@@ -25,6 +25,7 @@ struct ContentView: View {
                 }
                 
                 // MARK: Apps Section
+                // Clock, Contacts, Health, Heart, Workout
                 Section {
                     ForEach(appSectionList) { item in
                         SettingsLink(title: item.title, icon: item.icon, primaryColor: item.primaryColor, secondaryColor: item.secondaryColor, content: item.content)

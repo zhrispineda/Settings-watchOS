@@ -46,6 +46,9 @@
 		8353FA7A2B73F73800C78938 /* TapticTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353FA792B73F73800C78938 /* TapticTimeView.swift */; };
 		8353FA7C2B73F8E800C78938 /* SiriFaceDataSourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353FA7B2B73F8E800C78938 /* SiriFaceDataSourcesView.swift */; };
 		8353FA7E2B73FA3800C78938 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353FA7D2B73FA3800C78938 /* ContactsView.swift */; };
+		8353FA802B73FB5B00C78938 /* HealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353FA7F2B73FB5B00C78938 /* HealthView.swift */; };
+		8353FA832B73FC3200C78938 /* HealthDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353FA822B73FC3200C78938 /* HealthDetailsView.swift */; };
+		8353FA852B73FD5600C78938 /* DevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353FA842B73FD5600C78938 /* DevicesView.swift */; };
 		835DE6072B6C105B00FC23C8 /* NanoSettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DE6062B6C105B00FC23C8 /* NanoSettingsModel.swift */; };
 		835DE6092B6C116100FC23C8 /* SettingsLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DE6082B6C116100FC23C8 /* SettingsLink.swift */; };
 		835DE60B2B6C134E00FC23C8 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DE60A2B6C134E00FC23C8 /* NotificationsView.swift */; };
@@ -65,7 +68,7 @@
 		83A292A72B7294DF0028907F /* LocationServicesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A292A62B7294DF0028907F /* LocationServicesDetailView.swift */; };
 		83A292A92B72960C0028907F /* SystemServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A292A82B72960C0028907F /* SystemServicesView.swift */; };
 		83A292AC2B72984B0028907F /* AppPermissionsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A292AB2B72984B0028907F /* AppPermissionsDetailView.swift */; };
-		83A292AE2B729CFF0028907F /* HealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A292AD2B729CFF0028907F /* HealthView.swift */; };
+		83A292AE2B729CFF0028907F /* HealthPermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A292AD2B729CFF0028907F /* HealthPermissionsView.swift */; };
 		83A292B12B729D7A0028907F /* HeartRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A292B02B729D7A0028907F /* HeartRateView.swift */; };
 		83A292B32B729DE90028907F /* TimeDaylightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A292B22B729DE90028907F /* TimeDaylightView.swift */; };
 		83A292B52B729E2E0028907F /* HeadphoneAudioLevelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A292B42B729E2E0028907F /* HeadphoneAudioLevelsView.swift */; };
@@ -129,6 +132,9 @@
 		8353FA792B73F73800C78938 /* TapticTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapticTimeView.swift; sourceTree = "<group>"; };
 		8353FA7B2B73F8E800C78938 /* SiriFaceDataSourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriFaceDataSourcesView.swift; sourceTree = "<group>"; };
 		8353FA7D2B73FA3800C78938 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		8353FA7F2B73FB5B00C78938 /* HealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthView.swift; sourceTree = "<group>"; };
+		8353FA822B73FC3200C78938 /* HealthDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDetailsView.swift; sourceTree = "<group>"; };
+		8353FA842B73FD5600C78938 /* DevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesView.swift; sourceTree = "<group>"; };
 		835DE6052B6C0B1600FC23C8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		835DE6062B6C105B00FC23C8 /* NanoSettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanoSettingsModel.swift; sourceTree = "<group>"; };
 		835DE6082B6C116100FC23C8 /* SettingsLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLink.swift; sourceTree = "<group>"; };
@@ -149,7 +155,7 @@
 		83A292A62B7294DF0028907F /* LocationServicesDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServicesDetailView.swift; sourceTree = "<group>"; };
 		83A292A82B72960C0028907F /* SystemServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemServicesView.swift; sourceTree = "<group>"; };
 		83A292AB2B72984B0028907F /* AppPermissionsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPermissionsDetailView.swift; sourceTree = "<group>"; };
-		83A292AD2B729CFF0028907F /* HealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthView.swift; sourceTree = "<group>"; };
+		83A292AD2B729CFF0028907F /* HealthPermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthPermissionsView.swift; sourceTree = "<group>"; };
 		83A292B02B729D7A0028907F /* HeartRateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateView.swift; sourceTree = "<group>"; };
 		83A292B22B729DE90028907F /* TimeDaylightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDaylightView.swift; sourceTree = "<group>"; };
 		83A292B42B729E2E0028907F /* HeadphoneAudioLevelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadphoneAudioLevelsView.swift; sourceTree = "<group>"; };
@@ -302,6 +308,15 @@
 			path = Clock;
 			sourceTree = "<group>";
 		};
+		8353FA812B73FC2800C78938 /* Health */ = {
+			isa = PBXGroup;
+			children = (
+				8353FA822B73FC3200C78938 /* HealthDetailsView.swift */,
+				8353FA842B73FD5600C78938 /* DevicesView.swift */,
+			);
+			path = Health;
+			sourceTree = "<group>";
+		};
 		835DE6022B6C09F300FC23C8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -315,6 +330,7 @@
 				8305D1A22B7149BB0031865E /* SOS */,
 				83A292A32B728DBD0028907F /* Privacy & Security */,
 				8353FA762B73F5B700C78938 /* Clock */,
+				8353FA812B73FC2800C78938 /* Health */,
 				835DE60A2B6C134E00FC23C8 /* NotificationsView.swift */,
 				836D6ABC2B6C42DD008DBB8F /* GeneralView.swift */,
 				833936A02B6C716D0049FDC7 /* FocusView.swift */,
@@ -331,6 +347,7 @@
 				83A2929E2B7280D20028907F /* PrivacySecurityView.swift */,
 				8353FA722B73592D00C78938 /* ClockView.swift */,
 				8353FA7D2B73FA3800C78938 /* ContactsView.swift */,
+				8353FA7F2B73FB5B00C78938 /* HealthView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -398,7 +415,7 @@
 				83A292AF2B729D5B0028907F /* Health */,
 				83A292A42B728DD80028907F /* LocationServicesView.swift */,
 				83A292AB2B72984B0028907F /* AppPermissionsDetailView.swift */,
-				83A292AD2B729CFF0028907F /* HealthView.swift */,
+				83A292AD2B729CFF0028907F /* HealthPermissionsView.swift */,
 			);
 			path = "Privacy & Security";
 			sourceTree = "<group>";
@@ -560,6 +577,7 @@
 				83EDDA8E2B6D9E2E00DC2F2B /* ShowAppsView.swift in Sources */,
 				831987902B6ECF10009937B0 /* SwipeGesturesView.swift in Sources */,
 				831987972B6EF289009937B0 /* FavoritePhrasesView.swift in Sources */,
+				8353FA802B73FB5B00C78938 /* HealthView.swift in Sources */,
 				8353FA7A2B73F73800C78938 /* TapticTimeView.swift in Sources */,
 				83EDDA942B6DA5FE00DC2F2B /* GesturesView.swift in Sources */,
 				833936962B6C68890049FDC7 /* IconLabel.swift in Sources */,
@@ -573,6 +591,7 @@
 				833936A42B6C73580049FDC7 /* DoNotDisturbView.swift in Sources */,
 				83EDDA872B6D30A000DC2F2B /* ShowComplicationDataView.swift in Sources */,
 				83A04AEA2B6E131400C34E53 /* ChimesScheduleView.swift in Sources */,
+				8353FA852B73FD5600C78938 /* DevicesView.swift in Sources */,
 				83A292AC2B72984B0028907F /* AppPermissionsDetailView.swift in Sources */,
 				83EDDA962B6DA6E900DC2F2B /* DoubleTapView.swift in Sources */,
 				8353FA732B73592D00C78938 /* ClockView.swift in Sources */,
@@ -602,13 +621,14 @@
 				833936902B6C57F50049FDC7 /* AutoLaunchView.swift in Sources */,
 				833936AB2B6C80FF0049FDC7 /* AirplaneModeView.swift in Sources */,
 				83EDDA982B6DA8E800DC2F2B /* AccessibilityView.swift in Sources */,
+				8353FA832B73FC3200C78938 /* HealthDetailsView.swift in Sources */,
 				833D23152B70442A00EB3E8F /* SoundsHapticsView.swift in Sources */,
 				83A04AE72B6E124900C34E53 /* ChimesView.swift in Sources */,
 				835DE6072B6C105B00FC23C8 /* NanoSettingsModel.swift in Sources */,
 				833936922B6C58F30049FDC7 /* BackgroundAppRefreshView.swift in Sources */,
 				833936A62B6C75D10049FDC7 /* SymbolLink.swift in Sources */,
 				83A292B32B729DE90028907F /* TimeDaylightView.swift in Sources */,
-				83A292AE2B729CFF0028907F /* HealthView.swift in Sources */,
+				83A292AE2B729CFF0028907F /* HealthPermissionsView.swift in Sources */,
 				831987942B6EF020009937B0 /* LiveSpeechView.swift in Sources */,
 				8305D1A12B7149130031865E /* SOSView.swift in Sources */,
 				8305D1A42B7149D00031865E /* HoldSideButtonView.swift in Sources */,

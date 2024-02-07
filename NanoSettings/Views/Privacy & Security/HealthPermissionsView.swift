@@ -1,5 +1,5 @@
 //
-//  HealthView.swift
+//  HealthPermissionsView.swift
 //  NanoSettings
 //
 //  Settings > Privacy & Security > Health
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HealthView: View {
+struct HealthPermissionsView: View {
     var body: some View {
         List {
             NavigationLink(destination: HeartRateView(), label: {
@@ -38,6 +38,6 @@ struct HealthView: View {
 
 #Preview {
     NavigationStack {
-        HealthView()
+        HealthPermissionsView()
     }
 }
