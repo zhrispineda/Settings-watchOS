@@ -49,6 +49,9 @@
 		8353FA802B73FB5B00C78938 /* HealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353FA7F2B73FB5B00C78938 /* HealthView.swift */; };
 		8353FA832B73FC3200C78938 /* HealthDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353FA822B73FC3200C78938 /* HealthDetailsView.swift */; };
 		8353FA852B73FD5600C78938 /* DevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353FA842B73FD5600C78938 /* DevicesView.swift */; };
+		8353FA872B74000F00C78938 /* HeartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353FA862B74000F00C78938 /* HeartView.swift */; };
+		8353FA892B74005D00C78938 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353FA882B74005D00C78938 /* WorkoutView.swift */; };
+		8353FA8C2B7400F000C78938 /* UnitsMeasureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353FA8B2B7400F000C78938 /* UnitsMeasureView.swift */; };
 		835DE6072B6C105B00FC23C8 /* NanoSettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DE6062B6C105B00FC23C8 /* NanoSettingsModel.swift */; };
 		835DE6092B6C116100FC23C8 /* SettingsLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DE6082B6C116100FC23C8 /* SettingsLink.swift */; };
 		835DE60B2B6C134E00FC23C8 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DE60A2B6C134E00FC23C8 /* NotificationsView.swift */; };
@@ -135,6 +138,9 @@
 		8353FA7F2B73FB5B00C78938 /* HealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthView.swift; sourceTree = "<group>"; };
 		8353FA822B73FC3200C78938 /* HealthDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDetailsView.swift; sourceTree = "<group>"; };
 		8353FA842B73FD5600C78938 /* DevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesView.swift; sourceTree = "<group>"; };
+		8353FA862B74000F00C78938 /* HeartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartView.swift; sourceTree = "<group>"; };
+		8353FA882B74005D00C78938 /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
+		8353FA8B2B7400F000C78938 /* UnitsMeasureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitsMeasureView.swift; sourceTree = "<group>"; };
 		835DE6052B6C0B1600FC23C8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		835DE6062B6C105B00FC23C8 /* NanoSettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanoSettingsModel.swift; sourceTree = "<group>"; };
 		835DE6082B6C116100FC23C8 /* SettingsLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLink.swift; sourceTree = "<group>"; };
@@ -317,6 +323,14 @@
 			path = Health;
 			sourceTree = "<group>";
 		};
+		8353FA8A2B7400C800C78938 /* Workout */ = {
+			isa = PBXGroup;
+			children = (
+				8353FA8B2B7400F000C78938 /* UnitsMeasureView.swift */,
+			);
+			path = Workout;
+			sourceTree = "<group>";
+		};
 		835DE6022B6C09F300FC23C8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -331,6 +345,7 @@
 				83A292A32B728DBD0028907F /* Privacy & Security */,
 				8353FA762B73F5B700C78938 /* Clock */,
 				8353FA812B73FC2800C78938 /* Health */,
+				8353FA8A2B7400C800C78938 /* Workout */,
 				835DE60A2B6C134E00FC23C8 /* NotificationsView.swift */,
 				836D6ABC2B6C42DD008DBB8F /* GeneralView.swift */,
 				833936A02B6C716D0049FDC7 /* FocusView.swift */,
@@ -348,6 +363,8 @@
 				8353FA722B73592D00C78938 /* ClockView.swift */,
 				8353FA7D2B73FA3800C78938 /* ContactsView.swift */,
 				8353FA7F2B73FB5B00C78938 /* HealthView.swift */,
+				8353FA862B74000F00C78938 /* HeartView.swift */,
+				8353FA882B74005D00C78938 /* WorkoutView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -607,7 +624,9 @@
 				83A292A72B7294DF0028907F /* LocationServicesDetailView.swift in Sources */,
 				8319879C2B6EF808009937B0 /* VoicesDetailView.swift in Sources */,
 				83EDDA8C2B6D339900DC2F2B /* ReturnClockDetailView.swift in Sources */,
+				8353FA892B74005D00C78938 /* WorkoutView.swift in Sources */,
 				83EDDA9B2B6DAAF400DC2F2B /* ReduceMotionView.swift in Sources */,
+				8353FA872B74000F00C78938 /* HeartView.swift in Sources */,
 				83A292A92B72960C0028907F /* SystemServicesView.swift in Sources */,
 				8353FA782B73F5C300C78938 /* ClockSoundsView.swift in Sources */,
 				83B7CD3A2B7019860024307F /* LanguageView.swift in Sources */,
@@ -639,6 +658,7 @@
 				83EDDA822B6D2EBE00DC2F2B /* TextSizeView.swift in Sources */,
 				833D231D2B70478200EB3E8F /* ReduceLoudSoundsView.swift in Sources */,
 				8339369A2B6C6A420049FDC7 /* HandoffView.swift in Sources */,
+				8353FA8C2B7400F000C78938 /* UnitsMeasureView.swift in Sources */,
 				833936982B6C69C00049FDC7 /* NightstandModeView.swift in Sources */,
 				83A292B52B729E2E0028907F /* HeadphoneAudioLevelsView.swift in Sources */,
 				8339369C2B6C6ACF0049FDC7 /* WebsiteDataView.swift in Sources */,

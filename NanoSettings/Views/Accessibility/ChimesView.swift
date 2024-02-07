@@ -16,18 +16,10 @@ struct ChimesView: View {
             Section(content: {
                 Toggle("Chimes", isOn: $chimesEnabled)
                 NavigationLink(destination: ChimesScheduleView(), label: {
-                    VStack(alignment: .leading) {
-                        Text("Schedule")
-                        Text("Hourly")
-                            .foregroundStyle(.secondary)
-                    }
+                    RowLabel(title: "Schedule", subtitle: "Hourly")
                 })
                 NavigationLink(destination: ChimesSoundsView(), label: {
-                    VStack(alignment: .leading) {
-                        Text("Sounds")
-                        Text("Bells")
-                            .foregroundStyle(.secondary)
-                    }
+                    RowLabel(title: "Sounds", subtitle: "Bells")
                 })
             }, footer: {
                 Text("When this is on, selected sounds and haptics will play on the hour.")

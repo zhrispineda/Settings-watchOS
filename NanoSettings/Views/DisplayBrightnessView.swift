@@ -40,11 +40,7 @@ struct DisplayBrightnessView: View {
             
             Section(content: {
                 NavigationLink(destination: AlwaysOnView(), label: {
-                    VStack(alignment: .leading) {
-                        Text("Always On")
-                        Text("On")
-                            .foregroundStyle(.secondary)
-                    }
+                    RowLabel(title: "Always On", subtitle: "On")
                 })
             }, footer: {
                 Text("Your Apple Watch can always show the time. You can also choose if your complications show sensitive data.")

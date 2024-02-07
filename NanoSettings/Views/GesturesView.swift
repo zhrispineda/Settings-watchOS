@@ -15,11 +15,7 @@ struct GesturesView: View {
         List {
             Section {
                 NavigationLink(destination: {}, label: {
-                    VStack(alignment: .leading) {
-                        Text("Double Tap")
-                        Text("On")
-                            .foregroundStyle(.secondary)
-                    }
+                    RowLabel(title: "Double Tap", subtitle: "On")
                 })
             }
             

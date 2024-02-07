@@ -47,11 +47,7 @@ struct AccessibilityView: View {
             
             Section(content: {
                 NavigationLink(destination: ReduceMotionView(), label: {
-                    VStack(alignment: .leading) {
-                        Text("Reduce Motion")
-                        Text("Off")
-                            .foregroundStyle(.secondary)
-                    }
+                    RowLabel(title: "Reduce Motion", subtitle: "Off")
                 })
             }, footer: {
                 Text("Limits animation of the user interface.")
@@ -63,18 +59,10 @@ struct AccessibilityView: View {
             
             Section(content: {
                 NavigationLink(destination: QuickActionsView(), label: {
-                    VStack(alignment: .leading) {
-                        Text("Quick Actions")
-                        Text("Off")
-                            .foregroundStyle(.secondary)
-                    }
+                    RowLabel(title: "Quick Action", subtitle: "Off")
                 })
                 NavigationLink(destination: TouchAccommodationsView(), label: {
-                    VStack(alignment: .leading) {
-                        Text("Touch Accommodations")
-                        Text("Off")
-                            .foregroundStyle(.secondary)
-                    }
+                    RowLabel(title: "Touch Accommodations", subtitle: "Off")
                 })
                 Button("Control Nearby Devices", action: { showingConnectedDeviceSheet.toggle() })
                     .sheet(isPresented: $showingConnectedDeviceSheet, content: {
@@ -171,11 +159,7 @@ struct AccessibilityView: View {
             
             Section(content: {
                 NavigationLink(destination: LiveSpeechView(), label: {
-                    VStack(alignment: .leading) {
-                        Text("Live Speech")
-                        Text("Off")
-                            .foregroundStyle(.secondary)
-                    }
+                    RowLabel(title: "Live Speech", subtitle: "Off")
                 })
             }, header: {
                 Text("Speech")
@@ -183,11 +167,7 @@ struct AccessibilityView: View {
             
             Section(content: {
                 NavigationLink(destination: AccessibilityShortcutView(), label: {
-                    VStack(alignment: .leading) {
-                        Text("Accessibility Shortcut")
-                        Text("Touch Accommodations")
-                            .foregroundStyle(.secondary)
-                    }
+                    RowLabel(title: "Accessibility Shortcut", subtitle: "Touch Accommodations")
                 })
             }, header: {
                 Text("Other")

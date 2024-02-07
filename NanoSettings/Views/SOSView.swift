@@ -12,11 +12,7 @@ struct SOSView: View {
         List {
             Section {
                 NavigationLink(destination: HoldSideButtonView(), label: {
-                    VStack(alignment: .leading) {
-                        Text("Hold Side Button")
-                        Text("Enabled")
-                            .foregroundStyle(.secondary)
-                    }
+                    RowLabel(title: "Hold Side Button", subtitle: "Enabled")
                 })
             }
             

@@ -14,6 +14,8 @@
 
 import SwiftUI
 
+let disabledLinks = ["Cellular", "Wi-Fi", "Bluetooth", "Battery"]
+
 struct SettingsLink<Content: View>: View {
     // Variables
     let title: String
@@ -31,37 +33,59 @@ struct SettingsLink<Content: View>: View {
     }
     
     var body: some View {
-        NavigationLink {
-            content
-        } label: {
-            Label {
-                Text(title)
-            } icon: {
-                if UIImage(systemName: icon) != nil {
-                    Image(systemName: icon)
-                        .foregroundStyle(primaryColor, secondaryColor)
-                } else {
-                    switch icon {
-                    case "logo.bluetooth":
-                        ZStack {
-                            Image(systemName: "circle.fill")
-                                .foregroundStyle(secondaryColor)
-                            Image(icon)
-                                .imageScale(.small)
-                        }
-                    case "custom.chart.bar.xaxis.circle.fill":
-                        Image(icon)
+        if disabledLinks.contains(title) {
+            Button(action: {}, label: {
+                Label {
+                    Text(title)
+                } icon: {
+                    if UIImage(systemName: icon) != nil {
+                        Image(systemName: icon)
                             .foregroundStyle(primaryColor, secondaryColor)
-                    default:
-                        Image(icon)
-                            .resizable()
-                            .clipShape(Circle())
-                            .scaledToFit()
-                            //.frame(height: 20)
-                        
+                    } else {
+                        switch icon {
+                        case "logo.bluetooth":
+                            ZStack {
+                                Image(systemName: "circle.fill")
+                                    .foregroundStyle(secondaryColor)
+                                Image(icon)
+                                    .imageScale(.small)
+                            }
+                        default:
+                            Image(icon)
+                                .resizable()
+                                .clipShape(Circle())
+                                .scaledToFit()
+                                .frame(height: 20)
+                            
+                        }
                     }
                 }
-                
+            })
+        } else {
+            NavigationLink {
+                content
+            } label: {
+                Label {
+                    Text(title)
+                } icon: {
+                    if UIImage(systemName: icon) != nil {
+                        Image(systemName: icon)
+                            .foregroundStyle(primaryColor, secondaryColor)
+                    } else {
+                        switch icon {
+                        case "custom.chart.bar.xaxis.circle.fill":
+                            Image(icon)
+                                .foregroundStyle(primaryColor, secondaryColor)
+                        default:
+                            Image(icon)
+                                .resizable()
+                                .clipShape(Circle())
+                                .scaledToFit()
+                                .frame(height: 20)
+                            
+                        }
+                    }
+                }
             }
         }
     }

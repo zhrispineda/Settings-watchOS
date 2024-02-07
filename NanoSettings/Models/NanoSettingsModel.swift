@@ -88,4 +88,10 @@ let appSectionList: [NavigationData] = [
     NavigationData(title: "Health", icon: "applehealth", content: {
         AnyView(HealthView())
     }),
+    NavigationData(title: "Heart", icon: "appleheart", content: {
+        AnyView(HeartView())
+    }),
+    NavigationData(title: "Workout", icon: "appleworkout", content: {
+        AnyView(WorkoutView())
+    })
 ]

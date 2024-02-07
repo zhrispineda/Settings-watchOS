@@ -10,7 +10,6 @@ import SwiftUI
 struct ContentView: View {
     // Variables
     @State private var loadingEnabled = false
-    let disabledLinks = ["Cellular", "Wi-Fi", "Bluetooth", "Battery"]
     
     var body: some View {
         NavigationStack {
@@ -20,7 +19,6 @@ struct ContentView: View {
                 Section {
                     ForEach(mainSectionList) { item in
                         SettingsLink(title: item.title, icon: item.icon, primaryColor: item.primaryColor, secondaryColor: item.secondaryColor, content: item.content)
-                            .disabled(disabledLinks.contains(item.title))
                     }
                 }
                 

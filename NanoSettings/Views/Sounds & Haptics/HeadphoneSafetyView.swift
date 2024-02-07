@@ -12,11 +12,7 @@ struct HeadphoneSafetyView: View {
         List {
             Section(content: {
                 NavigationLink(destination: HeadphoneNotificationsView(), label: {
-                    VStack(alignment: .leading) {
-                        Text("Last 6 Months")
-                        Text("0 notifications")
-                            .foregroundStyle(.secondary)
-                    }
+                    RowLabel(title: "Last 6 Months", subtitle: "0 notifications")
                 })
             }, header: {
                 Text("Headphone Notifications")
@@ -26,11 +22,7 @@ struct HeadphoneSafetyView: View {
             
             Section {
                 NavigationLink(destination: ReduceLoudSoundsView(), label: {
-                    VStack(alignment: .leading) {
-                        Text("Reduce Loud Sounds")
-                        Text("Off")
-                            .foregroundStyle(.secondary)
-                    }
+                    RowLabel(title: "Reduce Loud Sounds", subtitle: "Off")
                 })
             }
         }

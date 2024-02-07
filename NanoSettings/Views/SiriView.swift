@@ -45,11 +45,7 @@ struct SiriView: View {
             if pressDigitalCrownEnabled {
                 Section {
                     NavigationLink(destination: LanguageView(), label: {
-                        VStack(alignment: .leading) {
-                            Text("Language")
-                            Text("English (United States)")
-                                .foregroundStyle(.secondary)
-                        }
+                        RowLabel(title: "Language", subtitle: "English (United States)")
                     })
                 }
                 

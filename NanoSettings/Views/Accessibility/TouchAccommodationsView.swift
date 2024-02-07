@@ -53,11 +53,7 @@ struct TouchAccommodationsView: View {
             
             if holdDurationEnabled {
                 NavigationLink(destination: SwipeGesturesView(), label: {
-                    VStack(alignment: .leading) {
-                        Text("Swipe Gestures")
-                        Text("Off")
-                            .foregroundStyle(.secondary)
-                    }
+                    RowLabel(title: "Swipe Gestures", subtitle: "Off")
                 })
             }
             

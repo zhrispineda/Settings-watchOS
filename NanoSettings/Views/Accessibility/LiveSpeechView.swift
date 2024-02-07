@@ -25,11 +25,7 @@ struct LiveSpeechView: View {
             
             Section(content: {
                 NavigationLink(destination: VoicesView(), label: {
-                    VStack(alignment: .leading) {
-                        Text("English (US)")
-                        Text("Samantha")
-                            .foregroundStyle(.secondary)
-                    }
+                    RowLabel(title: "English (US)", subtitle: "Samantha")
                 })
             }, header: {
                 Text("Voices")

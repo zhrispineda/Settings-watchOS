@@ -11,25 +11,13 @@ struct HealthPermissionsView: View {
     var body: some View {
         List {
             NavigationLink(destination: HeartRateView(), label: {
-                VStack(alignment: .leading) {
-                    Text("Heart Rate")
-                    Text("On")
-                        .foregroundStyle(.secondary)
-                }
+                RowLabel(title: "Heart Rate", subtitle: "On")
             })
             NavigationLink(destination: TimeDaylightView(), label: {
-                VStack(alignment: .leading) {
-                    Text("Time in Daylight")
-                    Text("On")
-                        .foregroundStyle(.secondary)
-                }
+                RowLabel(title: "Time in Daylight", subtitle: "On")
             })
             NavigationLink(destination: HeadphoneAudioLevelsView(), label: {
-                VStack(alignment: .leading) {
-                    Text("Headphone Audio Levels")
-                    Text("Saved Until I Delete")
-                        .foregroundStyle(.secondary)
-                }
+                RowLabel(title: "Headphone Audio Levels", subtitle: "Saved Until I Delete")
             })
         }
         .navigationTitle("Health")

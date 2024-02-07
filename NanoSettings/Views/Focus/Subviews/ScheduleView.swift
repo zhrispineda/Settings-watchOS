@@ -22,23 +22,13 @@ struct ScheduleView: View {
             Section {
                 Button(action: {
                     // TODO: Clock-styled time picker
-                    
                 }, label: {
-                    VStack(alignment: .leading) {
-                        Text("From")
-                        Text(fromTime)
-                            .foregroundStyle(.secondary)
-                    }
+                    RowLabel(title: "From", subtitle: fromTime)
                 })
                 Button(action: {
                     // TODO: Clock-styled time picker
-                    
                 }, label: {
-                    VStack(alignment: .leading) {
-                        Text("To")
-                        Text(toTime)
-                            .foregroundStyle(.secondary)
-                    }
+                    RowLabel(title: "To", subtitle: toTime)
                 })
             }
             
