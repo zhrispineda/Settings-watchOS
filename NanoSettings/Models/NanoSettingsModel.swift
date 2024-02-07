@@ -77,3 +77,9 @@ let mainSectionList: [NavigationData] = [
         AnyView(PrivacySecurityView())
     })
 ]
+
+let appSectionList: [NavigationData] = [
+    NavigationData(title: "Clock", icon: "appleclock", content: {
+        AnyView(ClockView())
+    }),
+]

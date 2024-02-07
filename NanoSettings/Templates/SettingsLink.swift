@@ -37,32 +37,36 @@ struct SettingsLink<Content: View>: View {
             Label {
                 Text(title)
             } icon: {
-                switch icon {
-                case "siri-masked_Normal":
-                    Image(icon)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(height: 20)
-                case "logo.bluetooth":
-                    ZStack {
-                        Image(systemName: "circle.fill")
-                            .foregroundStyle(secondaryColor)
-                        Image(icon)
-                            .imageScale(.small)
-                    }
-                case "custom.chart.bar.xaxis.circle.fill":
-                    Image(icon)
-                        .foregroundStyle(primaryColor, secondaryColor)
-                default:
+                if UIImage(systemName: icon) != nil {
                     Image(systemName: icon)
                         .foregroundStyle(primaryColor, secondaryColor)
-                    
+                } else {
+                    switch icon {
+                    case "logo.bluetooth":
+                        ZStack {
+                            Image(systemName: "circle.fill")
+                                .foregroundStyle(secondaryColor)
+                            Image(icon)
+                                .imageScale(.small)
+                        }
+                    case "custom.chart.bar.xaxis.circle.fill":
+                        Image(icon)
+                            .foregroundStyle(primaryColor, secondaryColor)
+                    default:
+                        Image(icon)
+                            .resizable()
+                            .clipShape(Circle())
+                            .scaledToFit()
+                            //.frame(height: 20)
+                        
+                    }
                 }
+                
             }
         }
     }
 }
 
 #Preview {
-    SettingsLink(title: "Bluetooth", icon: "applecontacts", primaryColor: .white, secondaryColor: .blue, content: {})
+    SettingsLink(title: "Bluetooth", icon: "appleclock", primaryColor: .white, secondaryColor: .blue, content: {})
 }

@@ -40,6 +40,11 @@
 		833D23182B70456F00EB3E8F /* HeadphoneSafetyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833D23172B70456F00EB3E8F /* HeadphoneSafetyView.swift */; };
 		833D231B2B70463000EB3E8F /* HeadphoneNotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833D231A2B70463000EB3E8F /* HeadphoneNotificationsView.swift */; };
 		833D231D2B70478200EB3E8F /* ReduceLoudSoundsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833D231C2B70478200EB3E8F /* ReduceLoudSoundsView.swift */; };
+		8353FA732B73592D00C78938 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353FA722B73592D00C78938 /* ClockView.swift */; };
+		8353FA752B73F52C00C78938 /* RowLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353FA742B73F52C00C78938 /* RowLabel.swift */; };
+		8353FA782B73F5C300C78938 /* ClockSoundsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353FA772B73F5C300C78938 /* ClockSoundsView.swift */; };
+		8353FA7A2B73F73800C78938 /* TapticTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353FA792B73F73800C78938 /* TapticTimeView.swift */; };
+		8353FA7C2B73F8E800C78938 /* SiriFaceDataSourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353FA7B2B73F8E800C78938 /* SiriFaceDataSourcesView.swift */; };
 		835DE6072B6C105B00FC23C8 /* NanoSettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DE6062B6C105B00FC23C8 /* NanoSettingsModel.swift */; };
 		835DE6092B6C116100FC23C8 /* SettingsLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DE6082B6C116100FC23C8 /* SettingsLink.swift */; };
 		835DE60B2B6C134E00FC23C8 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DE60A2B6C134E00FC23C8 /* NotificationsView.swift */; };
@@ -117,6 +122,11 @@
 		833D23172B70456F00EB3E8F /* HeadphoneSafetyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadphoneSafetyView.swift; sourceTree = "<group>"; };
 		833D231A2B70463000EB3E8F /* HeadphoneNotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadphoneNotificationsView.swift; sourceTree = "<group>"; };
 		833D231C2B70478200EB3E8F /* ReduceLoudSoundsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduceLoudSoundsView.swift; sourceTree = "<group>"; };
+		8353FA722B73592D00C78938 /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		8353FA742B73F52C00C78938 /* RowLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowLabel.swift; sourceTree = "<group>"; };
+		8353FA772B73F5C300C78938 /* ClockSoundsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockSoundsView.swift; sourceTree = "<group>"; };
+		8353FA792B73F73800C78938 /* TapticTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapticTimeView.swift; sourceTree = "<group>"; };
+		8353FA7B2B73F8E800C78938 /* SiriFaceDataSourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriFaceDataSourcesView.swift; sourceTree = "<group>"; };
 		835DE6052B6C0B1600FC23C8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		835DE6062B6C105B00FC23C8 /* NanoSettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanoSettingsModel.swift; sourceTree = "<group>"; };
 		835DE6082B6C116100FC23C8 /* SettingsLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLink.swift; sourceTree = "<group>"; };
@@ -280,6 +290,16 @@
 			path = "Headphone Safety";
 			sourceTree = "<group>";
 		};
+		8353FA762B73F5B700C78938 /* Clock */ = {
+			isa = PBXGroup;
+			children = (
+				8353FA772B73F5C300C78938 /* ClockSoundsView.swift */,
+				8353FA792B73F73800C78938 /* TapticTimeView.swift */,
+				8353FA7B2B73F8E800C78938 /* SiriFaceDataSourcesView.swift */,
+			);
+			path = Clock;
+			sourceTree = "<group>";
+		};
 		835DE6022B6C09F300FC23C8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -292,6 +312,7 @@
 				833D23162B70455900EB3E8F /* Sounds & Haptics */,
 				8305D1A22B7149BB0031865E /* SOS */,
 				83A292A32B728DBD0028907F /* Privacy & Security */,
+				8353FA762B73F5B700C78938 /* Clock */,
 				835DE60A2B6C134E00FC23C8 /* NotificationsView.swift */,
 				836D6ABC2B6C42DD008DBB8F /* GeneralView.swift */,
 				833936A02B6C716D0049FDC7 /* FocusView.swift */,
@@ -306,6 +327,7 @@
 				8305D19E2B7145220031865E /* PasscodeView.swift */,
 				8305D1A02B7149130031865E /* SOSView.swift */,
 				83A2929E2B7280D20028907F /* PrivacySecurityView.swift */,
+				8353FA722B73592D00C78938 /* ClockView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -326,6 +348,7 @@
 				836D6AC12B6C4428008DBB8F /* ClearRow.swift */,
 				833936952B6C68890049FDC7 /* IconLabel.swift */,
 				833936A52B6C75D10049FDC7 /* SymbolLink.swift */,
+				8353FA742B73F52C00C78938 /* RowLabel.swift */,
 			);
 			path = Templates;
 			sourceTree = "<group>";
@@ -534,6 +557,7 @@
 				83EDDA8E2B6D9E2E00DC2F2B /* ShowAppsView.swift in Sources */,
 				831987902B6ECF10009937B0 /* SwipeGesturesView.swift in Sources */,
 				831987972B6EF289009937B0 /* FavoritePhrasesView.swift in Sources */,
+				8353FA7A2B73F73800C78938 /* TapticTimeView.swift in Sources */,
 				83EDDA942B6DA5FE00DC2F2B /* GesturesView.swift in Sources */,
 				833936962B6C68890049FDC7 /* IconLabel.swift in Sources */,
 				83A292A52B728DD80028907F /* LocationServicesView.swift in Sources */,
@@ -547,6 +571,7 @@
 				83A04AEA2B6E131400C34E53 /* ChimesScheduleView.swift in Sources */,
 				83A292AC2B72984B0028907F /* AppPermissionsDetailView.swift in Sources */,
 				83EDDA962B6DA6E900DC2F2B /* DoubleTapView.swift in Sources */,
+				8353FA732B73592D00C78938 /* ClockView.swift in Sources */,
 				831987992B6EF4DF009937B0 /* VoicesView.swift in Sources */,
 				835DE60B2B6C134E00FC23C8 /* NotificationsView.swift in Sources */,
 				8305D19F2B7145220031865E /* PasscodeView.swift in Sources */,
@@ -555,12 +580,15 @@
 				836D6AC22B6C4428008DBB8F /* ClearRow.swift in Sources */,
 				831987922B6EEC10009937B0 /* AccessibilitySiriView.swift in Sources */,
 				833936A12B6C716D0049FDC7 /* FocusView.swift in Sources */,
+				8353FA7C2B73F8E800C78938 /* SiriFaceDataSourcesView.swift in Sources */,
 				83A292A72B7294DF0028907F /* LocationServicesDetailView.swift in Sources */,
 				8319879C2B6EF808009937B0 /* VoicesDetailView.swift in Sources */,
 				83EDDA8C2B6D339900DC2F2B /* ReturnClockDetailView.swift in Sources */,
 				83EDDA9B2B6DAAF400DC2F2B /* ReduceMotionView.swift in Sources */,
 				83A292A92B72960C0028907F /* SystemServicesView.swift in Sources */,
+				8353FA782B73F5C300C78938 /* ClockSoundsView.swift in Sources */,
 				83B7CD3A2B7019860024307F /* LanguageView.swift in Sources */,
+				8353FA752B73F52C00C78938 /* RowLabel.swift in Sources */,
 				833D23182B70456F00EB3E8F /* HeadphoneSafetyView.swift in Sources */,
 				836D6AC02B6C43B0008DBB8F /* AboutView.swift in Sources */,
 				832895822B6C014300A9CB97 /* ContentView.swift in Sources */,
