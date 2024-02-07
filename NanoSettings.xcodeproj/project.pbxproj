@@ -45,6 +45,7 @@
 		8353FA782B73F5C300C78938 /* ClockSoundsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353FA772B73F5C300C78938 /* ClockSoundsView.swift */; };
 		8353FA7A2B73F73800C78938 /* TapticTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353FA792B73F73800C78938 /* TapticTimeView.swift */; };
 		8353FA7C2B73F8E800C78938 /* SiriFaceDataSourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353FA7B2B73F8E800C78938 /* SiriFaceDataSourcesView.swift */; };
+		8353FA7E2B73FA3800C78938 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353FA7D2B73FA3800C78938 /* ContactsView.swift */; };
 		835DE6072B6C105B00FC23C8 /* NanoSettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DE6062B6C105B00FC23C8 /* NanoSettingsModel.swift */; };
 		835DE6092B6C116100FC23C8 /* SettingsLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DE6082B6C116100FC23C8 /* SettingsLink.swift */; };
 		835DE60B2B6C134E00FC23C8 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DE60A2B6C134E00FC23C8 /* NotificationsView.swift */; };
@@ -127,6 +128,7 @@
 		8353FA772B73F5C300C78938 /* ClockSoundsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockSoundsView.swift; sourceTree = "<group>"; };
 		8353FA792B73F73800C78938 /* TapticTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapticTimeView.swift; sourceTree = "<group>"; };
 		8353FA7B2B73F8E800C78938 /* SiriFaceDataSourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriFaceDataSourcesView.swift; sourceTree = "<group>"; };
+		8353FA7D2B73FA3800C78938 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		835DE6052B6C0B1600FC23C8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		835DE6062B6C105B00FC23C8 /* NanoSettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanoSettingsModel.swift; sourceTree = "<group>"; };
 		835DE6082B6C116100FC23C8 /* SettingsLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLink.swift; sourceTree = "<group>"; };
@@ -328,6 +330,7 @@
 				8305D1A02B7149130031865E /* SOSView.swift */,
 				83A2929E2B7280D20028907F /* PrivacySecurityView.swift */,
 				8353FA722B73592D00C78938 /* ClockView.swift */,
+				8353FA7D2B73FA3800C78938 /* ContactsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -565,6 +568,7 @@
 				83B7CD3E2B701E420024307F /* SiriSuggestionsDetailView.swift in Sources */,
 				83B7CD3C2B701D1A0024307F /* SiriResponsesView.swift in Sources */,
 				83A04AEC2B6E147200C34E53 /* ChimesSoundsView.swift in Sources */,
+				8353FA7E2B73FA3800C78938 /* ContactsView.swift in Sources */,
 				83A04AEE2B6E164D00C34E53 /* QuickActionsView.swift in Sources */,
 				833936A42B6C73580049FDC7 /* DoNotDisturbView.swift in Sources */,
 				83EDDA872B6D30A000DC2F2B /* ShowComplicationDataView.swift in Sources */,
