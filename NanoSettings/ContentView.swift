@@ -8,9 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    // Variables
-    @State private var loadingEnabled = false
-    
     var body: some View {
         NavigationStack {
             List {
@@ -27,7 +24,6 @@ struct ContentView: View {
                 Section {
                     ForEach(appSectionList) { item in
                         SettingsLink(title: item.title, icon: item.icon, primaryColor: item.primaryColor, secondaryColor: item.secondaryColor, content: item.content)
-                            .disabled(disabledLinks.contains(item.title))
                     }
                 }
             }
