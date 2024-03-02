@@ -20,7 +20,7 @@ As this is a personal project for learning Swift and SwiftUI, feel free to fork,
 ## Contributing
 Contributions such as pull requests that help make the app more accurate and better optimized are always welcome.
 
-Issues are also encourage to raise awareness to certain issues, inconsistencies, or questions about the project.
+Issues are also encouraged to raise awareness to certain issues, inconsistencies, or questions about the project.
 
 ## To Do
 - Make use of NSUserDefaults for saving and loading basic data
@@ -30,5 +30,5 @@ Issues are also encourage to raise awareness to certain issues, inconsistencies,
 ## Disclaimers
 - This app is a recreation of one of Apple's own apps and its designs.
 - All assets such as icons including those of Apple's and the Bluetooth symbol are not my own in any way.
-- This personal project started on February 1, 2024. Feel free to look through the commit history to see the project evolve from a single view to its current state.
-- **Some code may not be best practice and may not be optimal.**
+- Feel free to look through the commit history to see the project evolve from a single view to its current state.
+- Some code may not be best practice and may not be optimal.
