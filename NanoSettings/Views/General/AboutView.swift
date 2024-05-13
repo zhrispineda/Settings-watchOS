@@ -14,7 +14,7 @@ struct AboutView: View {
     var body: some View {
         List {
             ClearRow(title: "Name", subtitle: "Apple Watch")
-            ClearRow(title: "Version", subtitle: "10.4 (21T5196c)")
+            ClearRow(title: "Version", subtitle: "10.5 (21T575)")
             
             // Model Row
             VStack(alignment: .leading) {

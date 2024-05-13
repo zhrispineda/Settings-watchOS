@@ -7,7 +7,7 @@ Apple's Settings app is shown first, and then this project's app is shown in the
 ![A GIF comparing Apple's Settings app and this project's Settings app side-by-side](Assets/Settings.gif)
 
 ## Information
-- This personal project is a recreation of Apple's current and default Settings app for Apple Watch **(Simulator.app)** on watchOS 10.4 (21T5196c).
+- This personal project is a recreation of Apple's current and default Settings app for Apple Watch **(Simulator.app)** on watchOS 10.5 (21T575).
 - All features within the app are only simulations and have no effect on the device outside of the app.
 - Most views are complete, but lack features such as saving data, including basic variables, perhaps for now.
 - Since this is based off of the Simulator and not a physical Apple Watch, perhaps for now, aspects such as simulated controls and views for radios, are unavailable at this time.
