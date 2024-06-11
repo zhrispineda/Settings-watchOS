@@ -28,6 +28,9 @@ let mainSectionList: [NavigationData] = [
     NavigationData(title: "Notifications", icon: "bell.badge.circle.fill", primaryColor: .white, secondaryColor: .red, content: {
         AnyView(NotificationsView())
     }),
+    NavigationData(title: "Smart Stack", icon: "custom.rectangle.stack.circle.fill", primaryColor: .white, secondaryColor: .blue, content: {
+        AnyView(GeneralView())
+    }),
     NavigationData(title: "General", icon: "gear.circle.fill", primaryColor: .white, secondaryColor: .gray, content: {
         AnyView(GeneralView())
     }),
@@ -52,7 +55,7 @@ let mainSectionList: [NavigationData] = [
     NavigationData(title: "App View", icon: "circle.hexagongrid.circle.fill", primaryColor: .white, secondaryColor: .blue, content: {
         AnyView(AppView())
     }),
-    NavigationData(title: "Gestures", icon: "hand.thumbsup.circle.fill", primaryColor: .white, secondaryColor: .blue, content: {
+    NavigationData(title: "Gestures", icon: "hand.side.pinch.fill26x14", primaryColor: .white, secondaryColor: .blue, content: {
         AnyView(GesturesView())
     }),
     NavigationData(title: "Accessibility", icon: "accessibility.fill", primaryColor: .white, secondaryColor: .blue, content: {

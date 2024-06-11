@@ -72,6 +72,15 @@ struct SettingsLink<Content: View>: View {
                             .foregroundStyle(primaryColor, secondaryColor)
                     } else {
                         switch icon {
+                        case "hand.side.pinch.fill26x14":
+                            ZStack {
+                                Image(systemName: "circle.fill")
+                                    .foregroundStyle(secondaryColor)
+                                Image(icon)
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(height: 7)
+                            }
                         case "logo.bluetooth":
                             ZStack {
                                 Image(systemName: "circle.fill")
@@ -79,6 +88,10 @@ struct SettingsLink<Content: View>: View {
                                 Image(icon)
                                     .imageScale(.small)
                             }
+                        case "custom.rectangle.stack.circle.fill":
+                            Image(icon)
+                                .foregroundStyle(primaryColor, secondaryColor)
+                                .rotationEffect(.degrees(180))
                         default:
                             Image(icon)
                                 .resizable()

@@ -9,12 +9,13 @@ import SwiftUI
 
 struct AboutView: View {
     // Variables
-    @State private var showingModelID = true
+    @State private var showingModelID = false
     
     var body: some View {
         List {
             ClearRow(title: "Name", subtitle: "Apple Watch")
-            ClearRow(title: "Version", subtitle: "10.5 (21T575)")
+            ClearRow(title: "watchOS Version", subtitle: "11.0 (22R5284o)")
+            ClearRow(title: "Model Name", subtitle: "Apple Watch")
             
             // Model Row
             VStack(alignment: .leading) {
@@ -23,8 +24,8 @@ struct AboutView: View {
                         showingModelID.toggle()
                     }
                 }, label: {
-                    Text("Model")
-                    Text(showingModelID ? "A2984" : "A2984LL/A")
+                    Text("Model Number")
+                    Text(showingModelID ? "A2984LL/A" : "A2984")
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
                 })
