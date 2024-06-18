@@ -23,9 +23,9 @@ struct SymbolLink<Content: View>: View {
     var content: Content
     
     var body: some View {
-        NavigationLink(destination: {
+        NavigationLink {
             content
-        }, label: {
+        } label: {
             HStack(spacing: 5) {
                 if UIImage(systemName: icon) != nil {
                     Image(systemName: icon)
@@ -45,7 +45,7 @@ struct SymbolLink<Content: View>: View {
                     }
                 }
             }
-        })
+        }
     }
 }
 

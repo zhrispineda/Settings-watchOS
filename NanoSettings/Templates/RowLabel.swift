@@ -12,11 +12,11 @@ struct RowLabel: View {
     var subtitle = String()
     
     var body: some View {
-        VStack(alignment: .leading, content: {
+        VStack(alignment: .leading) {
             Text(title)
             Text(subtitle)
                 .foregroundStyle(.secondary)
-        })
+        }
     }
 }
 

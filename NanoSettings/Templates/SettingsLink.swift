@@ -34,7 +34,7 @@ struct SettingsLink<Content: View>: View {
     
     var body: some View {
         if disabledLinks.contains(title) {
-            Button(action: {}, label: {
+            Button {} label: {
                 Label {
                     Text(title)
                 } icon: {
@@ -59,7 +59,7 @@ struct SettingsLink<Content: View>: View {
                     }
                 }
                 .labelStyle(CustomStyle())
-            })
+            }
         } else {
             NavigationLink {
                 content

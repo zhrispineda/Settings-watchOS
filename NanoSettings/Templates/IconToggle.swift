@@ -19,7 +19,7 @@ struct IconToggle: View {
     var icon: String = "Icon"
     
     var body: some View {
-        Toggle(isOn: $isEnabled, label: {
+        Toggle(isOn: $isEnabled) {
             HStack {
                 Image(icon)
                     .resizable()
@@ -28,7 +28,7 @@ struct IconToggle: View {
                     .frame(height: 20)
                 Text(title)
             }
-        })
+        }
     }
 }
 
