@@ -19,7 +19,7 @@ struct PrivacySecurityView: View {
                 NavigationLink(destination: { AppPermissionsDetailView(title: "Reminders") }, label: {
                     IconLabel(title: "Reminders", icon: "applereminders")
                 })
-                SettingsLink(title: "Bluetooth", icon: "logo.bluetooth", primaryColor: .white, secondaryColor: .blue, content: { AppPermissionsDetailView(title: "Bluetooth") })
+                SettingsLink(title: "Bluetooth", icon: "bluetooth", primaryColor: .white, secondaryColor: .blue, content: { AppPermissionsDetailView(title: "Bluetooth") })
                 SettingsLink(title: "Microphone", icon: "mic.circle.fill", primaryColor: .white, secondaryColor: .red, content: { AppPermissionsDetailView(title: "Microphone") })
                 NavigationLink(destination: HealthView(), label: {
                     IconLabel(title: "Health", icon: "applehealth")

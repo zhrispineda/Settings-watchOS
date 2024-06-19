@@ -19,52 +19,56 @@ struct ReturnClockDetailView: View {
     
     var body: some View {
         List {
-            Section(content: {
+            Section {
                 ForEach(returnClockOptions, id: \.self) { option in
-                    Button(action: {
+                    Button {
                         selectedReturnClockOption = option
-                    }, label: {
+                    } label: {
                         HStack {
                             Text(option)
                             Spacer()
-                            Image(systemName: "\(selectedReturnClockOption == option ? "checkmark" : "")")
-                                .foregroundStyle(.green)
+                            if selectedReturnClockOption == option {
+                                Image(systemName: "checkmark")
+                                    .foregroundStyle(.green)
+                            }
                         }
-                    })
+                    }
                 }
-            }, header: {
+            } header: {
                 Text("Return to Clock")
-            }, footer: {
+            } footer: {
                 Text("Apple Watch will return to the Clock face on wrist down.")
-            })
+            }
             
             if selectedReturnClockOption == "Custom" {
-                Section(content: {
+                Section {
                     ForEach(whenNotInSessionOptions, id: \.self) { option in
-                        Button(action: {
+                        Button {
                             selectedNotInSessionOption = option
-                        }, label: {
+                        } label: {
                             HStack {
                                 Text(option)
                                 Spacer()
-                                Image(systemName: "\(selectedNotInSessionOption == option ? "checkmark" : "")")
-                                    .foregroundStyle(.green)
+                                if selectedNotInSessionOption == option {
+                                    Image(systemName: "checkmark")
+                                        .foregroundStyle(.green)
+                                }
                             }
-                        })
+                        }
                     }
-                }, header: {
+                } header: {
                     Text("When not in Session")
-                })
+                }
             }
             
             if sessionsApps.contains(title) {
-                Section(content: {
+                Section {
                     Toggle("Return to App", isOn: $returnToAppEnabled)
-                }, header: {
+                } header: {
                     Text("When in Session")
-                }, footer: {
+                } footer: {
                     Text("Apple Watch can return to this app for as long as a session is active. A session is considered anything with a defined start and stop such as a workout, audio recording, or timer. To return to the Clock face, end the active session.")
-                })
+                }
             }
         }
         .navigationTitle(title)

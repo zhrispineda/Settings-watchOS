@@ -43,12 +43,14 @@ struct SettingsLink<Content: View>: View {
                             .foregroundStyle(primaryColor, secondaryColor)
                     } else {
                         switch icon {
-                        case "logo.bluetooth":
+                        case "bluetooth":
                             ZStack {
                                 Image(systemName: "circle.fill")
                                     .foregroundStyle(secondaryColor)
-                                Image(icon)
-                                    .imageScale(.small)
+                                Image(_internalSystemName: icon)
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 7)
                             }
                         default:
                             Image(icon)
@@ -72,7 +74,7 @@ struct SettingsLink<Content: View>: View {
                             .foregroundStyle(primaryColor, secondaryColor)
                     } else {
                         switch icon {
-                        case "hand.side.pinch.fill26x14":
+                        case "hand.side.pinch.fill":
                             ZStack {
                                 Image(systemName: "circle.fill")
                                     .foregroundStyle(secondaryColor)
@@ -81,12 +83,14 @@ struct SettingsLink<Content: View>: View {
                                     .scaledToFit()
                                     .frame(height: 7)
                             }
-                        case "logo.bluetooth":
+                        case "bluetooth":
                             ZStack {
                                 Image(systemName: "circle.fill")
                                     .foregroundStyle(secondaryColor)
-                                Image(icon)
-                                    .imageScale(.small)
+                                Image(_internalSystemName: icon)
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 7)
                             }
                         case "custom.rectangle.stack.circle.fill":
                             Image(icon)

@@ -19,16 +19,16 @@ struct AboutView: View {
             
             // Model Row
             VStack(alignment: .leading) {
-                Button(action: {
+                Button {
                     withAnimation {
                         showingModelID.toggle()
                     }
-                }, label: {
+                } label: {
                     Text("Model Number")
                     Text(showingModelID ? "A2984LL/A" : "A2984")
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
-                })
+                }
             }
             .listRowBackground(Color.clear)
             

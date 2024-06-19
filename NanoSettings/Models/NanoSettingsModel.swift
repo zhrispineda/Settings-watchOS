@@ -46,7 +46,7 @@ struct NavigationData: Identifiable {
     NavigationData(title: "Wi-Fi", icon: "wifi.circle.fill", primaryColor: .white, secondaryColor: .blue) {
         AnyView(EmptyView())
     },
-    NavigationData(title: "Bluetooth", icon: "logo.bluetooth", primaryColor: .white, secondaryColor: .blue) {
+    NavigationData(title: "Bluetooth", icon: "bluetooth", primaryColor: .white, secondaryColor: .blue) {
         AnyView(EmptyView())
     },
     NavigationData(title: "Display & Brightness", icon: "sun.max.circle.fill", primaryColor: .white, secondaryColor: .blue) {
@@ -55,7 +55,7 @@ struct NavigationData: Identifiable {
     NavigationData(title: "App View", icon: "circle.hexagongrid.circle.fill", primaryColor: .white, secondaryColor: .blue) {
         AnyView(AppView())
     },
-    NavigationData(title: "Gestures", icon: "hand.side.pinch.fill26x14", primaryColor: .white, secondaryColor: .blue) {
+    NavigationData(title: "Gestures", icon: "hand.side.pinch.fill", primaryColor: .white, secondaryColor: .blue) {
         AnyView(GesturesView())
     },
     NavigationData(title: "Accessibility", icon: "accessibility.fill", primaryColor: .white, secondaryColor: .blue) {
