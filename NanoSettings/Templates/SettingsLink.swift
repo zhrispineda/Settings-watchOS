@@ -92,10 +92,12 @@ struct SettingsLink<Content: View>: View {
                                     .scaledToFit()
                                     .frame(width: 7)
                             }
-                        case "custom.rectangle.stack.circle.fill":
-                            Image(icon)
+                        case "figure.run.motion.circle.fill":
+                            Image(_internalSystemName: "figure.run.motion.circle.fill")
                                 .foregroundStyle(primaryColor, secondaryColor)
-                                .rotationEffect(.degrees(180))
+                        case "smartstack.circle.fill":
+                            Image(_internalSystemName: icon)
+                                .foregroundStyle(primaryColor, secondaryColor)
                         default:
                             Image(icon)
                                 .resizable()
@@ -114,7 +116,12 @@ struct SettingsLink<Content: View>: View {
 }
 
 #Preview {
-    ContentView()
+    NavigationStack {
+        List {
+            SettingsLink(title: "Title", icon: "figure.run.motion", primaryColor: .white, secondaryColor: .blue, content: {})
+        }
+    }
+    //ContentView()
 }
 
 struct CustomStyle: LabelStyle {

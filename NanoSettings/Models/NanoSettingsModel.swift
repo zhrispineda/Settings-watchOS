@@ -28,7 +28,7 @@ struct NavigationData: Identifiable {
     NavigationData(title: "Notifications", icon: "bell.badge.circle.fill", primaryColor: .white, secondaryColor: .red) {
         AnyView(NotificationsView())
     },
-    NavigationData(title: "Smart Stack", icon: "custom.rectangle.stack.circle.fill", primaryColor: .white, secondaryColor: .blue) {
+    NavigationData(title: "Smart Stack", icon: "smartstack.circle.fill", primaryColor: .white, secondaryColor: .blue) {
         AnyView(GeneralView())
     },
     NavigationData(title: "General", icon: "gear.circle.fill", primaryColor: .white, secondaryColor: .gray) {

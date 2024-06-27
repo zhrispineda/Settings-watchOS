@@ -27,7 +27,7 @@ struct PrivacySecurityView: View {
                 NavigationLink(destination: AppPermissionsDetailView(title: "HomeKit"), label: {
                     IconLabel(title: "HomeKit", icon: "applehome")
                 })
-                SettingsLink(title: "Motion & Fitness", icon: "figure.run.circle.fill", primaryColor: .white, secondaryColor: .green, content: { AppPermissionsDetailView(title: "Motion & Fitness") })
+                SettingsLink(title: "Motion & Fitness", icon: "figure.run.motion.circle.fill", primaryColor: .white, secondaryColor: .green, content: { AppPermissionsDetailView(title: "Motion & Fitness") })
                 NavigationLink(destination: AppPermissionsDetailView(title: "Analytics & Improvements"), label: {
                     IconLabel(title: "Analytics & Improvements", icon: "custom.chart.bar.xaxis.circle.fill")
                 })
