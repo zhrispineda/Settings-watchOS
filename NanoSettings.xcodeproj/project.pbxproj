@@ -93,6 +93,9 @@
 		83EDDA962B6DA6E900DC2F2B /* DoubleTapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDDA952B6DA6E900DC2F2B /* DoubleTapView.swift */; };
 		83EDDA982B6DA8E800DC2F2B /* AccessibilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDDA972B6DA8E800DC2F2B /* AccessibilityView.swift */; };
 		83EDDA9B2B6DAAF400DC2F2B /* ReduceMotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDDA9A2B6DAAF400DC2F2B /* ReduceMotionView.swift */; };
+		83F721872C81532B004B3CAF /* SmartStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F721862C81532B004B3CAF /* SmartStackView.swift */; };
+		83F7218A2C815484004B3CAF /* LiveActivitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F721892C815484004B3CAF /* LiveActivitiesView.swift */; };
+		83F7218C2C81548C004B3CAF /* WidgetSuggestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F7218B2C81548C004B3CAF /* WidgetSuggestionsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -184,6 +187,9 @@
 		83EDDA952B6DA6E900DC2F2B /* DoubleTapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleTapView.swift; sourceTree = "<group>"; };
 		83EDDA972B6DA8E800DC2F2B /* AccessibilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityView.swift; sourceTree = "<group>"; };
 		83EDDA9A2B6DAAF400DC2F2B /* ReduceMotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduceMotionView.swift; sourceTree = "<group>"; };
+		83F721862C81532B004B3CAF /* SmartStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartStackView.swift; sourceTree = "<group>"; };
+		83F721892C815484004B3CAF /* LiveActivitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivitiesView.swift; sourceTree = "<group>"; };
+		83F7218B2C81548C004B3CAF /* WidgetSuggestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetSuggestionsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -346,6 +352,7 @@
 			isa = PBXGroup;
 			children = (
 				836D6AB72B6C3F0D008DBB8F /* Notifications */,
+				83F721882C8153BD004B3CAF /* Smart Stack */,
 				836D6ABE2B6C43A6008DBB8F /* General */,
 				8339369F2B6C715E0049FDC7 /* Focus */,
 				83EDDA802B6D2EA800DC2F2B /* Display & Brightness */,
@@ -358,6 +365,7 @@
 				8353FA812B73FC2800C78938 /* Health */,
 				8353FA8A2B7400C800C78938 /* Workout */,
 				835DE60A2B6C134E00FC23C8 /* NotificationsView.swift */,
+				83F721862C81532B004B3CAF /* SmartStackView.swift */,
 				836D6ABC2B6C42DD008DBB8F /* GeneralView.swift */,
 				833936A02B6C716D0049FDC7 /* FocusView.swift */,
 				833936AA2B6C80FF0049FDC7 /* AirplaneModeView.swift */,
@@ -523,6 +531,15 @@
 			path = Accessibility;
 			sourceTree = "<group>";
 		};
+		83F721882C8153BD004B3CAF /* Smart Stack */ = {
+			isa = PBXGroup;
+			children = (
+				83F721892C815484004B3CAF /* LiveActivitiesView.swift */,
+				83F7218B2C81548C004B3CAF /* WidgetSuggestionsView.swift */,
+			);
+			path = "Smart Stack";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -612,6 +629,7 @@
 				833936962B6C68890049FDC7 /* IconLabel.swift in Sources */,
 				83A292A52B728DD80028907F /* LocationServicesView.swift in Sources */,
 				833936A82B6C77EA0049FDC7 /* ScheduleView.swift in Sources */,
+				83F7218C2C81548C004B3CAF /* WidgetSuggestionsView.swift in Sources */,
 				83B7CD3E2B701E420024307F /* SiriSuggestionsDetailView.swift in Sources */,
 				83B7CD3C2B701D1A0024307F /* SiriResponsesView.swift in Sources */,
 				83A04AEC2B6E147200C34E53 /* ChimesSoundsView.swift in Sources */,
@@ -648,6 +666,7 @@
 				832895822B6C014300A9CB97 /* ContentView.swift in Sources */,
 				836D6ABD2B6C42DD008DBB8F /* GeneralView.swift in Sources */,
 				832895802B6C014300A9CB97 /* NanoSettingsApp.swift in Sources */,
+				83F7218A2C815484004B3CAF /* LiveActivitiesView.swift in Sources */,
 				836D6AC42B6C4682008DBB8F /* SoftwareUpdateView.swift in Sources */,
 				833936902B6C57F50049FDC7 /* AutoLaunchView.swift in Sources */,
 				833936AB2B6C80FF0049FDC7 /* AirplaneModeView.swift in Sources */,
@@ -665,6 +684,7 @@
 				8305D1A42B7149D00031865E /* HoldSideButtonView.swift in Sources */,
 				83EDDA922B6DA1A800DC2F2B /* AppView.swift in Sources */,
 				8319878D2B6ECBD9009937B0 /* TouchAccommodationsView.swift in Sources */,
+				83F721872C81532B004B3CAF /* SmartStackView.swift in Sources */,
 				83E6C3912B6F16D4003DDBC7 /* SiriHistoryView.swift in Sources */,
 				83EDDA902B6D9F5800DC2F2B /* WakeDurationView.swift in Sources */,
 				83EDDA822B6D2EBE00DC2F2B /* TextSizeView.swift in Sources */,

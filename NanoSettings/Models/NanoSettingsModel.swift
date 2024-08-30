@@ -29,7 +29,7 @@ struct NavigationData: Identifiable {
         AnyView(NotificationsView())
     },
     NavigationData(title: "Smart Stack", icon: "smartstack.circle.fill", primaryColor: .white, secondaryColor: .blue) {
-        AnyView(GeneralView())
+        AnyView(SmartStackView())
     },
     NavigationData(title: "General", icon: "gear.circle.fill", primaryColor: .white, secondaryColor: .gray) {
         AnyView(GeneralView())
