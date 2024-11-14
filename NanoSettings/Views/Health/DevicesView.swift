@@ -13,10 +13,14 @@ struct DevicesView: View {
     
     var body: some View {
         List {
-            NavigationLink("watchOS Simulator", destination: {
+            NavigationLink("watchOS Simulator") {
                 List {
-                    Section(content: {
-                        Button("Delete All watchOS Simulator Data", action: { showingDeleteDataPrompt.toggle() })
+                    Section {} footer: {
+                        Text("Data from watchOS Simulator cannot be viewed on this watch. You can view Health data from this device on iPhone.")
+                    }
+                    
+                    Section {
+                        Button("Delete All watchOS Simulator Data") { showingDeleteDataPrompt.toggle() }
                             .multilineTextAlignment(.center)
                             .frame(maxWidth: .infinity)
                             .foregroundStyle(.red)
@@ -28,12 +32,10 @@ struct DevicesView: View {
                                     secondaryButton: .destructive(Text("Delete"))
                                 )
                             }
-                    }, header: {
-                        Text("")
-                    })
+                    }
                 }
                 .navigationTitle("watchOS Simulator")
-            })
+            }
         }
         .navigationTitle("Devices")
     }
