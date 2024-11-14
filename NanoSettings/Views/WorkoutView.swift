@@ -9,15 +9,15 @@ import SwiftUI
 
 struct WorkoutView: View {
     // Variables
-    @State private var lowPowerModeEnabled = false
+    @AppStorage("LowPowerModeToggle") private var lowPowerModeEnabled = false
     
     var body: some View {
         List {
-            Section(content: {
+            Section {
                 Toggle("Low Power Mode", isOn: $lowPowerModeEnabled)
-            }, footer: {
+            } footer: {
                 Text("Turn on Low Power Mode during a workout. Learn more about [Low Power Mode...](#)")
-            })
+            }
             
             Section {
                 NavigationLink("Units of Measure", destination: UnitsMeasureView())
