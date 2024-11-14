@@ -96,6 +96,7 @@
 		83F721872C81532B004B3CAF /* SmartStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F721862C81532B004B3CAF /* SmartStackView.swift */; };
 		83F7218A2C815484004B3CAF /* LiveActivitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F721892C815484004B3CAF /* LiveActivitiesView.swift */; };
 		83F7218C2C81548C004B3CAF /* WidgetSuggestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F7218B2C81548C004B3CAF /* WidgetSuggestionsView.swift */; };
+		83FEF1962CE681F90032D04E /* FitnessPlusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FEF1952CE681F90032D04E /* FitnessPlusView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -190,6 +191,7 @@
 		83F721862C81532B004B3CAF /* SmartStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartStackView.swift; sourceTree = "<group>"; };
 		83F721892C815484004B3CAF /* LiveActivitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivitiesView.swift; sourceTree = "<group>"; };
 		83F7218B2C81548C004B3CAF /* WidgetSuggestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetSuggestionsView.swift; sourceTree = "<group>"; };
+		83FEF1952CE681F90032D04E /* FitnessPlusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessPlusView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -381,6 +383,7 @@
 				83A2929E2B7280D20028907F /* PrivacySecurityView.swift */,
 				8353FA722B73592D00C78938 /* ClockView.swift */,
 				8353FA7D2B73FA3800C78938 /* ContactsView.swift */,
+				83FEF1952CE681F90032D04E /* FitnessPlusView.swift */,
 				8353FA7F2B73FB5B00C78938 /* HealthView.swift */,
 				8353FA862B74000F00C78938 /* HeartView.swift */,
 				8353FA882B74005D00C78938 /* WorkoutView.swift */,
@@ -634,6 +637,7 @@
 				83B7CD3C2B701D1A0024307F /* SiriResponsesView.swift in Sources */,
 				83A04AEC2B6E147200C34E53 /* ChimesSoundsView.swift in Sources */,
 				8353FA7E2B73FA3800C78938 /* ContactsView.swift in Sources */,
+				83FEF1962CE681F90032D04E /* FitnessPlusView.swift in Sources */,
 				83A04AEE2B6E164D00C34E53 /* QuickActionsView.swift in Sources */,
 				833936A42B6C73580049FDC7 /* DoNotDisturbView.swift in Sources */,
 				83EDDA872B6D30A000DC2F2B /* ShowComplicationDataView.swift in Sources */,

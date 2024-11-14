@@ -13,23 +13,21 @@ struct SiriFaceDataSourcesView: View {
     
     var body: some View {
         List {
-            Section(content: {
+            Section("Data Sources") {
                 IconToggle(isEnabled: true, title: "News", icon: "applenews")
                 IconToggle(isEnabled: true, title: "Now Playing", icon: "applenow playing")
                 IconToggle(isEnabled: true, title: "Shortcuts", icon: "appleshortcuts")
-            }, header: {
-                Text("Data Sources")
-            })
+            }
             
-            Section(content: {
-                Toggle(isOn: $favoriteTeamsEnabled, label: {
+            Section {
+                Toggle(isOn: $favoriteTeamsEnabled) {
                     Label("Favorite Teams", systemImage: "")
-                })
-            }, header: {
+                }
+            } header: {
                 Text("Sports")
-            }, footer: {
+            } footer: {
                 Text("You can select your favorite teams in the TV app on your iPhone.")
-            })
+            }
         }
         .navigationTitle("Siri Face Data Sources")
     }

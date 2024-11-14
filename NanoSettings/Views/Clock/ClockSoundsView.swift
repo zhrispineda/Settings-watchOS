@@ -8,22 +8,22 @@
 import SwiftUI
 
 struct ClockSoundsView: View {
-    @State private var selected = "Bells"
+    @AppStorage("ClockSound") private var selected = "Bells"
     let options = ["Bells", "Birds"]
     
     var body: some View {
         List {
             ForEach(options, id: \.self) { option in
-                Button(action: {
+                Button {
                     selected = option
-                }, label: {
+                } label: {
                     HStack {
                         Text(option)
                         Spacer()
                         Image(systemName: "\(selected == option ? "checkmark" : "")")
                             .foregroundStyle(.green)
                     }
-                })
+                }
             }
         }
         .navigationTitle("Sounds")
@@ -31,5 +31,7 @@ struct ClockSoundsView: View {
 }
 
 #Preview {
-    ClockSoundsView()
+    NavigationStack {
+        ClockSoundsView()
+    }
 }

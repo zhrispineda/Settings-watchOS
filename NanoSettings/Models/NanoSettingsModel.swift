@@ -88,6 +88,9 @@ struct NavigationData: Identifiable {
     NavigationData(title: "Contacts", icon: "applecontacts") {
         AnyView(ContactsView())
     },
+    NavigationData(title: "Fitness+", icon: "appleworkout") {
+        AnyView(FitnessPlusView())
+    },
     NavigationData(title: "Health", icon: "applehealth") {
         AnyView(HealthView())
     },

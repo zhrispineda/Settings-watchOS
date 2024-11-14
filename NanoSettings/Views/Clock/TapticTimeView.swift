@@ -9,29 +9,29 @@ import SwiftUI
 
 struct TapticTimeView: View {
     // Variables
-    @State private var tapticTimeEnabled = false
-    @State private var selected = "Digits"
+    @AppStorage("TapticTime") private var tapticTimeEnabled = false
+    @AppStorage("TapticTimeDigits") private var selected = "Digits"
     let options = ["Digits", "Terse", "Morse Code"]
     
     var body: some View {
         List {
-            Section(content: {
+            Section {
                 Toggle("Taptic Time", isOn: $tapticTimeEnabled)
                 if tapticTimeEnabled {
                     ForEach(options, id: \.self) { option in
-                        Button(action: {
+                        Button {
                             selected = option
-                        }, label: {
+                        } label: {
                             HStack {
                                 Text(option)
                                 Spacer()
                                 Image(systemName: "\(selected == option ? "checkmark" : "")")
                                     .foregroundStyle(.green)
                             }
-                        })
+                        }
                     }
                 }
-            }, footer: {
+            } footer: {
                 if tapticTimeEnabled {
                     switch selected {
                     case "Digits":
@@ -42,12 +42,14 @@ struct TapticTimeView: View {
                         Text("Apple Watch will tap each digit of the time in Morse code.")
                     }
                 }
-            })
+            }
         }
         .navigationTitle("Taptic Time")
     }
 }
 
 #Preview {
-    TapticTimeView()
+    NavigationStack {
+        TapticTimeView()
+    }
 }
