@@ -40,12 +40,8 @@ struct LiveActivitiesView: View {
                 }
                 
                 Section {
-                    NavigationLink {} label: {
-                        Label("Music Recognition", systemImage: "circle.fill")
-                    }
-                    NavigationLink {} label: {
-                        Label("Workout", systemImage: "circle.fill")
-                    }
+                    SettingsLink(title: "Music Recognition", icon: "NanoMusicRecognitionIcon") {}
+                    SettingsLink(title: "Workout", icon: "template", content: {})
                 }
                 
                 Section {} footer: {

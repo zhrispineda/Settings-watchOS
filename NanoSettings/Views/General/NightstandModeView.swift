@@ -13,11 +13,11 @@ struct NightstandModeView: View {
     
     var body: some View {
         List {
-            Section(content: {
+            Section {
                 Toggle("Nightstand Mode", isOn: $nightstandModeEnabled)
-            }, footer: {
+            } footer: {
                 Text("You can use Apple Watch as a nightstand clock while it‘s charging. If you have an alarm set on Apple Watch, the screen will gently brighten in the minutes leading up to it.")
-            })
+            }
         }
         .navigationTitle("Nightstand Mode")
     }

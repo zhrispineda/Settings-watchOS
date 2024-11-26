@@ -14,7 +14,7 @@ struct AboutView: View {
     var body: some View {
         List {
             ClearRow(title: "Name", subtitle: "Apple Watch")
-            ClearRow(title: "watchOS Version", subtitle: "11.0 (22R349)")
+            ClearRow(title: "watchOS Version", subtitle: "11.1 (22R585)")
             ClearRow(title: "Model Name", subtitle: "Apple Watch")
             
             // Model Row

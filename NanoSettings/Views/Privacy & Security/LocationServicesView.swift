@@ -35,7 +35,7 @@ struct LocationServicesView: View {
             if locationServicesEnabled {
                 Section(content: {
                     SymbolLink(title: "Share My Location", subtitle: "When Shared", icon: "template", content: AnyView(LocationServicesDetailView(title: "Share My Location")))
-                    SymbolLink(title: "Siri & Dictation", subtitle: "When Shared", icon: "siri-masked_Normal", content: AnyView(LocationServicesDetailView(title: "Siri & Dictation")))
+                    SymbolLink(title: "Siri & Dictation", subtitle: "When Shared", icon: "siri-masked", content: AnyView(LocationServicesDetailView(title: "Siri & Dictation")))
                     NavigationLink("System Services", destination: SystemServicesView())
                 }, footer: {
                     Text("Location indicators are displayed when an app uses the location of your Apple Watch.")

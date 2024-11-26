@@ -13,10 +13,10 @@ struct WebsiteDataView: View {
     
     var body: some View {
         List {
-            Section(content: {
-                Button("Clear Website Data", action: {
+            Section {
+                Button("Clear Website Data") {
                     showingAlert.toggle()
-                })
+                }
                 .alert(isPresented: $showingAlert) {
                     Alert(
                         title: Text(""),
@@ -25,9 +25,9 @@ struct WebsiteDataView: View {
                         secondaryButton: .destructive(Text("Clear Data"))
                     )
                 }
-            }, footer: {
+            } footer: {
                 Text("Clearing will remove web-site cookies, credentials and other browsing data.")
-            })
+            }
         }
         .navigationTitle("Website Data")
     }

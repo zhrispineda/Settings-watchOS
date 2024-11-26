@@ -61,7 +61,7 @@ struct NavigationData: Identifiable {
     NavigationData(title: "Accessibility", icon: "accessibility.fill", primaryColor: .white, secondaryColor: .blue) {
         AnyView(AccessibilityView())
     },
-    NavigationData(title: "Siri", icon: "siri-masked_Normal") {
+    NavigationData(title: "Siri", icon: "siri-masked") {
         AnyView(SiriView())
     },
     NavigationData(title: "Sounds & Haptics", icon: "speaker.wave.2.circle.fill", primaryColor: .white, secondaryColor: .pink) {

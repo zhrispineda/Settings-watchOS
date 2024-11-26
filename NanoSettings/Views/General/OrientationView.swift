@@ -11,46 +11,41 @@ struct OrientationView: View {
     // Variables
     @State private var wristSelection: String = "Left"
     @State private var digitalCrownSelection: String = "Right"
-    
     let options = ["Left", "Right"]
     
     var body: some View {
         List {
             // Wrist
-            Section(content: {
+            Section("Wrist") {
                 ForEach(options, id: \.self) { option in
-                    Button(action: {
+                    Button {
                         wristSelection = option
-                    }, label: {
+                    } label: {
                         HStack {
                             Text(option)
                             Spacer()
                             Image(systemName: wristSelection == option ? "checkmark" : "")
                                 .foregroundColor(.green)
                         }
-                    })
+                    }
                 }
-            }, header: {
-                Text("Wrist")
-            })
+            }
             
             // Digital Crown
-            Section(content: {
+            Section("Digital Crown") {
                 ForEach(options, id: \.self) { option in
-                    Button(action: {
+                    Button {
                         digitalCrownSelection = option
-                    }, label: {
+                    } label: {
                         HStack {
                             Text(option)
                             Spacer()
                             Image(systemName: digitalCrownSelection == option ? "checkmark" : "")
                                 .foregroundColor(.green)
                         }
-                    })
+                    }
                 }
-            }, header: {
-                Text("Digital Crown")
-            })
+            }
         }
         .navigationTitle("Orientation")
     }

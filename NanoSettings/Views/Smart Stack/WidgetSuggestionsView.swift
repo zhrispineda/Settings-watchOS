@@ -20,14 +20,14 @@ struct WidgetSuggestionsView: View {
             }
             
             Section("Apps") {
-                SymbolLink(title: "Calendar", subtitle: "Allow All", icon: "circle.fill", content: EmptyView())
-                SymbolLink(title: "Check In", subtitle: "Allow All", icon: "circle.fill", content: EmptyView())
-                SymbolLink(title: "Medications", subtitle: "Allow All", icon: "circle.fill", content: EmptyView())
-                SymbolLink(title: "Music Recognition", subtitle: "Allow All", icon: "circle.fill", content: EmptyView())
-                SymbolLink(title: "News", subtitle: "Allow All", icon: "circle.fill", content: EmptyView())
-                SymbolLink(title: "Now Playing", subtitle: "Allow All", icon: "circle.fill", content: EmptyView())
-                SymbolLink(title: "Shortcuts", subtitle: "Allow All", icon: "circle.fill", content: EmptyView())
-                SymbolLink(title: "Translate", subtitle: "Allow All", icon: "circle.fill", content: EmptyView())
+                SymbolLink(title: "Calendar", subtitle: "Allow All", icon: "Calendar", content: EmptyView())
+                SymbolLink(title: "Check In", subtitle: "Allow All", icon: "SafetyMonitorApp", content: EmptyView())
+                SymbolLink(title: "Medications", subtitle: "Allow All", icon: "applemedications", content: EmptyView())
+                SymbolLink(title: "Music Recognition", subtitle: "Allow All", icon: "NanoMusicRecognitionIcon", content: EmptyView())
+                SymbolLink(title: "News", subtitle: "Allow All", icon: "applenews", content: EmptyView())
+                SymbolLink(title: "Now Playing", subtitle: "Allow All", icon: "applenow playing", content: EmptyView())
+                SymbolLink(title: "Shortcuts", subtitle: "Allow All", icon: "appleshortcuts", content: EmptyView())
+                SymbolLink(title: "Translate", subtitle: "Allow All", icon: "appletranslate", content: EmptyView())
             }
         }
         .navigationTitle("Widget Suggestions")

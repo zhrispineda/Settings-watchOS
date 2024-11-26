@@ -10,7 +10,7 @@ import SwiftUI
 struct PrivacySecurityView: View {
     var body: some View {
         List {
-            Section(content: {
+            Section {
                 SettingsLink(title: "Location Services", icon: "location.circle.fill", primaryColor: .white, secondaryColor: .blue, content: { LocationServicesView() })
                 NavigationLink(destination: AppPermissionsDetailView(title: "Contacts"), label: {
                     IconLabel(title: "Contacts", icon: "applecontacts")
@@ -33,9 +33,9 @@ struct PrivacySecurityView: View {
                 })
                 SettingsLink(title: "Fall Detection", icon: "figure.fall.circle.fill", primaryColor: .white, secondaryColor: .blue, content: { AppPermissionsDetailView(title: "Fall Detection Data Sharing") })
                 SettingsLink(title: "Focus", icon: "moon.circle.fill", primaryColor: .white, secondaryColor: .indigo, content: { AppPermissionsDetailView(title: "Focus") })
-            }, footer: {
+            } footer: {
                 Text("Some privacy settings are shared between Apple Watch and iPhone. You can manage these settings in the Privacy section of iPhone settings.")
-            })
+            }
         }
         .navigationTitle("Privacy & Security")
     }

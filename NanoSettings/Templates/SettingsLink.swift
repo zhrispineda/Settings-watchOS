@@ -78,7 +78,7 @@ struct SettingsLink<Content: View>: View {
                             ZStack {
                                 Image(systemName: "circle.fill")
                                     .foregroundStyle(secondaryColor)
-                                Image(icon)
+                                Image(_internalSystemName: icon)
                                     .resizable()
                                     .scaledToFit()
                                     .frame(height: 7)
@@ -92,10 +92,7 @@ struct SettingsLink<Content: View>: View {
                                     .scaledToFit()
                                     .frame(width: 7)
                             }
-                        case "figure.run.motion.circle.fill":
-                            Image(_internalSystemName: "figure.run.motion.circle.fill")
-                                .foregroundStyle(primaryColor, secondaryColor)
-                        case "smartstack.circle.fill":
+                        case "smartstack.circle.fill", "figure.run.motion.circle.fill":
                             Image(_internalSystemName: icon)
                                 .foregroundStyle(primaryColor, secondaryColor)
                         default:
@@ -115,21 +112,21 @@ struct SettingsLink<Content: View>: View {
     }
 }
 
-#Preview {
-    NavigationStack {
-        List {
-            SettingsLink(title: "Title", icon: "figure.run.motion", primaryColor: .white, secondaryColor: .blue, content: {})
-        }
-    }
-    //ContentView()
-}
-
 struct CustomStyle: LabelStyle {
     func makeBody(configuration: Configuration) -> some View {
         HStack(alignment: .center) {
             configuration.icon
                 .font(.title3)
             configuration.title
+        }
+    }
+}
+
+#Preview {
+    NavigationStack {
+        List {
+            SettingsLink(title: "Title", icon: "hand.side.pinch.fill", primaryColor: .white, secondaryColor: .blue, content: {})
+            SettingsLink(title: "Title", icon: "bluetooth", primaryColor: .white, secondaryColor: .blue, content: {})
         }
     }
 }
