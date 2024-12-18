@@ -35,7 +35,7 @@ struct ClockView: View {
                     HStack {
                         Text("+0 min")
                         Spacer()
-                        Text("\(calendar.component(.hour, from: date)):\(calendar.component(.minute, from: date))")
+                        Text("\(calendar.component(.hour, from: date)):\(String(format: "%02d", calendar.component(.minute, from: date)))")
                             .foregroundStyle(.secondary)
                     }
                 }
