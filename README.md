@@ -2,7 +2,7 @@
 A **work-in-progress** SwiftUI recreation of the watchOS Settings app.
 
 ## Information
-- This personal project is a recreation of Apple's current and default Settings app for Apple Watch **(Simulator.app)** on watchOS 11.4 **Release** (22S560).
+- This personal project is a recreation of Apple's current and default Settings app for Apple Watch **(Simulator.app)** on watchOS 11.5 **Release** (22T572).
 - All features within the app are only simulations and have no effect on the device outside of the app.
 - This is based off of the Simulator and not a physical Apple Watch for now; aspects such as simulated controls and views for radios are unavailable at this time.
 
@@ -23,4 +23,6 @@ As this is a personal project for learning Swift and SwiftUI, feel free to fork,
 
 ## Other Settings Projects
 - **iOS Settings** https://github.com/zhrispineda/Settings-iOS
+- **macOS System Settings** https://github.com/zhrispineda/System-Settings
 - **visionOS Settings** https://github.com/zhrispineda/Settings-visionOS
+- **tvOS Settings** https://github.com/zhrispineda/Settings-tvOS

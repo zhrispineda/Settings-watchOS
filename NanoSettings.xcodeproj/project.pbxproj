@@ -79,6 +79,7 @@
 		83B7CD3A2B7019860024307F /* LanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B7CD392B7019860024307F /* LanguageView.swift */; };
 		83B7CD3C2B701D1A0024307F /* SiriResponsesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B7CD3B2B701D1A0024307F /* SiriResponsesView.swift */; };
 		83B7CD3E2B701E420024307F /* SiriSuggestionsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B7CD3D2B701E420024307F /* SiriSuggestionsDetailView.swift */; };
+		83C4E1EE2DDF774D002B65CA /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83C4E1ED2DDF774D002B65CA /* Localizable.xcstrings */; };
 		83E6C38E2B6F1152003DDBC7 /* SiriView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E6C38D2B6F1152003DDBC7 /* SiriView.swift */; };
 		83E6C3912B6F16D4003DDBC7 /* SiriHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E6C3902B6F16D4003DDBC7 /* SiriHistoryView.swift */; };
 		83EDDA7F2B6D267500DC2F2B /* DisplayBrightnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDDA7E2B6D267500DC2F2B /* DisplayBrightnessView.swift */; };
@@ -174,6 +175,7 @@
 		83B7CD392B7019860024307F /* LanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageView.swift; sourceTree = "<group>"; };
 		83B7CD3B2B701D1A0024307F /* SiriResponsesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriResponsesView.swift; sourceTree = "<group>"; };
 		83B7CD3D2B701E420024307F /* SiriSuggestionsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriSuggestionsDetailView.swift; sourceTree = "<group>"; };
+		83C4E1ED2DDF774D002B65CA /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		83E6C38D2B6F1152003DDBC7 /* SiriView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriView.swift; sourceTree = "<group>"; };
 		83E6C3902B6F16D4003DDBC7 /* SiriHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriHistoryView.swift; sourceTree = "<group>"; };
 		83EDDA7E2B6D267500DC2F2B /* DisplayBrightnessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayBrightnessView.swift; sourceTree = "<group>"; };
@@ -261,6 +263,7 @@
 		8328957E2B6C014300A9CB97 /* NanoSettings */ = {
 			isa = PBXGroup;
 			children = (
+				83C4E1EC2DDF7746002B65CA /* Resources */,
 				835DE6032B6C09F900FC23C8 /* Models */,
 				835DE6042B6C0A0F00FC23C8 /* Templates */,
 				835DE6022B6C09F300FC23C8 /* Views */,
@@ -478,6 +481,14 @@
 			path = Health;
 			sourceTree = "<group>";
 		};
+		83C4E1EC2DDF7746002B65CA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				83C4E1ED2DDF774D002B65CA /* Localizable.xcstrings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		83E6C38F2B6F163B003DDBC7 /* Siri */ = {
 			isa = PBXGroup;
 			children = (
@@ -603,6 +614,7 @@
 			files = (
 				832895872B6C014400A9CB97 /* Preview Assets.xcassets in Resources */,
 				8353FA8F2B74413700C78938 /* Settings.gif in Resources */,
+				83C4E1EE2DDF774D002B65CA /* Localizable.xcstrings in Resources */,
 				832895842B6C014400A9CB97 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,13 +8,12 @@
 import SwiftUI
 
 struct AboutView: View {
-    // Variables
     @State private var showingModelID = false
     
     var body: some View {
         List {
             ClearRow(title: "Name", subtitle: "Apple Watch")
-            ClearRow(title: "watchOS Version", subtitle: "11.4 (22T251)")
+            ClearRow(title: "watchOS Version", subtitle: "11.5 (22T572)")
             ClearRow(title: "Model Name", subtitle: "Apple Watch")
             
             // Model Row

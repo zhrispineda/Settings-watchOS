@@ -27,7 +27,7 @@ struct ContentView: View {
                     }
                 }
             }
-            .navigationTitle("Settings")
+            .navigationTitle("STATUS_BAR_TITLE_SETTINGS")
         }
     }
 }
