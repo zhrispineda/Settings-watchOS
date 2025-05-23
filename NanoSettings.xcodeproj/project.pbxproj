@@ -80,6 +80,9 @@
 		83B7CD3C2B701D1A0024307F /* SiriResponsesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B7CD3B2B701D1A0024307F /* SiriResponsesView.swift */; };
 		83B7CD3E2B701E420024307F /* SiriSuggestionsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B7CD3D2B701E420024307F /* SiriSuggestionsDetailView.swift */; };
 		83C4E1EE2DDF774D002B65CA /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83C4E1ED2DDF774D002B65CA /* Localizable.xcstrings */; };
+		83C4E1FD2DDF7FBE002B65CA /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C4E1FC2DDF7FBE002B65CA /* StringExtensions.swift */; };
+		83C4E2002DDF8063002B65CA /* MGHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C4E1FF2DDF8063002B65CA /* MGHelper.swift */; };
+		83C4E2022DDF8073002B65CA /* SettingsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C4E2012DDF8073002B65CA /* SettingsLogger.swift */; };
 		83E6C38E2B6F1152003DDBC7 /* SiriView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E6C38D2B6F1152003DDBC7 /* SiriView.swift */; };
 		83E6C3912B6F16D4003DDBC7 /* SiriHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E6C3902B6F16D4003DDBC7 /* SiriHistoryView.swift */; };
 		83EDDA7F2B6D267500DC2F2B /* DisplayBrightnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDDA7E2B6D267500DC2F2B /* DisplayBrightnessView.swift */; };
@@ -176,6 +179,9 @@
 		83B7CD3B2B701D1A0024307F /* SiriResponsesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriResponsesView.swift; sourceTree = "<group>"; };
 		83B7CD3D2B701E420024307F /* SiriSuggestionsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriSuggestionsDetailView.swift; sourceTree = "<group>"; };
 		83C4E1ED2DDF774D002B65CA /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		83C4E1FC2DDF7FBE002B65CA /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		83C4E1FF2DDF8063002B65CA /* MGHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGHelper.swift; sourceTree = "<group>"; };
+		83C4E2012DDF8073002B65CA /* SettingsLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLogger.swift; sourceTree = "<group>"; };
 		83E6C38D2B6F1152003DDBC7 /* SiriView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriView.swift; sourceTree = "<group>"; };
 		83E6C3902B6F16D4003DDBC7 /* SiriHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriHistoryView.swift; sourceTree = "<group>"; };
 		83EDDA7E2B6D267500DC2F2B /* DisplayBrightnessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayBrightnessView.swift; sourceTree = "<group>"; };
@@ -263,6 +269,8 @@
 		8328957E2B6C014300A9CB97 /* NanoSettings */ = {
 			isa = PBXGroup;
 			children = (
+				83C4E1FE2DDF8058002B65CA /* Components */,
+				83C4E1FB2DDF7FB0002B65CA /* Extensions */,
 				83C4E1EC2DDF7746002B65CA /* Resources */,
 				835DE6032B6C09F900FC23C8 /* Models */,
 				835DE6042B6C0A0F00FC23C8 /* Templates */,
@@ -489,6 +497,23 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		83C4E1FB2DDF7FB0002B65CA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				83C4E1FC2DDF7FBE002B65CA /* StringExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		83C4E1FE2DDF8058002B65CA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				83C4E1FF2DDF8063002B65CA /* MGHelper.swift */,
+				83C4E2012DDF8073002B65CA /* SettingsLogger.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		83E6C38F2B6F163B003DDBC7 /* Siri */ = {
 			isa = PBXGroup;
 			children = (
@@ -684,6 +709,7 @@
 				832895802B6C014300A9CB97 /* NanoSettingsApp.swift in Sources */,
 				83F7218A2C815484004B3CAF /* LiveActivitiesView.swift in Sources */,
 				836D6AC42B6C4682008DBB8F /* SoftwareUpdateView.swift in Sources */,
+				83C4E2022DDF8073002B65CA /* SettingsLogger.swift in Sources */,
 				833936902B6C57F50049FDC7 /* AutoLaunchView.swift in Sources */,
 				833936AB2B6C80FF0049FDC7 /* AirplaneModeView.swift in Sources */,
 				83EDDA982B6DA8E800DC2F2B /* AccessibilityView.swift in Sources */,
@@ -698,6 +724,7 @@
 				831987942B6EF020009937B0 /* LiveSpeechView.swift in Sources */,
 				8305D1A12B7149130031865E /* SOSView.swift in Sources */,
 				8305D1A42B7149D00031865E /* HoldSideButtonView.swift in Sources */,
+				83C4E1FD2DDF7FBE002B65CA /* StringExtensions.swift in Sources */,
 				83EDDA922B6DA1A800DC2F2B /* AppView.swift in Sources */,
 				8319878D2B6ECBD9009937B0 /* TouchAccommodationsView.swift in Sources */,
 				83F721872C81532B004B3CAF /* SmartStackView.swift in Sources */,
@@ -707,6 +734,7 @@
 				833D231D2B70478200EB3E8F /* ReduceLoudSoundsView.swift in Sources */,
 				8339369A2B6C6A420049FDC7 /* HandoffView.swift in Sources */,
 				8353FA8C2B7400F000C78938 /* UnitsMeasureView.swift in Sources */,
+				83C4E2002DDF8063002B65CA /* MGHelper.swift in Sources */,
 				833936982B6C69C00049FDC7 /* NightstandModeView.swift in Sources */,
 				83A292B52B729E2E0028907F /* HeadphoneAudioLevelsView.swift in Sources */,
 				8339369C2B6C6ACF0049FDC7 /* WebsiteDataView.swift in Sources */,

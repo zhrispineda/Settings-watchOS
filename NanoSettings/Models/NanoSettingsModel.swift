@@ -2,8 +2,6 @@
 //  NanoSettingsModel.swift
 //  NanoSettings
 //
-//  Model for storing navigation data.
-//
 
 import SwiftUI
 
@@ -25,7 +23,8 @@ struct NavigationData: Identifiable {
     }
 }
 
-@MainActor let mainSectionList: [NavigationData] = [
+@MainActor
+let mainSectionList: [NavigationData] = [
     NavigationData(title: "Notifications", icon: "bell.badge.circle.fill", primaryColor: .white, secondaryColor: .red) {
         AnyView(NotificationsView())
     },
@@ -82,16 +81,14 @@ struct NavigationData: Identifiable {
     }
 ]
 
-@MainActor let appSectionList: [NavigationData] = [
+@MainActor
+let appSectionList: [NavigationData] = [
     NavigationData(title: "Clock", icon: "appleclock") {
         AnyView(ClockView())
     },
     NavigationData(title: "Contacts", icon: "applecontacts") {
         AnyView(ContactsView())
     },
-//    NavigationData(title: "Fitness+", icon: "appleworkout") {
-//        AnyView(FitnessPlusView())
-//    },
     NavigationData(title: "Health", icon: "applehealth") {
         AnyView(HealthView())
     },
