@@ -25,71 +25,71 @@ struct NavigationData: Identifiable {
 
 @MainActor
 let mainSectionList: [NavigationData] = [
-    NavigationData(title: "Notifications", icon: "bell.badge.circle.fill", primaryColor: .white, secondaryColor: .red) {
+    NavigationData(title: "NOTIFICATIONS_SETTINGS_TITLE", icon: "bell.badge.circle.fill", primaryColor: .white, secondaryColor: .red) {
         AnyView(NotificationsView())
     },
-    NavigationData(title: "Smart Stack", icon: "smartstack.circle.fill", primaryColor: .white, secondaryColor: .blue) {
+    NavigationData(title: "SMART_STACK_TITLE", icon: "smartstack.circle.fill", primaryColor: .white, secondaryColor: .blue) {
         AnyView(SmartStackView())
     },
-    NavigationData(title: "General", icon: "gear.circle.fill", primaryColor: .white, secondaryColor: .gray) {
+    NavigationData(title: "GENERAL_SETTINGS_TITLE", icon: "gear.circle.fill", primaryColor: .white, secondaryColor: .gray) {
         AnyView(GeneralView())
     },
-    NavigationData(title: "Focus", icon: "moon.circle.fill", primaryColor: .white, secondaryColor: .indigo) {
+    NavigationData(title: "FOCUS_MODES", icon: "moon.circle.fill", primaryColor: .white, secondaryColor: .indigo) {
         AnyView(FocusView())
     },
-    NavigationData(title: "Airplane Mode", icon: "airplane.circle.fill", primaryColor: .white, secondaryColor: .orange) {
+    NavigationData(title: "AIRPLANE_MODE_TITLE", icon: "airplane.circle.fill", primaryColor: .white, secondaryColor: .orange) {
         AnyView(AirplaneModeView())
     },
-    NavigationData(title: "Cellular", icon: "antenna.radiowaves.left.and.right.circle.fill", primaryColor: .white, secondaryColor: .green) {
+//    NavigationData(title: "CELLULAR_TITLE", icon: "antenna.radiowaves.left.and.right.circle.fill", primaryColor: .white, secondaryColor: .green) {
+//        AnyView(EmptyView())
+//    },
+    NavigationData(title: "WIFI_TITLE", icon: "wifi.circle.fill", primaryColor: .white, secondaryColor: .blue) {
         AnyView(EmptyView())
     },
-    NavigationData(title: "Wi-Fi", icon: "wifi.circle.fill", primaryColor: .white, secondaryColor: .blue) {
+    NavigationData(title: "BLUETOOTH_TITLE", icon: "bluetooth", primaryColor: .white, secondaryColor: .blue) {
         AnyView(EmptyView())
     },
-    NavigationData(title: "Bluetooth", icon: "bluetooth", primaryColor: .white, secondaryColor: .blue) {
-        AnyView(EmptyView())
-    },
-    NavigationData(title: "Display & Brightness", icon: "sun.max.circle.fill", primaryColor: .white, secondaryColor: .blue) {
+    NavigationData(title: "BRIGHTNESS_TITLE", icon: "sun.max.circle.fill", primaryColor: .white, secondaryColor: .blue) {
         AnyView(DisplayBrightnessView())
     },
-    NavigationData(title: "App View", icon: "circle.hexagongrid.circle.fill", primaryColor: .white, secondaryColor: .blue) {
+    NavigationData(title: "APP_LAYOUT_TITLE", icon: "circle.hexagongrid.circle.fill", primaryColor: .white, secondaryColor: .blue) {
         AnyView(AppView())
     },
     NavigationData(title: "Gestures", icon: "hand.side.pinch.fill", primaryColor: .white, secondaryColor: .blue) {
         AnyView(GesturesView())
     },
-    NavigationData(title: "Accessibility", icon: "accessibility.fill", primaryColor: .white, secondaryColor: .blue) {
+    NavigationData(title: "ACCESSIBILITY_TITLE", icon: "accessibility", primaryColor: .white, secondaryColor: .white) {
         AnyView(AccessibilityView())
     },
-    NavigationData(title: "Siri", icon: "siri-masked") {
+    NavigationData(title: "SIRI_TITLE", icon: "siri-masked") {
         AnyView(SiriView())
     },
-    NavigationData(title: "Sounds & Haptics", icon: "speaker.wave.2.circle.fill", primaryColor: .white, secondaryColor: .pink) {
+    NavigationData(title: "VOLUME_TITLE", icon: "speaker.wave.2.circle.fill", primaryColor: .white, secondaryColor: .pink) {
         AnyView(SoundsHapticsView())
     },
-    NavigationData(title: "Passcode", icon: "lock.circle.fill", primaryColor: .white, secondaryColor: .pink) {
+    NavigationData(title: "PASSCODE_TITLE", icon: "lock.circle.fill", primaryColor: .white, secondaryColor: .pink) {
         AnyView(PasscodeView())
     },
-    NavigationData(title: "SOS", icon: "sos.circle.fill", primaryColor: .white, secondaryColor: .red) {
+    NavigationData(title: "SOS_TITLE", icon: "sos.circle.fill", primaryColor: .white, secondaryColor: .red) {
         AnyView(SOSView())
     },
-    NavigationData(title: "Battery", icon: "bolt.circle.fill", primaryColor: .white, secondaryColor: .green) {
+    NavigationData(title: "BATTERY_TITLE", icon: "bolt.circle.fill", primaryColor: .white, secondaryColor: .green) {
         AnyView(EmptyView())
     },
-    NavigationData(title: "Privacy & Security", icon: "hand.raised.circle.fill", primaryColor: .white, secondaryColor: .blue) {
+    NavigationData(title: "PRIVACY_TITLE", icon: "hand.raised.circle.fill", primaryColor: .white, secondaryColor: .blue) {
         AnyView(PrivacySecurityView())
     }
 ]
 
 @MainActor
 let appSectionList: [NavigationData] = [
-    NavigationData(title: "Clock", icon: "appleclock") {
+    NavigationData(title: "TIME_TITLE", icon: "appleclock") {
         AnyView(ClockView())
     },
-    NavigationData(title: "Contacts", icon: "applecontacts") {
+    NavigationData(title: "CONTACTS", icon: "applecontacts") {
         AnyView(ContactsView())
     },
-    NavigationData(title: "Health", icon: "applehealth") {
+    NavigationData(title: "HEALTH_SETTINGS_TITLE", icon: "applehealth") {
         AnyView(HealthView())
     },
     NavigationData(title: "Heart", icon: "appleheart") {

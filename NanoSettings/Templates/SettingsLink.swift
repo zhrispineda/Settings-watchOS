@@ -2,22 +2,19 @@
 //  SettingsLink.swift
 //  NanoSettings
 //
-//  For displaying NavigationLinks with an icon with symbols and images
-//
-//  Parameters:
-//
-//  title: Text for the cell
-//  icon: Name of SF Symbol or Image
-//  primaryColor: Color of primary color
-//  secondaryColor: Color of secondary color (Optional)
-//  content: View for cell navigate to
 
 import SwiftUI
 
-let disabledLinks = ["Cellular", "Wi-Fi", "Bluetooth", "Battery"]
+let disabledLinks: Set<String> = ["Cellular", "Wi-Fi", "Bluetooth", "Battery"]
 
+/// A NavigationLink container with an icon with symbols and images
+///
+/// - Parameter title: Text for the cell
+/// - Parameter icon: Name of SF Symbol or Image
+/// - Parameter primaryColor: Color of primary color
+/// - Parameter secondaryColor: (Optional) Color of secondary color
+/// - Parameter content: View for cell navigate to
 struct SettingsLink<Content: View>: View {
-    // Variables
     let title: String
     let icon: String
     let primaryColor: Color
@@ -69,11 +66,21 @@ struct SettingsLink<Content: View>: View {
                 Label {
                     Text(title)
                 } icon: {
-                    if UIImage(systemName: icon) != nil {
+                    if UIImage(systemName: icon) != nil && icon != "accessibility" {
                         Image(systemName: icon)
                             .foregroundStyle(primaryColor, secondaryColor)
                     } else {
                         switch icon {
+                        case "accessibility":
+                            ZStack {
+                                Image(systemName: "circle.fill")
+                                    .foregroundStyle(.blue)
+                                Image(_internalSystemName: icon)
+                                    .resizable()
+                                    .fontWeight(.light)
+                                    .scaledToFit()
+                                    .frame(height: 17)
+                            }
                         case "hand.side.pinch.fill":
                             ZStack {
                                 Image(systemName: "circle.fill")
@@ -127,6 +134,7 @@ struct CustomStyle: LabelStyle {
         List {
             SettingsLink(title: "Title", icon: "hand.side.pinch.fill", primaryColor: .white, secondaryColor: .blue, content: {})
             SettingsLink(title: "Title", icon: "bluetooth", primaryColor: .white, secondaryColor: .blue, content: {})
+            SettingsLink(title: "Title", icon: "accessibility", primaryColor: .white, secondaryColor: .white, content: {})
         }
     }
 }
