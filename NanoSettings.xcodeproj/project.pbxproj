@@ -85,6 +85,7 @@
 		83C4E2022DDF8073002B65CA /* SettingsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C4E2012DDF8073002B65CA /* SettingsLogger.swift */; };
 		83E6C38E2B6F1152003DDBC7 /* SiriView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E6C38D2B6F1152003DDBC7 /* SiriView.swift */; };
 		83E6C3912B6F16D4003DDBC7 /* SiriHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E6C3902B6F16D4003DDBC7 /* SiriHistoryView.swift */; };
+		83ED9C1F2DFA5C1000B94613 /* settings.icon in Resources */ = {isa = PBXBuildFile; fileRef = 83ED9C1E2DFA5C1000B94613 /* settings.icon */; };
 		83EDDA7F2B6D267500DC2F2B /* DisplayBrightnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDDA7E2B6D267500DC2F2B /* DisplayBrightnessView.swift */; };
 		83EDDA822B6D2EBE00DC2F2B /* TextSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDDA812B6D2EBE00DC2F2B /* TextSizeView.swift */; };
 		83EDDA842B6D2FC200DC2F2B /* AlwaysOnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDDA832B6D2FC200DC2F2B /* AlwaysOnView.swift */; };
@@ -184,6 +185,7 @@
 		83C4E2012DDF8073002B65CA /* SettingsLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLogger.swift; sourceTree = "<group>"; };
 		83E6C38D2B6F1152003DDBC7 /* SiriView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriView.swift; sourceTree = "<group>"; };
 		83E6C3902B6F16D4003DDBC7 /* SiriHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriHistoryView.swift; sourceTree = "<group>"; };
+		83ED9C1E2DFA5C1000B94613 /* settings.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = settings.icon; sourceTree = "<group>"; };
 		83EDDA7E2B6D267500DC2F2B /* DisplayBrightnessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayBrightnessView.swift; sourceTree = "<group>"; };
 		83EDDA812B6D2EBE00DC2F2B /* TextSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSizeView.swift; sourceTree = "<group>"; };
 		83EDDA832B6D2FC200DC2F2B /* AlwaysOnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlwaysOnView.swift; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 		8328956D2B6C014300A9CB97 = {
 			isa = PBXGroup;
 			children = (
+				83ED9C1E2DFA5C1000B94613 /* settings.icon */,
 				8353FA8D2B74411F00C78938 /* Assets */,
 				835DE6052B6C0B1600FC23C8 /* README.md */,
 				8328957E2B6C014300A9CB97 /* NanoSettings */,
@@ -607,7 +610,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1530;
-				LastUpgradeCheck = 1600;
+				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					832895792B6C014300A9CB97 = {
 						CreatedOnToolsVersion = 15.3;
@@ -639,6 +642,7 @@
 			files = (
 				832895872B6C014400A9CB97 /* Preview Assets.xcassets in Resources */,
 				8353FA8F2B74413700C78938 /* Settings.gif in Resources */,
+				83ED9C1F2DFA5C1000B94613 /* settings.icon in Resources */,
 				83C4E1EE2DDF774D002B65CA /* Localizable.xcstrings in Resources */,
 				832895842B6C014400A9CB97 /* Assets.xcassets in Resources */,
 			);
@@ -804,6 +808,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -860,6 +865,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
@@ -868,7 +874,7 @@
 		8328958B2B6C014400A9CB97 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = settings;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -896,7 +902,7 @@
 		8328958C2B6C014400A9CB97 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = settings;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
