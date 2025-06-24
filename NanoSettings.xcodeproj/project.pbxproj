@@ -83,9 +83,9 @@
 		83C4E1FD2DDF7FBE002B65CA /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C4E1FC2DDF7FBE002B65CA /* StringExtensions.swift */; };
 		83C4E2002DDF8063002B65CA /* MGHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C4E1FF2DDF8063002B65CA /* MGHelper.swift */; };
 		83C4E2022DDF8073002B65CA /* SettingsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C4E2012DDF8073002B65CA /* SettingsLogger.swift */; };
+		83E4D4102E0AEEFE001D6441 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 83E4D40F2E0AEEFE001D6441 /* AppIcon.icon */; };
 		83E6C38E2B6F1152003DDBC7 /* SiriView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E6C38D2B6F1152003DDBC7 /* SiriView.swift */; };
 		83E6C3912B6F16D4003DDBC7 /* SiriHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E6C3902B6F16D4003DDBC7 /* SiriHistoryView.swift */; };
-		83ED9C1F2DFA5C1000B94613 /* settings.icon in Resources */ = {isa = PBXBuildFile; fileRef = 83ED9C1E2DFA5C1000B94613 /* settings.icon */; };
 		83EDDA7F2B6D267500DC2F2B /* DisplayBrightnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDDA7E2B6D267500DC2F2B /* DisplayBrightnessView.swift */; };
 		83EDDA822B6D2EBE00DC2F2B /* TextSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDDA812B6D2EBE00DC2F2B /* TextSizeView.swift */; };
 		83EDDA842B6D2FC200DC2F2B /* AlwaysOnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDDA832B6D2FC200DC2F2B /* AlwaysOnView.swift */; };
@@ -183,9 +183,9 @@
 		83C4E1FC2DDF7FBE002B65CA /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		83C4E1FF2DDF8063002B65CA /* MGHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGHelper.swift; sourceTree = "<group>"; };
 		83C4E2012DDF8073002B65CA /* SettingsLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLogger.swift; sourceTree = "<group>"; };
+		83E4D40F2E0AEEFE001D6441 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 		83E6C38D2B6F1152003DDBC7 /* SiriView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriView.swift; sourceTree = "<group>"; };
 		83E6C3902B6F16D4003DDBC7 /* SiriHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriHistoryView.swift; sourceTree = "<group>"; };
-		83ED9C1E2DFA5C1000B94613 /* settings.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = settings.icon; sourceTree = "<group>"; };
 		83EDDA7E2B6D267500DC2F2B /* DisplayBrightnessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayBrightnessView.swift; sourceTree = "<group>"; };
 		83EDDA812B6D2EBE00DC2F2B /* TextSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSizeView.swift; sourceTree = "<group>"; };
 		83EDDA832B6D2FC200DC2F2B /* AlwaysOnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlwaysOnView.swift; sourceTree = "<group>"; };
@@ -253,7 +253,6 @@
 		8328956D2B6C014300A9CB97 = {
 			isa = PBXGroup;
 			children = (
-				83ED9C1E2DFA5C1000B94613 /* settings.icon */,
 				8353FA8D2B74411F00C78938 /* Assets */,
 				835DE6052B6C0B1600FC23C8 /* README.md */,
 				8328957E2B6C014300A9CB97 /* NanoSettings */,
@@ -272,6 +271,7 @@
 		8328957E2B6C014300A9CB97 /* NanoSettings */ = {
 			isa = PBXGroup;
 			children = (
+				83E4D40F2E0AEEFE001D6441 /* AppIcon.icon */,
 				83C4E1FE2DDF8058002B65CA /* Components */,
 				83C4E1FB2DDF7FB0002B65CA /* Extensions */,
 				83C4E1EC2DDF7746002B65CA /* Resources */,
@@ -642,9 +642,9 @@
 			files = (
 				832895872B6C014400A9CB97 /* Preview Assets.xcassets in Resources */,
 				8353FA8F2B74413700C78938 /* Settings.gif in Resources */,
-				83ED9C1F2DFA5C1000B94613 /* settings.icon in Resources */,
 				83C4E1EE2DDF774D002B65CA /* Localizable.xcstrings in Resources */,
 				832895842B6C014400A9CB97 /* Assets.xcassets in Resources */,
+				83E4D4102E0AEEFE001D6441 /* AppIcon.icon in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -874,20 +874,21 @@
 		8328958B2B6C014400A9CB97 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = settings;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_ASSET_PATHS = "\"NanoSettings/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Settings;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 11.3.1;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.exaple.NanoSettings;
 				PRODUCT_NAME = Settings;
 				SDKROOT = watchos;
@@ -895,27 +896,28 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Debug;
 		};
 		8328958C2B6C014400A9CB97 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = settings;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_ASSET_PATHS = "\"NanoSettings/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Settings;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 11.3.1;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.exaple.NanoSettings;
 				PRODUCT_NAME = Settings;
 				SDKROOT = watchos;
@@ -924,7 +926,7 @@
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Release;
 		};

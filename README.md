@@ -5,7 +5,7 @@ A **work-in-progress** SwiftUI recreation of the watchOS Settings app.
 > This project is currently focused on watchOS 26 beta using Xcode 26 beta. Use an older branch to deploy this project on watchOS 11.5/Xcode 16.4 or earlier.
 
 ## Information
-- This project is a recreation of Apple's Settings app for Apple Watch **(Simulator)** on watchOS 26 **beta** (23R5280m).
+- This project is a recreation of Apple's Settings app for Apple Watch **(Simulator)** on watchOS 26 **beta 2** (23R5296f).
 - All features within the app are only simulations and have no effect on the device outside of the app.
 - This is based off of the Simulator and not a physical Apple Watch for now.
 
@@ -17,7 +17,7 @@ Apple's Settings app is opened first, followed up by this project's app:
 ## Usage
 Open the project in Xcode and run with either a watchOS Simulator or a physical Apple Watch with Developer Mode enabled as a destination.
 
-As this is a project for learning Swift and SwiftUI, feel free to fork, explore, and make the project your own for any personal use!
+Feel free to fork, explore, and make the project your own for any personal use!
 
 ## Disclaimers
 - This app is a recreation of one of Apple's own apps and designs.
