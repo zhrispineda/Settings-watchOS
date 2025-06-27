@@ -66,7 +66,7 @@ struct SettingsLink<Content: View>: View {
                 Label {
                     Text(title)
                 } icon: {
-                    if UIImage(systemName: icon) != nil && icon != "accessibility" {
+                    if UIImage(systemName: icon) != nil && icon != "accessibility" && icon != "switch.2" {
                         Image(systemName: icon)
                             .foregroundStyle(primaryColor, secondaryColor)
                     } else {
@@ -81,14 +81,14 @@ struct SettingsLink<Content: View>: View {
                                     .scaledToFit()
                                     .frame(height: 17)
                             }
-                        case "hand.side.pinch.fill":
+                        case "hand.side.pinch.fill", "switch.2":
                             ZStack {
                                 Image(systemName: "circle.fill")
                                     .foregroundStyle(secondaryColor)
                                 Image(_internalSystemName: icon)
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(height: 7)
+                                    .frame(height: icon == "switch.2" ? 10 : 7)
                             }
                         case "bluetooth":
                             ZStack {
@@ -130,11 +130,5 @@ struct CustomStyle: LabelStyle {
 }
 
 #Preview {
-    NavigationStack {
-        List {
-            SettingsLink(title: "Title", icon: "hand.side.pinch.fill", primaryColor: .white, secondaryColor: .blue, content: {})
-            SettingsLink(title: "Title", icon: "bluetooth", primaryColor: .white, secondaryColor: .blue, content: {})
-            SettingsLink(title: "Title", icon: "accessibility", primaryColor: .white, secondaryColor: .white, content: {})
-        }
-    }
+    ContentView()
 }

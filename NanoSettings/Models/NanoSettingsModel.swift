@@ -31,6 +31,9 @@ let mainSectionList: [NavigationData] = [
     NavigationData(title: "SMART_STACK_TITLE", icon: "smartstack.circle.fill", primaryColor: .white, secondaryColor: .blue) {
         AnyView(SmartStackView())
     },
+    NavigationData(title: "CONTROL_CENTER_TITLE", icon: "switch.2", primaryColor: .white, secondaryColor: .gray) {
+        AnyView(GeneralView())
+    },
     NavigationData(title: "GENERAL_SETTINGS_TITLE", icon: "gear.circle.fill", primaryColor: .white, secondaryColor: .gray) {
         AnyView(GeneralView())
     },
@@ -40,9 +43,6 @@ let mainSectionList: [NavigationData] = [
     NavigationData(title: "AIRPLANE_MODE_TITLE", icon: "airplane.circle.fill", primaryColor: .white, secondaryColor: .orange) {
         AnyView(AirplaneModeView())
     },
-//    NavigationData(title: "CELLULAR_TITLE", icon: "antenna.radiowaves.left.and.right.circle.fill", primaryColor: .white, secondaryColor: .green) {
-//        AnyView(EmptyView())
-//    },
     NavigationData(title: "WIFI_TITLE", icon: "wifi.circle.fill", primaryColor: .white, secondaryColor: .blue) {
         AnyView(EmptyView())
     },

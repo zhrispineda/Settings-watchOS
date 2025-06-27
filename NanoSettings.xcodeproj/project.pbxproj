@@ -63,6 +63,7 @@
 		836D6AC22B6C4428008DBB8F /* ClearRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836D6AC12B6C4428008DBB8F /* ClearRow.swift */; };
 		836D6AC42B6C4682008DBB8F /* SoftwareUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836D6AC32B6C4682008DBB8F /* SoftwareUpdateView.swift */; };
 		836D6AC62B6C4715008DBB8F /* OrientationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836D6AC52B6C4715008DBB8F /* OrientationView.swift */; };
+		83712E4D2E0DF33E007E8368 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83712E4C2E0DF33B007E8368 /* UIImageExtensions.swift */; };
 		83A04AE72B6E124900C34E53 /* ChimesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A04AE62B6E124900C34E53 /* ChimesView.swift */; };
 		83A04AEA2B6E131400C34E53 /* ChimesScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A04AE92B6E131400C34E53 /* ChimesScheduleView.swift */; };
 		83A04AEC2B6E147200C34E53 /* ChimesSoundsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A04AEB2B6E147200C34E53 /* ChimesSoundsView.swift */; };
@@ -163,6 +164,7 @@
 		836D6AC12B6C4428008DBB8F /* ClearRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearRow.swift; sourceTree = "<group>"; };
 		836D6AC32B6C4682008DBB8F /* SoftwareUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftwareUpdateView.swift; sourceTree = "<group>"; };
 		836D6AC52B6C4715008DBB8F /* OrientationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationView.swift; sourceTree = "<group>"; };
+		83712E4C2E0DF33B007E8368 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		83A04AE62B6E124900C34E53 /* ChimesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChimesView.swift; sourceTree = "<group>"; };
 		83A04AE92B6E131400C34E53 /* ChimesScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChimesScheduleView.swift; sourceTree = "<group>"; };
 		83A04AEB2B6E147200C34E53 /* ChimesSoundsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChimesSoundsView.swift; sourceTree = "<group>"; };
@@ -503,6 +505,7 @@
 		83C4E1FB2DDF7FB0002B65CA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				83712E4C2E0DF33B007E8368 /* UIImageExtensions.swift */,
 				83C4E1FC2DDF7FBE002B65CA /* StringExtensions.swift */,
 			);
 			path = Extensions;
@@ -699,6 +702,7 @@
 				83A292A72B7294DF0028907F /* LocationServicesDetailView.swift in Sources */,
 				8319879C2B6EF808009937B0 /* VoicesDetailView.swift in Sources */,
 				83EDDA8C2B6D339900DC2F2B /* ReturnClockDetailView.swift in Sources */,
+				83712E4D2E0DF33E007E8368 /* UIImageExtensions.swift in Sources */,
 				8353FA892B74005D00C78938 /* WorkoutView.swift in Sources */,
 				83EDDA9B2B6DAAF400DC2F2B /* ReduceMotionView.swift in Sources */,
 				8353FA872B74000F00C78938 /* HeartView.swift in Sources */,
@@ -810,8 +814,9 @@
 				ONLY_ACTIVE_ARCH = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -867,7 +872,8 @@
 				MTL_FAST_MATH = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
@@ -879,6 +885,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_ASSET_PATHS = "\"NanoSettings/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Settings;
@@ -893,7 +900,7 @@
 				PRODUCT_NAME = Settings;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 26.0;
@@ -908,6 +915,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_ASSET_PATHS = "\"NanoSettings/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Settings;
@@ -922,7 +930,7 @@
 				PRODUCT_NAME = Settings;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
