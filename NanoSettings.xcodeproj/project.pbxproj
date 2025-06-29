@@ -77,6 +77,7 @@
 		83A292B12B729D7A0028907F /* HeartRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A292B02B729D7A0028907F /* HeartRateView.swift */; };
 		83A292B32B729DE90028907F /* TimeDaylightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A292B22B729DE90028907F /* TimeDaylightView.swift */; };
 		83A292B52B729E2E0028907F /* HeadphoneAudioLevelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A292B42B729E2E0028907F /* HeadphoneAudioLevelsView.swift */; };
+		83A4056B2E10EBBB002B588D /* ControlCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A4056A2E10EBBB002B588D /* ControlCenterView.swift */; };
 		83B7CD3A2B7019860024307F /* LanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B7CD392B7019860024307F /* LanguageView.swift */; };
 		83B7CD3C2B701D1A0024307F /* SiriResponsesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B7CD3B2B701D1A0024307F /* SiriResponsesView.swift */; };
 		83B7CD3E2B701E420024307F /* SiriSuggestionsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B7CD3D2B701E420024307F /* SiriSuggestionsDetailView.swift */; };
@@ -178,6 +179,7 @@
 		83A292B02B729D7A0028907F /* HeartRateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateView.swift; sourceTree = "<group>"; };
 		83A292B22B729DE90028907F /* TimeDaylightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDaylightView.swift; sourceTree = "<group>"; };
 		83A292B42B729E2E0028907F /* HeadphoneAudioLevelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadphoneAudioLevelsView.swift; sourceTree = "<group>"; };
+		83A4056A2E10EBBB002B588D /* ControlCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlCenterView.swift; sourceTree = "<group>"; };
 		83B7CD392B7019860024307F /* LanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageView.swift; sourceTree = "<group>"; };
 		83B7CD3B2B701D1A0024307F /* SiriResponsesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriResponsesView.swift; sourceTree = "<group>"; };
 		83B7CD3D2B701E420024307F /* SiriSuggestionsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriSuggestionsDetailView.swift; sourceTree = "<group>"; };
@@ -384,6 +386,7 @@
 				8353FA8A2B7400C800C78938 /* Workout */,
 				835DE60A2B6C134E00FC23C8 /* NotificationsView.swift */,
 				83F721862C81532B004B3CAF /* SmartStackView.swift */,
+				83A4056A2E10EBBB002B588D /* ControlCenterView.swift */,
 				836D6ABC2B6C42DD008DBB8F /* GeneralView.swift */,
 				833936A02B6C716D0049FDC7 /* FocusView.swift */,
 				833936AA2B6C80FF0049FDC7 /* AirplaneModeView.swift */,
@@ -725,6 +728,7 @@
 				833D23152B70442A00EB3E8F /* SoundsHapticsView.swift in Sources */,
 				83A04AE72B6E124900C34E53 /* ChimesView.swift in Sources */,
 				835DE6072B6C105B00FC23C8 /* NanoSettingsModel.swift in Sources */,
+				83A4056B2E10EBBB002B588D /* ControlCenterView.swift in Sources */,
 				833936922B6C58F30049FDC7 /* BackgroundAppRefreshView.swift in Sources */,
 				833936A62B6C75D10049FDC7 /* SymbolLink.swift in Sources */,
 				83A292B32B729DE90028907F /* TimeDaylightView.swift in Sources */,

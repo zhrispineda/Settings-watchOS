@@ -32,7 +32,7 @@ let mainSectionList: [NavigationData] = [
         AnyView(SmartStackView())
     },
     NavigationData(title: "CONTROL_CENTER_SETTINGS_TITLE", icon: "switch.2", primaryColor: .white, secondaryColor: .gray) {
-        AnyView(EmptyView())
+        AnyView(ControlCenterView())
     },
     NavigationData(title: "GENERAL_SETTINGS_TITLE", icon: "gear.circle.fill", primaryColor: .white, secondaryColor: .gray) {
         AnyView(GeneralView())
