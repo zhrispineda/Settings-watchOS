@@ -8,45 +8,44 @@
 import SwiftUI
 
 struct NotificationsView: View {
-    // Variables
     @State private var notificationsIndicatorEnabled = true
     @State private var lockedSummaryEnabled = true
     @State private var tapShowFullNotificationEnabled = false
+    let table = "Localizable-Notifications"
     
     var body: some View {
         List {
-            Section(content: {}, footer: {
-                Text("Notifications appear when you‘re wearing your Apple Watch. They won‘t appear on your Apple Watch when you‘re using your iPhone.")
-            })
+            Section {} footer: {
+                Text("NOTIFICATIONS_INSTRUCTIONS", tableName: table)
+            }
             
-            Section(content: {
-                Toggle("Notifications Indicator", isOn: $notificationsIndicatorEnabled)
-            }, footer: {
-                Text("A red dot can appear at the top of your watch face when you have unread notifications. Swipe down to view them.")
-            })
+            Section {
+                Toggle("NOTIFICATIONS_INDICATOR".localize(table: table), isOn: $notificationsIndicatorEnabled)
+            } footer: {
+                Text("NOTIFICATIONS_INDICATOR_DESCRIPTION", tableName: table)
+            }
             
-            Section(content: {
-                Toggle("Show Summary When Locked", isOn: $lockedSummaryEnabled)
-            }, header: {
-                Text("Notification Privacy")
-            }, footer: {
-                Text("Apple Watch can show a notification summary, or short look, when it‘s locked. This typically has the app icon, name, and a brief headline.")
-            })
+            Section {
+                Toggle("NOTIFICATION_SHOW_SHORTLOOK".localize(table: table), isOn: $lockedSummaryEnabled)
+            } header: {
+                Text("NOTIFICATION_PRIVACY_HEADER", tableName: table)
+            } footer: {
+                Text("NOTIFICATION_SHOW_SHORTLOOK_DESCRIPTION", tableName: table)
+            }
             
-            Section(content: {
-                Toggle("Tap to Show Full Notification", isOn: $tapShowFullNotificationEnabled)
-            }, footer: {
-                Text("Apple Watch can hide the full details of a notification behind a summary until you tap on it.")
-            })
+            Section {
+                Toggle("NOTIFICATION_PRIVACY".localize(table: table), isOn: $tapShowFullNotificationEnabled)
+            } footer: {
+                Text("NOTIFICATION_PRIVACY_DESCRIPTION", tableName: table)
+            }
             
-            Section(content: {
-                // TODO: Destination view
-                NavigationLink("Show Notifications on Wrist Down", destination: ShowNotificationsView())
-            }, footer: {
-                Text("Apple Watch can show your notifications even when your wrist is down.")
-            })
+            Section {
+                NavigationLink("NOTIFICATION_AOT_PRIVACY_TITLE".localize(table: table), destination: ShowNotificationsView())
+            } footer: {
+                Text("NOTIFICATION_AOT_PRIVACY_FOOTER", tableName: table)
+            }
         }
-        .navigationTitle("Notifications")
+        .navigationTitle("NOTIFICATIONS_SETTINGS_TITLE")
     }
 }
 

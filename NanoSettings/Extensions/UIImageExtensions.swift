@@ -6,29 +6,29 @@
 import SwiftUI
 
 extension UIImage {
-    static func icon(forUTI uti: String) -> UIImage? {
+    private static func loadPreferences() {
         let path = "/System/Library/PrivateFrameworks/Preferences.framework/Preferences"
-
         if dlopen(path, RTLD_NOLOAD) == nil {
             dlopen(path, RTLD_NOW)
         }
-        
-        let selector = NSSelectorFromString("ps_synchronousIconWithTypeIdentifier:")
+    }
+    
+    private static func performSelector(_ name: String, with argument: Any) -> UIImage? {
+        let selector = NSSelectorFromString(name)
         guard UIImage.responds(to: selector) else {
             return nil
         }
-
-        let image = UIImage.perform(selector, with: uti)
-        return image?.takeUnretainedValue() as? UIImage
+        let result = UIImage.perform(selector, with: argument)
+        return result?.takeUnretainedValue() as? UIImage
+    }
+    
+    static func icon(forUTI uti: String) -> UIImage? {
+        loadPreferences()
+        return performSelector("ps_synchronousIconWithTypeIdentifier:", with: uti)
     }
 
     static func icon(forBundleID bundleID: String) -> UIImage? {
-        let selector = NSSelectorFromString("ps_synchronousIconWithApplicationBundleIdentifier:")
-        guard UIImage.responds(to: selector) else {
-            return nil
-        }
-
-        let image = UIImage.perform(selector, with: bundleID)
-        return image?.takeUnretainedValue() as? UIImage
+        loadPreferences()
+        return performSelector("ps_synchronousIconWithApplicationBundleIdentifier:", with: bundleID)
     }
 }

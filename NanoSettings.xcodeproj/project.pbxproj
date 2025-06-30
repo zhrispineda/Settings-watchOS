@@ -78,6 +78,7 @@
 		83A292B32B729DE90028907F /* TimeDaylightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A292B22B729DE90028907F /* TimeDaylightView.swift */; };
 		83A292B52B729E2E0028907F /* HeadphoneAudioLevelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A292B42B729E2E0028907F /* HeadphoneAudioLevelsView.swift */; };
 		83A4056B2E10EBBB002B588D /* ControlCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A4056A2E10EBBB002B588D /* ControlCenterView.swift */; };
+		83A405F52E122CC8002B588D /* Localizable-Notifications.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83A405F42E122CC8002B588D /* Localizable-Notifications.xcstrings */; };
 		83B7CD3A2B7019860024307F /* LanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B7CD392B7019860024307F /* LanguageView.swift */; };
 		83B7CD3C2B701D1A0024307F /* SiriResponsesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B7CD3B2B701D1A0024307F /* SiriResponsesView.swift */; };
 		83B7CD3E2B701E420024307F /* SiriSuggestionsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B7CD3D2B701E420024307F /* SiriSuggestionsDetailView.swift */; };
@@ -180,6 +181,7 @@
 		83A292B22B729DE90028907F /* TimeDaylightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDaylightView.swift; sourceTree = "<group>"; };
 		83A292B42B729E2E0028907F /* HeadphoneAudioLevelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadphoneAudioLevelsView.swift; sourceTree = "<group>"; };
 		83A4056A2E10EBBB002B588D /* ControlCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlCenterView.swift; sourceTree = "<group>"; };
+		83A405F42E122CC8002B588D /* Localizable-Notifications.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "Localizable-Notifications.xcstrings"; sourceTree = "<group>"; };
 		83B7CD392B7019860024307F /* LanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageView.swift; sourceTree = "<group>"; };
 		83B7CD3B2B701D1A0024307F /* SiriResponsesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriResponsesView.swift; sourceTree = "<group>"; };
 		83B7CD3D2B701E420024307F /* SiriSuggestionsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriSuggestionsDetailView.swift; sourceTree = "<group>"; };
@@ -501,6 +503,7 @@
 			isa = PBXGroup;
 			children = (
 				83CBA2002E10826E00C54DAE /* Localizable.xcstrings */,
+				83A405F42E122CC8002B588D /* Localizable-Notifications.xcstrings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -649,6 +652,7 @@
 				832895872B6C014400A9CB97 /* Preview Assets.xcassets in Resources */,
 				83CBA2012E10826E00C54DAE /* Localizable.xcstrings in Resources */,
 				8353FA8F2B74413700C78938 /* Settings.gif in Resources */,
+				83A405F52E122CC8002B588D /* Localizable-Notifications.xcstrings in Resources */,
 				832895842B6C014400A9CB97 /* Assets.xcassets in Resources */,
 				83E4D4102E0AEEFE001D6441 /* AppIcon.icon in Resources */,
 			);

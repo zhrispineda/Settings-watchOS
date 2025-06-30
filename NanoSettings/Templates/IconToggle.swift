@@ -13,7 +13,6 @@
 import SwiftUI
 
 struct IconToggle: View {
-    // Variables
     @State var isEnabled = true
     var title: String = "Title"
     var icon: String = "Icon"
@@ -21,11 +20,21 @@ struct IconToggle: View {
     var body: some View {
         Toggle(isOn: $isEnabled) {
             HStack {
-                Image(icon)
-                    .resizable()
-                    .scaledToFit()
-                    .clipShape(Circle())
-                    .frame(height: 20)
+                if icon.contains("com.") {
+                    if let icon = UIImage.icon(forBundleID: icon) {
+                        Image(uiImage: icon)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(height: 20)
+                    }
+                } else {
+                    Image(icon)
+                        .resizable()
+                        .scaledToFit()
+                        .clipShape(Circle())
+                        .frame(height: 20)
+                }
+                
                 Text(title)
             }
         }
