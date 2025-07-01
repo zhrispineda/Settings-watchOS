@@ -2,16 +2,13 @@
 //  IconToggle.swift
 //  NanoSettings
 //
-//  A Toggle with an image as an icon.
-//
-//  Parameters:
-//  isEnabled: Bool
-//  title: String
-//  icon: String
-//
 
 import SwiftUI
 
+/// A toggle combined with an icon.
+/// - Parameter isEnabled: Boolean for if the toggle is enabled.
+/// - Parameter title: String title text.
+/// - Parameter icon: String icon name.
 struct IconToggle: View {
     @State var isEnabled = true
     var title: String = "Title"

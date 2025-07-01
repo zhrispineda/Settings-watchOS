@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct LiveActivitiesView: View {
-    // Variables
     @State private var allowLiveActivities = true
     @State private var autoLaunchActivities = true
     
@@ -40,8 +39,8 @@ struct LiveActivitiesView: View {
                 }
                 
                 Section {
-                    SettingsLink(title: "Music Recognition", icon: "NanoMusicRecognitionIcon") {}
-                    SettingsLink(title: "Workout", icon: "template", content: {})
+                    SettingsLink(title: "Music Recognition", icon: "com.apple.nanomusicrecognition") {}
+                    SettingsLink(title: "Workout", icon: "com.") {}
                 }
                 
                 Section {} footer: {
