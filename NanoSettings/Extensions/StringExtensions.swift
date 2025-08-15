@@ -27,4 +27,37 @@ extension String {
         
         return String(format: format, locale: .current, arguments: localizedVariables)
     }
+    
+    // MARK: - Experimental
+    @MainActor
+    func localized(path: String, table: String = "Localizable", _ variables: CVarArg...) -> String {
+        var newPath = ""
+
+        if WKInterfaceDevice.IsSimulated {
+            guard let newBuild = MGHelper.read(key: "mZfUC7qo4pURNhyMHZ62RQ") else {
+                return self
+            }
+            newPath = "/Library/Developer/CoreSimulator/Volumes/watchOS_\(newBuild)/Library/Developer/CoreSimulator/Profiles/Runtimes/watchOS \(WKInterfaceDevice.current().systemVersion).simruntime/Contents/Resources/RuntimeRoot\(path)"
+        } else {
+            newPath = path
+        }
+
+        if let bundle = Bundle(path: newPath) {
+            let format = bundle.localizedString(forKey: self, value: nil, table: table)
+            return String(format: format, locale: .current, arguments: variables)
+        }
+
+        return self
+    }
+}
+
+extension WKInterfaceDevice {
+    static let IsSimulated: Bool = {
+        if let answer = MGHelper.read(key: "ulMliLomP737aAOJ/w/evA") { // IsSimulator key
+            return Bool(answer)!
+        }
+
+        // Fallback
+        return ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] != nil
+    }()
 }
