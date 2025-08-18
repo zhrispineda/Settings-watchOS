@@ -11,7 +11,7 @@ struct SmartStackView: View {
     var body: some View {
         List {
             NavigationLink("Live Activities", destination: LiveActivitiesView())
-            NavigationLink("Widget Suggestions", destination: WidgetSuggestionsView())
+            NavigationLink("SMART_STACK_SUGGESTION_SETTINGS_NAVIGATION_TITLE", destination: WidgetSuggestionsView())
         }
         .navigationTitle("Smart Stack")
     }

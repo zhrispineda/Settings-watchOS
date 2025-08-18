@@ -15,7 +15,6 @@
 import SwiftUI
 
 struct SymbolLink<Content: View>: View {
-    // Variables
     var title: String = "12:00 AM to 12:00 AM"
     var subtitle = String()
     var icon: String = "applesiri"
@@ -27,7 +26,14 @@ struct SymbolLink<Content: View>: View {
             content
         } label: {
             HStack(spacing: 5) {
-                if UIImage(systemName: icon) != nil {
+                if icon.contains("com.") {
+                    if let icon = UIImage.icon(forBundleID: icon) {
+                        Image(uiImage: icon)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(height: 20)
+                    }
+                } else if UIImage(systemName: icon) != nil {
                     Image(systemName: icon)
                         .foregroundStyle(color)
                 } else {
