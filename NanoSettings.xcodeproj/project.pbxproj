@@ -81,10 +81,10 @@
 		83B7CD3A2B7019860024307F /* LanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B7CD392B7019860024307F /* LanguageView.swift */; };
 		83B7CD3C2B701D1A0024307F /* SiriResponsesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B7CD3B2B701D1A0024307F /* SiriResponsesView.swift */; };
 		83B7CD3E2B701E420024307F /* SiriSuggestionsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B7CD3D2B701E420024307F /* SiriSuggestionsDetailView.swift */; };
+		83C45A212E5A553200FDDC13 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83C45A202E5A553200FDDC13 /* Localizable.xcstrings */; };
 		83C4E1FD2DDF7FBE002B65CA /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C4E1FC2DDF7FBE002B65CA /* StringExtensions.swift */; };
 		83C4E2002DDF8063002B65CA /* MGHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C4E1FF2DDF8063002B65CA /* MGHelper.swift */; };
 		83C4E2022DDF8073002B65CA /* SettingsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C4E2012DDF8073002B65CA /* SettingsLogger.swift */; };
-		83CBA2012E10826E00C54DAE /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83CBA2002E10826E00C54DAE /* Localizable.xcstrings */; };
 		83E4D4102E0AEEFE001D6441 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 83E4D40F2E0AEEFE001D6441 /* AppIcon.icon */; };
 		83E6C38E2B6F1152003DDBC7 /* SiriView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E6C38D2B6F1152003DDBC7 /* SiriView.swift */; };
 		83E6C3912B6F16D4003DDBC7 /* SiriHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E6C3902B6F16D4003DDBC7 /* SiriHistoryView.swift */; };
@@ -183,10 +183,10 @@
 		83B7CD392B7019860024307F /* LanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageView.swift; sourceTree = "<group>"; };
 		83B7CD3B2B701D1A0024307F /* SiriResponsesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriResponsesView.swift; sourceTree = "<group>"; };
 		83B7CD3D2B701E420024307F /* SiriSuggestionsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriSuggestionsDetailView.swift; sourceTree = "<group>"; };
+		83C45A202E5A553200FDDC13 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		83C4E1FC2DDF7FBE002B65CA /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		83C4E1FF2DDF8063002B65CA /* MGHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGHelper.swift; sourceTree = "<group>"; };
 		83C4E2012DDF8073002B65CA /* SettingsLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLogger.swift; sourceTree = "<group>"; };
-		83CBA2002E10826E00C54DAE /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		83E4D40F2E0AEEFE001D6441 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 		83E6C38D2B6F1152003DDBC7 /* SiriView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriView.swift; sourceTree = "<group>"; };
 		83E6C3902B6F16D4003DDBC7 /* SiriHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriHistoryView.swift; sourceTree = "<group>"; };
@@ -500,7 +500,7 @@
 		83C4E1EC2DDF7746002B65CA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				83CBA2002E10826E00C54DAE /* Localizable.xcstrings */,
+				83C45A202E5A553200FDDC13 /* Localizable.xcstrings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -647,7 +647,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				832895872B6C014400A9CB97 /* Preview Assets.xcassets in Resources */,
-				83CBA2012E10826E00C54DAE /* Localizable.xcstrings in Resources */,
+				83C45A212E5A553200FDDC13 /* Localizable.xcstrings in Resources */,
 				8353FA8F2B74413700C78938 /* Settings.gif in Resources */,
 				832895842B6C014400A9CB97 /* Assets.xcassets in Resources */,
 				83E4D4102E0AEEFE001D6441 /* AppIcon.icon in Resources */,
