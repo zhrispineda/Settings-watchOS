@@ -8,12 +8,16 @@
 import SwiftUI
 
 struct SmartStackView: View {
+    let liveActivities = "/System/Library/PreferenceBundles/CSLNanoLiveActivitiesSettings.bundle"
+    let smartStack = "/System/Library/PrivateFrameworks/SmartStackSettingsUI.framework"
+    let autoLaunchTable = "NanoAutoLaunchSettings"
+    
     var body: some View {
         List {
-            NavigationLink("Live Activities", destination: LiveActivitiesView())
-            NavigationLink("SMART_STACK_SUGGESTION_SETTINGS_NAVIGATION_TITLE", destination: WidgetSuggestionsView())
+            NavigationLink("LIVE_ACTIVITIES_TITLE".localized(path: liveActivities, table: autoLaunchTable), destination: LiveActivitiesView())
+            NavigationLink("SMART_STACK_SUGGESTION_SETTINGS_NAVIGATION_TITLE".localized(path: smartStack), destination: WidgetSuggestionsView())
         }
-        .navigationTitle("Smart Stack")
+        .navigationTitle("LIVE_ACTIVITIES_AUTOLAUNCH_SETTING_SMARTSTACK".localized(path: liveActivities, table: autoLaunchTable))
     }
 }
 
