@@ -8,22 +8,23 @@
 import SwiftUI
 
 struct FocusView: View {
-    // Variables
     @State private var mirrorPhoneEnabled = true
     
     var body: some View {
         List {
             Section {
-                SettingsLink(title: "Do Not Disturb", icon: "moon.fill", primaryColor: .indigo, content: { DoNotDisturbView() })
+                SettingsLink("DO_NOT_DISTURB_TITLE", icon: "moon.fill", primaryColor: .indigo) {
+                    DoNotDisturbView()
+                }
             }
             
-            Section(content: {
-                Toggle("Mirror my iPhone", isOn: $mirrorPhoneEnabled)
-            }, footer: {
-                Text("Turning on a Focus for iPhone will \(mirrorPhoneEnabled ? "also turn it on for" : "not affect your") Apple Watch.")
-            })
+            Section {
+                Toggle("FOCUS_MODES_PAIR_SYNC_SWITCH_TITLE", isOn: $mirrorPhoneEnabled)
+            } footer: {
+                Text(mirrorPhoneEnabled ? "FOCUS_MODES_SYNC_FOOTER_ON" : "FOCUS_MODES_SYNC_FOOTER_OFF")
+            }
         }
-        .navigationTitle("Focus")
+        .navigationTitle("FOCUS_MODES")
     }
 }
 

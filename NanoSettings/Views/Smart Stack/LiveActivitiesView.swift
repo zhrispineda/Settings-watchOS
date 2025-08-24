@@ -39,8 +39,8 @@ struct LiveActivitiesView: View {
                 }
                 
                 Section {
-                    SettingsLink(title: "Music Recognition", icon: "com.apple.nanomusicrecognition") {}
-                    SettingsLink(title: "Workout", icon: "com.") {}
+                    SettingsLink("Music Recognition", icon: "com.apple.nanomusicrecognition") {}
+                    SettingsLink("Workout", icon: "com.") {}
                 }
                 
                 Section {} footer: {

@@ -21,7 +21,7 @@ struct SettingsLink<Content: View>: View {
     let secondaryColor: Color
     let content: Content
     
-    init(title: String, icon: String, primaryColor: Color = Color.clear, secondaryColor: Color = Color.clear, @ViewBuilder content: () -> Content) {
+    init(_ title: String, icon: String, primaryColor: Color = Color.clear, secondaryColor: Color = Color.clear, @ViewBuilder content: () -> Content) {
         self.title = title
         self.icon = icon
         self.primaryColor = primaryColor
@@ -64,7 +64,7 @@ struct SettingsLink<Content: View>: View {
                 content
             } label: {
                 Label {
-                    Text(title)
+                    Text(.init(title))
                 } icon: {
                     if UIImage(systemName: icon) != nil && icon != "accessibility" && icon != "switch.2" {
                         Image(systemName: icon)
