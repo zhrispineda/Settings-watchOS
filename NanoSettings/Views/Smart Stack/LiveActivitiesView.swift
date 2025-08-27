@@ -10,45 +10,47 @@ import SwiftUI
 struct LiveActivitiesView: View {
     @State private var allowLiveActivities = true
     @State private var autoLaunchActivities = true
+    let path = "/System/Library/PreferenceBundles/CSLNanoLiveActivitiesSettings.bundle"
+    let table = "NanoAutoLaunchSettings"
     
     var body: some View {
         List {
             Section {
-                Toggle("Allow Live Activities", isOn: $allowLiveActivities)
+                Toggle("LIVE_ACTIVITIES_SETTING".localized(path: path, table: table), isOn: $allowLiveActivities)
             }
             
             if allowLiveActivities {
                 Section {
-                    Toggle("Auto-Launch Live Activities", isOn: $autoLaunchActivities)
+                    Toggle("LIVE_ACTIVITIES_AUTO_LAUNCH_TITLE".localized(path: path, table: table), isOn: $autoLaunchActivities)
                 } header: {
-                    Text("When Live Activity Begins")
+                    Text("LIVE_ACTIVITIES_AUTO_LAUNCH_SECTION_TITLE".localized(path: path, table: table))
                 } footer: {
-                    Text("When a Live Activity is runnning, the Smart Stack will remain pulled up when your wrist is down.")
+                    Text("LIVE_ACTIVITIES_AUTO_LAUNCH_SECTION_FOOTER".localized(path: path, table: table))
                 }
                 
                 Section {
-                    NavigationLink("Show Live Activities on Wrist Down") {}
+                    NavigationLink("LIVE_ACTIVITIES_PRIVACY_SETTINGS_BUTTON".localized(path: path, table: table)) {}
                 } footer: {
-                    Text("You can choose whether Live Activity data is shown or blurred when your wrist is down.")
+                    Text("LIVE_ACTIVITIES_PRIVACY_SETTINGS_SECTION_FOOTER".localized(path: path, table: table))
                 }
                 
                 Section {
                     NavigationLink {} label: {
-                        Label("Media Apps", systemImage: "play.circle.fill")
+                        Label("LIVE_ACTIVITIES_ALLMUSICAPPS_APP_TITLE".localized(path: path, table: table), systemImage: "play.circle.fill")
                     }
                 }
                 
                 Section {
                     SettingsLink("Music Recognition", icon: "com.apple.nanomusicrecognition") {}
-                    SettingsLink("Workout", icon: "com.") {}
+                    SettingsLink("LIVE_ACTIVITIES_ALLWORKOUTAPPS_APP_TITLE".localized(path: path, table: table), icon: "com.") {}
                 }
                 
                 Section {} footer: {
-                    Text("Live Activities settings for iOS apps can be managed in the Watch app on iPhone.")
+                    Text("LIVE_ACTIVITIES_COMPANION_SETTINGS".localized(path: path, table: table))
                 }
             }
         }
-        .navigationTitle("Live Activities")
+        .navigationTitle("LIVE_ACTIVITIES_TITLE".localized(path: path, table: table))
     }
 }
 
