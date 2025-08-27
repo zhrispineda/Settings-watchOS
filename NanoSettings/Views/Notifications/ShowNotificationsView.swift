@@ -13,15 +13,15 @@ struct ShowNotificationsView: View {
     var body: some View {
         List {
             Section {
-                Toggle("Show Notifications", isOn: $showNotificationsEnabled)
+                Toggle("AOT_PRIVACY_NOTIFICATIONS_ROW_TITLE", isOn: $showNotificationsEnabled)
             } footer: {
                 if showNotificationsEnabled {
-                    Text("You can choose which notifications are visible when your wrist is down.")
+                    Text("AOT_NOTIFICATION_PRIVACY_FOOTER")
                 }
             }
             
             if showNotificationsEnabled {
-                Section("Apple Watch Apps") {
+                Section("APP_AOT_NOTIFICATION_APPS_PRIVACY_HEADER") {
                     IconToggle(title: "Calculator", icon: "com.apple.NanoCalculator.watchkitapp")
                     IconToggle(title: "Contacts", icon: "com.apple.NanoContacts")
                     IconToggle(title: "Maps", icon: "com.apple.NanoMaps")
@@ -36,10 +36,12 @@ struct ShowNotificationsView: View {
                 }
             }
         }
-        .navigationTitle("Show Notifications")
+        .navigationTitle("AOT_APP_PRIVACY_NOTIFICATION_TITLE")
     }
 }
 
 #Preview {
-    ShowNotificationsView()
+    NavigationStack {
+        ShowNotificationsView()
+    }
 }
