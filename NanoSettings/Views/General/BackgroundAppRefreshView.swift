@@ -8,15 +8,14 @@
 import SwiftUI
 
 struct BackgroundAppRefreshView: View {
-    // Variables
     @State private var backgroundAppRefreshEnabled = true
     
     var body: some View {
         List {
             Section {
-                Toggle("Background App Refresh", isOn: $backgroundAppRefreshEnabled)
+                Toggle("BACKGROUND_APP_UPDATING_LABEL", isOn: $backgroundAppRefreshEnabled)
             } footer: {
-                Text("Turning off Background App Refresh may preserve battery life. If you‘ve given an app permission to read background data, this setting also controls background access. Apps with complications on the current watch face will continue to refresh, even when their background app refresh setting is off.")
+                Text("BACKGROUND_APP_UPDATING_FOOTER")
             }
             
             if backgroundAppRefreshEnabled {
@@ -34,7 +33,7 @@ struct BackgroundAppRefreshView: View {
                 }
             }
         }
-        .navigationTitle("Background App Refresh")
+        .navigationTitle("STATUS_BAR_TITLE_BACKGROUND_APP_REFRESH")
     }
 }
 
