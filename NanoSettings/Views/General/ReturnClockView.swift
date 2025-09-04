@@ -41,7 +41,7 @@ struct ReturnClockView: View {
                     NavigationLink {
                         ReturnClockDetailView(title: app)
                     } label: {
-                        IconLabel(title: app, icon: app == "Music Recognition" ? "NanoMusicRecognitionIcon" : "apple\(app.lowercased())")
+                        IconLabel(title: app, icon: app == "Music Recognition" ? "com.apple.nanomusicrecognition" : "apple\(app.lowercased())")
                     }
                 }
             }

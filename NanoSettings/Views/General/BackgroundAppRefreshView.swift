@@ -22,10 +22,10 @@ struct BackgroundAppRefreshView: View {
                 Section {
                     IconToggle(title: "Calculator", icon: "applecalculator")
                     IconToggle(title: "Contacts", icon: "com.apple.NanoContacts")
-                    IconToggle(title: "Maps", icon: "applemaps")
+                    IconToggle(title: "Maps", icon: "com.apple.NanoMaps")
                     IconToggle(title: "Medications", icon: "applemedications")
-                    IconToggle(title: "Music Recognition", icon: "NanoMusicRecognitionIcon")
-                    IconToggle(title: "Now Playing", icon: "applenow playing")
+                    IconToggle(title: "Music Recognition", icon: "com.apple.nanomusicrecognition")
+                    IconToggle(title: "Now Playing", icon: "com.apple.NanoNowPlaying")
                     IconToggle(title: "Settings", icon: "applesettings")
                     IconToggle(title: "Shortcuts", icon: "com.apple.shortcuts.watch")
                     IconToggle(title: "Siren", icon: "com.apple.Mandrake")

@@ -29,7 +29,7 @@ struct PrivacySecurityView: View {
                 })
                 SettingsLink("Motion & Fitness", icon: "figure.run.motion.circle.fill", primaryColor: .white, secondaryColor: .green, content: { AppPermissionsDetailView(title: "Motion & Fitness") })
                 NavigationLink(destination: AppPermissionsDetailView(title: "Analytics & Improvements"), label: {
-                    IconLabel(title: "Analytics & Improvements", icon: "custom.chart.bar.xaxis.circle.fill")
+                    IconLabel(title: "Analytics & Improvements", icon: "com.apple.graphic-icon.analytics-and-improvements")
                 })
                 SettingsLink("Fall Detection", icon: "figure.fall.circle.fill", primaryColor: .white, secondaryColor: .blue, content: { AppPermissionsDetailView(title: "Fall Detection Data Sharing") })
                 SettingsLink("Focus", icon: "moon.circle.fill", primaryColor: .white, secondaryColor: .indigo, content: { AppPermissionsDetailView(title: "Focus") })

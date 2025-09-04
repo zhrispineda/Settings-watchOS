@@ -76,7 +76,7 @@ struct SiriView: View {
             
             Section("Siri Suggestions") {
                 NavigationLink(destination: SiriSuggestionsDetailView(title: "Maps")) {
-                    IconLabel(title: "Maps", icon: "applemaps")
+                    IconLabel(title: "Maps", icon: "com.apple.NanoMaps")
                 }
             }
         }

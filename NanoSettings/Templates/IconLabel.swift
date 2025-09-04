@@ -12,19 +12,25 @@
 import SwiftUI
 
 struct IconLabel: View {
-    // Variables
-    var title: String = "Calculator"
-    var icon: String = "applecalculator"
+    var title = "Calculator"
+    var icon = "applecalculator"
     
     var body: some View {
         HStack(spacing: 8) {
-            if icon == "custom.chart.bar.xaxis.circle.fill" {
-                Image(icon)
-                    .resizable()
-                    .scaledToFit()
-                    .clipShape(Circle())
-                    .frame(height: 17)
-                    .foregroundStyle(.white, .blue)
+            if icon.contains("com.apple.graphic-icon") {
+                if let asset = UIImage.icon(forUTI: icon) {
+                    Image(uiImage: asset)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height: 19)
+                }
+            } else if icon.contains("com.apple") {
+                if let asset = UIImage.icon(forBundleID: icon) {
+                    Image(uiImage: asset)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height: 19)
+                }
             } else {
                 Image(icon)
                     .resizable()

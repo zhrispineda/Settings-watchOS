@@ -23,9 +23,9 @@ struct ShowAppsView: View {
                 Section(content: {
                     IconToggle(title: "Calculator", icon: "applecalculator")
                     IconToggle(title: "Contacts", icon: "com.apple.NanoContacts")
-                    IconToggle(title: "Maps", icon: "applemaps")
+                    IconToggle(title: "Maps", icon: "com.apple.NanoMaps")
                     IconToggle(isEnabled: false, title: "Medications", icon: "applemedications")
-                    IconToggle(title: "Now Playing", icon: "applenow playing")
+                    IconToggle(title: "Now Playing", icon: "com.apple.NanoNowPlaying")
                     IconToggle(title: "Shortcuts", icon: "com.apple.shortcuts.watch")
                     IconToggle(title: "Siren", icon: "com.apple.Mandrake")
                     
