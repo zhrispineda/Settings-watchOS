@@ -17,5 +17,7 @@ struct SoftwareUpdateView: View {
 }
 
 #Preview {
-    SoftwareUpdateView()
+    NavigationStack {
+        SoftwareUpdateView()
+    }
 }

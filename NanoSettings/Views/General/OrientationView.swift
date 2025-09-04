@@ -8,46 +8,35 @@
 import SwiftUI
 
 struct OrientationView: View {
-    // Variables
-    @State private var wristSelection: String = "Left"
-    @State private var digitalCrownSelection: String = "Right"
-    let options = ["Left", "Right"]
+    @State private var wristSelection = "LEFT_WRIST_TITLE_TEXT"
+    @State private var digitalCrownSelection = "RIGHT_WRIST_TITLE_TEXT"
+    let options = ["LEFT_WRIST_TITLE_TEXT", "RIGHT_WRIST_TITLE_TEXT"]
     
     var body: some View {
         List {
             // Wrist
-            Section("Wrist") {
-                ForEach(options, id: \.self) { option in
-                    Button {
-                        wristSelection = option
-                    } label: {
-                        HStack {
-                            Text(option)
-                            Spacer()
-                            Image(systemName: wristSelection == option ? "checkmark" : "")
-                                .foregroundColor(.green)
-                        }
+            Section("WRIST_SECTION_TITLE") {
+                Picker("WRIST_SECTION_TITLE", selection: $wristSelection) {
+                    ForEach(options, id: \.self) { option in
+                        Text(.init(option))
                     }
                 }
+                .pickerStyle(.inline)
+                .labelsHidden()
             }
             
             // Digital Crown
-            Section("Digital Crown") {
-                ForEach(options, id: \.self) { option in
-                    Button {
-                        digitalCrownSelection = option
-                    } label: {
-                        HStack {
-                            Text(option)
-                            Spacer()
-                            Image(systemName: digitalCrownSelection == option ? "checkmark" : "")
-                                .foregroundColor(.green)
-                        }
+            Section("CROWN_SECTION_TITLE") {
+                Picker("WRIST_SECTION_TITLE", selection: $digitalCrownSelection) {
+                    ForEach(options, id: \.self) { option in
+                        Text(.init(option))
                     }
                 }
+                .pickerStyle(.inline)
+                .labelsHidden()
             }
         }
-        .navigationTitle("Orientation")
+        .navigationTitle("STATUS_BAR_TITLE_ORIENTATION")
     }
 }
 
