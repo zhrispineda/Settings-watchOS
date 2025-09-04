@@ -69,6 +69,13 @@ struct SettingsLink<Content: View>: View {
                     if UIImage(systemName: icon) != nil && icon != "accessibility" && icon != "switch.2" {
                         Image(systemName: icon)
                             .foregroundStyle(primaryColor, secondaryColor)
+                    } else if icon.contains("com.apple.graphic") || icon.contains("com.apple.application") {
+                        if let icon = UIImage.icon(forUTI: icon) {
+                            Image(uiImage: icon)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(height: 20)
+                        }
                     } else if icon.contains("com.") {
                         if let icon = UIImage.icon(forBundleID: icon) {
                             Image(uiImage: icon)

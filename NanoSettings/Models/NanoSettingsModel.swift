@@ -61,7 +61,7 @@ let mainSectionList: [NavigationData] = [
     NavigationData(title: "ACCESSIBILITY_TITLE", icon: "accessibility", primaryColor: .white, secondaryColor: .white) {
         AnyView(AccessibilityView())
     },
-    NavigationData(title: "SIRI_TITLE", icon: "siri-masked") {
+    NavigationData(title: "SIRI_TITLE", icon: "com.apple.application-icon.siri") {
         AnyView(SiriView())
     },
     NavigationData(title: "VOLUME_TITLE", icon: "speaker.wave.2.circle.fill", primaryColor: .white, secondaryColor: .pink) {

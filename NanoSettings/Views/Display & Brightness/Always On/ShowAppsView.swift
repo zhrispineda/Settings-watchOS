@@ -21,10 +21,10 @@ struct ShowAppsView: View {
             
             if showAppsEnabled {
                 Section(content: {
-                    IconToggle(title: "Calculator", icon: "applecalculator")
+                    IconToggle(title: "Calculator", icon: "com.apple.NanoCalculator.watchkitapp")
                     IconToggle(title: "Contacts", icon: "com.apple.NanoContacts")
                     IconToggle(title: "Maps", icon: "com.apple.NanoMaps")
-                    IconToggle(isEnabled: false, title: "Medications", icon: "applemedications")
+                    IconToggle(isEnabled: false, title: "Medications", icon: "com.apple.NanoMedications")
                     IconToggle(title: "Now Playing", icon: "com.apple.NanoNowPlaying")
                     IconToggle(title: "Shortcuts", icon: "com.apple.shortcuts.watch")
                     IconToggle(title: "Siren", icon: "com.apple.Mandrake")

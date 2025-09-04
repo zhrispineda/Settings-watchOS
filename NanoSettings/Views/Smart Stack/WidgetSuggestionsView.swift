@@ -22,7 +22,7 @@ struct WidgetSuggestionsView: View {
             Section("SMART_STACK_SUGGESTION_SETTINGS_APPS_SECTION_HEADER".localized(path: path)) {
                 SymbolLink(title: "Calendar", subtitle: "SMART_STACK_SUGGESTION_SETTINGS_APP_GROUP_STATUS_ALLOW_ALL".localized(path: path), icon: "Calendar", content: EmptyView())
                 SymbolLink(title: "Check In", subtitle: "SMART_STACK_SUGGESTION_SETTINGS_APP_GROUP_STATUS_ALLOW_ALL".localized(path: path), icon: "com.apple.SafetyMonitorApp", content: EmptyView())
-                SymbolLink(title: "Medications", subtitle: "SMART_STACK_SUGGESTION_SETTINGS_APP_GROUP_STATUS_ALLOW_ALL".localized(path: path), icon: "applemedications", content: EmptyView())
+                SymbolLink(title: "Medications", subtitle: "SMART_STACK_SUGGESTION_SETTINGS_APP_GROUP_STATUS_ALLOW_ALL".localized(path: path), icon: "com.apple.NanoMedications", content: EmptyView())
                 SymbolLink(title: "Music Recognition", subtitle: "SMART_STACK_SUGGESTION_SETTINGS_APP_GROUP_STATUS_ALLOW_ALL".localized(path: path), icon: "com.apple.nanomusicrecognition", content: EmptyView())
                 SymbolLink(title: "News", subtitle: "SMART_STACK_SUGGESTION_SETTINGS_APP_GROUP_STATUS_ALLOW_ALL".localized(path: path), icon: "com.apple.nanonews", content: EmptyView())
                 SymbolLink(title: "Now Playing", subtitle: "SMART_STACK_SUGGESTION_SETTINGS_APP_GROUP_STATUS_ALLOW_ALL".localized(path: path), icon: "com.apple.NanoNowPlaying", content: EmptyView())

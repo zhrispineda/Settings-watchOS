@@ -17,7 +17,7 @@ struct PrivacySecurityView: View {
                 })
                 SettingsLink("Calendar", icon: "calendar.circle.fill", primaryColor: .red, secondaryColor: .white, content: { AppPermissionsDetailView(title: "Calendars") })
                 NavigationLink(destination: { AppPermissionsDetailView(title: "Reminders") }, label: {
-                    IconLabel(title: "Reminders", icon: "applereminders")
+                    IconLabel(title: "Reminders", icon: "Reminders")
                 })
                 SettingsLink("Bluetooth", icon: "bluetooth", primaryColor: .white, secondaryColor: .blue, content: { AppPermissionsDetailView(title: "Bluetooth") })
                 SettingsLink("Microphone", icon: "mic.circle.fill", primaryColor: .white, secondaryColor: .red, content: { AppPermissionsDetailView(title: "Microphone") })

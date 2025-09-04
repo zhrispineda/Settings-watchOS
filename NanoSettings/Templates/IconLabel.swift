@@ -13,7 +13,7 @@ import SwiftUI
 
 struct IconLabel: View {
     var title = "Calculator"
-    var icon = "applecalculator"
+    var icon = "com.apple.NanoCalculator.watchkitapp"
     
     var body: some View {
         HStack(spacing: 8) {

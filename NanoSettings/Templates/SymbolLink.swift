@@ -26,7 +26,14 @@ struct SymbolLink<Content: View>: View {
             content
         } label: {
             HStack(spacing: 5) {
-                if icon.contains("com.") {
+                if icon.contains("com.apple.graphic") || icon.contains("com.apple.application") {
+                    if let icon = UIImage.icon(forUTI: icon) {
+                        Image(uiImage: icon)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(height: 20)
+                    }
+                } else if icon.contains("com.") {
                     if let icon = UIImage.icon(forBundleID: icon) {
                         Image(uiImage: icon)
                             .resizable()
