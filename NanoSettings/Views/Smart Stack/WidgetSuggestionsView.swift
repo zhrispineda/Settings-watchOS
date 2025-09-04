@@ -26,8 +26,8 @@ struct WidgetSuggestionsView: View {
                 SymbolLink(title: "Music Recognition", subtitle: "SMART_STACK_SUGGESTION_SETTINGS_APP_GROUP_STATUS_ALLOW_ALL".localized(path: path), icon: "NanoMusicRecognitionIcon", content: EmptyView())
                 SymbolLink(title: "News", subtitle: "SMART_STACK_SUGGESTION_SETTINGS_APP_GROUP_STATUS_ALLOW_ALL".localized(path: path), icon: "applenews", content: EmptyView())
                 SymbolLink(title: "Now Playing", subtitle: "SMART_STACK_SUGGESTION_SETTINGS_APP_GROUP_STATUS_ALLOW_ALL".localized(path: path), icon: "applenow playing", content: EmptyView())
-                SymbolLink(title: "Shortcuts", subtitle: "SMART_STACK_SUGGESTION_SETTINGS_APP_GROUP_STATUS_ALLOW_ALL".localized(path: path), icon: "appleshortcuts", content: EmptyView())
-                SymbolLink(title: "Translate", subtitle: "SMART_STACK_SUGGESTION_SETTINGS_APP_GROUP_STATUS_ALLOW_ALL".localized(path: path), icon: "appletranslate", content: EmptyView())
+                SymbolLink(title: "Shortcuts", subtitle: "SMART_STACK_SUGGESTION_SETTINGS_APP_GROUP_STATUS_ALLOW_ALL".localized(path: path), icon: "com.apple.shortcuts.watch", content: EmptyView())
+                SymbolLink(title: "Translate", subtitle: "SMART_STACK_SUGGESTION_SETTINGS_APP_GROUP_STATUS_ALLOW_ALL".localized(path: path), icon: "com.apple.NanoTranslate", content: EmptyView())
             }
         }
         .navigationTitle("SMART_STACK_SUGGESTION_SETTINGS_NAVIGATION_TITLE".localized(path: path))

@@ -16,7 +16,7 @@ struct SiriFaceDataSourcesView: View {
             Section("Data Sources") {
                 IconToggle(isEnabled: true, title: "News", icon: "applenews")
                 IconToggle(isEnabled: true, title: "Now Playing", icon: "applenow playing")
-                IconToggle(isEnabled: true, title: "Shortcuts", icon: "appleshortcuts")
+                IconToggle(isEnabled: true, title: "Shortcuts", icon: "com.apple.shortcuts.watch")
             }
             
             Section {

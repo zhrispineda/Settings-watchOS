@@ -86,7 +86,7 @@ let appSectionList: [NavigationData] = [
     NavigationData(title: "TIME_TITLE", icon: "appleclock") {
         AnyView(ClockView())
     },
-    NavigationData(title: "CONTACTS", icon: "applecontacts") {
+    NavigationData(title: "CONTACTS", icon: "contacts") {
         AnyView(ContactsView())
     },
     NavigationData(title: "HEALTH_SETTINGS_TITLE", icon: "applehealth") {
@@ -99,3 +99,7 @@ let appSectionList: [NavigationData] = [
         AnyView(WorkoutView())
     }
 ]
+
+#Preview {
+    ContentView()
+}

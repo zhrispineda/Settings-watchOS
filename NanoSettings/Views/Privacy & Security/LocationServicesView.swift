@@ -34,7 +34,7 @@ struct LocationServicesView: View {
             
             if locationServicesEnabled {
                 Section(content: {
-                    SymbolLink(title: "Share My Location", subtitle: "When Shared", icon: "template", content: AnyView(LocationServicesDetailView(title: "Share My Location")))
+                    SymbolLink(title: "Share My Location", subtitle: "When Shared", icon: "com.", content: AnyView(LocationServicesDetailView(title: "Share My Location")))
                     SymbolLink(title: "Siri & Dictation", subtitle: "When Shared", icon: "siri-masked", content: AnyView(LocationServicesDetailView(title: "Siri & Dictation")))
                     NavigationLink("System Services", destination: SystemServicesView())
                 }, footer: {

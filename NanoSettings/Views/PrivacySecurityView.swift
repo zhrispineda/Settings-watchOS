@@ -13,7 +13,7 @@ struct PrivacySecurityView: View {
             Section {
                 SettingsLink("Location Services", icon: "location.circle.fill", primaryColor: .white, secondaryColor: .blue, content: { LocationServicesView() })
                 NavigationLink(destination: AppPermissionsDetailView(title: "Contacts"), label: {
-                    IconLabel(title: "Contacts", icon: "applecontacts")
+                    IconLabel(title: "Contacts", icon: "contacts")
                 })
                 SettingsLink("Calendar", icon: "calendar.circle.fill", primaryColor: .red, secondaryColor: .white, content: { AppPermissionsDetailView(title: "Calendars") })
                 NavigationLink(destination: { AppPermissionsDetailView(title: "Reminders") }, label: {
