@@ -8,18 +8,17 @@
 import SwiftUI
 
 struct NightstandModeView: View {
-    // Variables
     @State private var nightstandModeEnabled = true
     
     var body: some View {
         List {
             Section {
-                Toggle("Nightstand Mode", isOn: $nightstandModeEnabled)
+                Toggle("NIGHTSTAND_MODE_TITLE", isOn: $nightstandModeEnabled)
             } footer: {
-                Text("You can use Apple Watch as a nightstand clock while it‘s charging. If you have an alarm set on Apple Watch, the screen will gently brighten in the minutes leading up to it.")
+                Text("NIGHTSTAND_MODE_DESC_TEXT")
             }
         }
-        .navigationTitle("Nightstand Mode")
+        .navigationTitle("STATUS_BAR_TITLE_NIGHTSTAND_MODE")
     }
 }
 

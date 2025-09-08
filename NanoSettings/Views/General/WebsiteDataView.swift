@@ -8,28 +8,27 @@
 import SwiftUI
 
 struct WebsiteDataView: View {
-    // Variables
     @State private var showingAlert = false
     
     var body: some View {
         List {
             Section {
-                Button("Clear Website Data") {
+                Button("SAFARI_CLEAR_ALL_DATA_TITLE") {
                     showingAlert.toggle()
                 }
                 .alert(isPresented: $showingAlert) {
                     Alert(
                         title: Text(""),
-                        message: Text("Clearing will remove website cookies, credentials and other browsing data."),
+                        message: Text("SAFARI_DESCRIPTION_TEXT"),
                         primaryButton: .cancel(),
-                        secondaryButton: .destructive(Text("Clear Data"))
+                        secondaryButton: .destructive(Text("SAFARI_CLEAR_DATA_TITLE"))
                     )
                 }
             } footer: {
-                Text("Clearing will remove web-site cookies, credentials and other browsing data.")
+                Text("SAFARI_DESCRIPTION_TEXT")
             }
         }
-        .navigationTitle("Website Data")
+        .navigationTitle("STATUS_BAR_TITLE_SAFARI")
     }
 }
 
