@@ -7,46 +7,62 @@
 
 import SwiftUI
 
+struct AppInfo: Hashable {
+    let name: String
+    let icon: String
+}
+
 struct ReturnClockView: View {
-    // Variables
-    @State private var selected = "After 2 minutes"
-    let options = ["Always", "After 2 minutes", "After 1 hour"]
-    let apps = ["Calculator", "Contacts", "Maps", "Medications", "Music Recognition", "Now Playing", "Settings", "Shortcuts", "Siren", "Translate"]
+    @State private var selected = "RETURN_TO_CLOCK_2_MINUTE_LABEL"
+    let options = ["RETURN_TO_CLOCK_TINY_LABEL", "RETURN_TO_CLOCK_2_MINUTE_LABEL", "RETURN_TO_CLOCK_1_HOUR_LABEL"]
+    let apps = [
+        AppInfo(name: "Calculator", icon: "com.apple.NanoCalculator.watchkitapp"),
+        AppInfo(name: "Contacts", icon: "com.apple.NanoContacts"),
+        AppInfo(name: "Maps", icon: "com.apple.NanoMaps"),
+        AppInfo(name: "Medications", icon: "com.apple.NanoMedications"),
+        AppInfo(name: "Messages", icon: "com.apple.MobileSMS"),
+        AppInfo(name: "Music Recognition", icon: "com.apple.nanomusicrecognition"),
+        AppInfo(name: "Now Playing", icon: "com.apple.NanoNowPlaying"),
+        AppInfo(name: "Settings", icon: "com.apple.NanoSettings"),
+        AppInfo(name: "Shortcuts", icon: "com.apple.shortcuts.watch"),
+        AppInfo(name: "Siren", icon: "com.apple.Mandrake"),
+        AppInfo(name: "Translate", icon: "com.apple.NanoTranslate"),
+    ]
     
     var body: some View {
         List {
             Section {
-                ForEach(options, id: \.self) { option in
-                    Button {
-                        withAnimation {
-                            selected = option
-                        }
-                    } label: {
-                        HStack {
-                            Text(option)
-                            Spacer()
-                            Image(systemName: "\(selected == option ? "checkmark" : "")")
-                                .foregroundStyle(.green)
-                        }
+                Picker("RETURN_TO_CLOCK_HEADER", selection: $selected) {
+                    ForEach(options, id: \.self) { option in
+                        Text(.init(option))
                     }
                 }
+                .labelsHidden()
+                .pickerStyle(.inline)
             } header: {
-                Text("Return to Clock")
+                Text("RETURN_TO_CLOCK_HEADER")
             } footer: {
-                Text("Apple Watch will return to the Clock Face \(selected == "Always" ? "on wrist down.": "after \(selected == "After 2 minutes" ? "2 minutes" : "1 hour") of displaying a launched App or after the Digital Crown is pressed.")")
+                switch selected {
+                case "RETURN_TO_CLOCK_TINY_LABEL":
+                    Text("RETURN_TO_CLOCK_TINY_WINDOW_FOOTER")
+                case "RETURN_TO_CLOCK_1_HOUR_LABEL":
+                    Text("RETURN_TO_CLOCK_WITHIN_1_HOUR_WINDOW_FOOTER")
+                default:
+                    Text("RETURN_TO_CLOCK_WITHIN_2_MINUTE_WINDOW_FOOTER")
+                }
             }
             
-            Section("Apps") {
+            Section("CUSTOMIZE_APPS_HEADER") {
                 ForEach(apps, id: \.self) { app in
                     NavigationLink {
-                        ReturnClockDetailView(title: app)
+                        ReturnClockDetailView(title: app.name)
                     } label: {
-                        IconLabel(title: app, icon: app == "Music Recognition" ? "com.apple.nanomusicrecognition" : "apple\(app.lowercased())")
+                        IconLabel(title: app.name, icon: app.icon)
                     }
                 }
             }
         }
-        .navigationTitle("Return to Clock")
+        .navigationTitle("STATUS_BAR_TITLE_RETURN_TO_CLOCK")
     }
 }
 
