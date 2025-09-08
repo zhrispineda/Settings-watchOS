@@ -23,6 +23,9 @@
 		832895822B6C014300A9CB97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832895812B6C014300A9CB97 /* ContentView.swift */; };
 		832895842B6C014400A9CB97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 832895832B6C014400A9CB97 /* Assets.xcassets */; };
 		832895872B6C014400A9CB97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 832895862B6C014400A9CB97 /* Preview Assets.xcassets */; };
+		8330A4E52E6A214000364248 /* LiveActivitiesSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8330A4E42E6A214000364248 /* LiveActivitiesSettingsView.swift */; };
+		8330A57C2E6DF44900364248 /* ShowLiveActivitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8330A57B2E6DF44900364248 /* ShowLiveActivitiesView.swift */; };
+		8330A57E2E6E08D800364248 /* LiveActivitiesAppDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8330A57D2E6E08D800364248 /* LiveActivitiesAppDetailView.swift */; };
 		833936902B6C57F50049FDC7 /* AutoLaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8339368F2B6C57F50049FDC7 /* AutoLaunchView.swift */; };
 		833936922B6C58F30049FDC7 /* BackgroundAppRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833936912B6C58F30049FDC7 /* BackgroundAppRefreshView.swift */; };
 		833936942B6C5A1B0049FDC7 /* ReturnClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833936932B6C5A1B0049FDC7 /* ReturnClockView.swift */; };
@@ -124,6 +127,9 @@
 		832895812B6C014300A9CB97 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		832895832B6C014400A9CB97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		832895862B6C014400A9CB97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8330A4E42E6A214000364248 /* LiveActivitiesSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivitiesSettingsView.swift; sourceTree = "<group>"; };
+		8330A57B2E6DF44900364248 /* ShowLiveActivitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowLiveActivitiesView.swift; sourceTree = "<group>"; };
+		8330A57D2E6E08D800364248 /* LiveActivitiesAppDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivitiesAppDetailView.swift; sourceTree = "<group>"; };
 		8339368F2B6C57F50049FDC7 /* AutoLaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLaunchView.swift; sourceTree = "<group>"; };
 		833936912B6C58F30049FDC7 /* BackgroundAppRefreshView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundAppRefreshView.swift; sourceTree = "<group>"; };
 		833936932B6C5A1B0049FDC7 /* ReturnClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnClockView.swift; sourceTree = "<group>"; };
@@ -298,6 +304,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		8330A4E32E6A212A00364248 /* Auto-Launch */ = {
+			isa = PBXGroup;
+			children = (
+				8330A57A2E6DF43B00364248 /* Live Activities */,
+				8330A4E42E6A214000364248 /* LiveActivitiesSettingsView.swift */,
+			);
+			path = "Auto-Launch";
+			sourceTree = "<group>";
+		};
+		8330A57A2E6DF43B00364248 /* Live Activities */ = {
+			isa = PBXGroup;
+			children = (
+				8330A57B2E6DF44900364248 /* ShowLiveActivitiesView.swift */,
+				8330A57D2E6E08D800364248 /* LiveActivitiesAppDetailView.swift */,
+			);
+			path = "Live Activities";
+			sourceTree = "<group>";
+		};
 		8339369F2B6C715E0049FDC7 /* Focus */ = {
 			isa = PBXGroup;
 			children = (
@@ -442,6 +466,7 @@
 		836D6ABE2B6C43A6008DBB8F /* General */ = {
 			isa = PBXGroup;
 			children = (
+				8330A4E32E6A212A00364248 /* Auto-Launch */,
 				83EDDA8A2B6D338600DC2F2B /* Return to Clock */,
 				836D6ABF2B6C43B0008DBB8F /* AboutView.swift */,
 				836D6AC32B6C4682008DBB8F /* SoftwareUpdateView.swift */,
@@ -720,6 +745,7 @@
 				832895802B6C014300A9CB97 /* NanoSettingsApp.swift in Sources */,
 				83F7218A2C815484004B3CAF /* LiveActivitiesView.swift in Sources */,
 				836D6AC42B6C4682008DBB8F /* SoftwareUpdateView.swift in Sources */,
+				8330A57E2E6E08D800364248 /* LiveActivitiesAppDetailView.swift in Sources */,
 				83C4E2022DDF8073002B65CA /* SettingsLogger.swift in Sources */,
 				833936902B6C57F50049FDC7 /* AutoLaunchView.swift in Sources */,
 				833936AB2B6C80FF0049FDC7 /* AirplaneModeView.swift in Sources */,
@@ -733,6 +759,7 @@
 				833936A62B6C75D10049FDC7 /* SymbolLink.swift in Sources */,
 				83A292B32B729DE90028907F /* TimeDaylightView.swift in Sources */,
 				83A292AE2B729CFF0028907F /* HealthPermissionsView.swift in Sources */,
+				8330A57C2E6DF44900364248 /* ShowLiveActivitiesView.swift in Sources */,
 				831987942B6EF020009937B0 /* LiveSpeechView.swift in Sources */,
 				8305D1A12B7149130031865E /* SOSView.swift in Sources */,
 				8305D1A42B7149D00031865E /* HoldSideButtonView.swift in Sources */,
@@ -741,6 +768,7 @@
 				8319878D2B6ECBD9009937B0 /* TouchAccommodationsView.swift in Sources */,
 				83F721872C81532B004B3CAF /* SmartStackView.swift in Sources */,
 				83E6C3912B6F16D4003DDBC7 /* SiriHistoryView.swift in Sources */,
+				8330A4E52E6A214000364248 /* LiveActivitiesSettingsView.swift in Sources */,
 				83EDDA902B6D9F5800DC2F2B /* WakeDurationView.swift in Sources */,
 				83EDDA822B6D2EBE00DC2F2B /* TextSizeView.swift in Sources */,
 				833D231D2B70478200EB3E8F /* ReduceLoudSoundsView.swift in Sources */,

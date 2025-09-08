@@ -9,10 +9,7 @@ import SwiftUI
 
 struct SoftwareUpdateView: View {
     var body: some View {
-        List {
-            // Empty
-        }
-        .navigationTitle("Software Update")
+        List {}.navigationTitle("SOFTWARE_UPDATE_TITLE")
     }
 }
 
