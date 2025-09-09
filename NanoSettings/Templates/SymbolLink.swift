@@ -15,10 +15,10 @@
 import SwiftUI
 
 struct SymbolLink<Content: View>: View {
-    var title: String = "12:00 AM to 12:00 AM"
-    var subtitle = String()
-    var icon: String = "applesiri"
-    var color: Color = Color.blue
+    var title = "12:00 AM to 12:00 AM"
+    var subtitle = ""
+    var icon = "com.apple.application-icon.siri"
+    var color = Color.blue
     var content: Content
     
     var body: some View {
@@ -51,9 +51,9 @@ struct SymbolLink<Content: View>: View {
                         .frame(height: 17)
                 }
                 VStack(alignment: .leading) {
-                    Text(title)
+                    Text(.init(title))
                     if !subtitle.isEmpty {
-                        Text(subtitle)
+                        Text(.init(subtitle))
                             .foregroundStyle(.secondary)
                     }
                 }
