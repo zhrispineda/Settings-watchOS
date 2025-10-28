@@ -23,9 +23,9 @@ struct AboutView: View {
     
     var body: some View {
         List {
-            ClearRow(title: "DEVICE_NAME_TITLE".localize(), subtitle: WKInterfaceDevice.current().localizedModel)
-            ClearRow(title: "VERSION_TITLE".localize(), subtitle: "\(WKInterfaceDevice.current().systemVersion) (\(buildVersion))")
-            ClearRow(title: "MODEL_NAME".localize(), subtitle: WKInterfaceDevice.current().localizedModel)
+            ClearRow(title: "DEVICE_NAME_TITLE".localized(), subtitle: WKInterfaceDevice.current().localizedModel)
+            ClearRow(title: "VERSION_TITLE".localized(), subtitle: "\(WKInterfaceDevice.current().systemVersion) (\(buildVersion))")
+            ClearRow(title: "MODEL_NAME".localized(), subtitle: WKInterfaceDevice.current().localizedModel)
             
             // Model Row
             VStack(alignment: .leading) {
@@ -42,8 +42,8 @@ struct AboutView: View {
             }
             .listRowBackground(Color.clear)
             
-            ClearRow(title: "APPLICATIONS_TITLE".localize(), subtitle: "0")
-            ClearRow(title: "LEGAL_INFO_TITLE".localize(), subtitle: "LEGAL_INFO_DETAILS".localize())
+            ClearRow(title: "APPLICATIONS_TITLE".localized(), subtitle: "0")
+            ClearRow(title: "LEGAL_INFO_TITLE".localized(), subtitle: "LEGAL_INFO_DETAILS".localized())
         }
         .navigationTitle("STATUS_BAR_TITLE_ABOUT")
     }
