@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(SettingsModel.self) private var model
+    
     var body: some View {
         NavigationStack {
             List {
                 // MARK: Main Section
                 // Notifications, Smart Stack, General, Focus, Airplane Mode, Wi-Fi, Bluetooth, Display & Brightness, App View, Gestures, Accessibility, Siri, Sounds & Haptics, Passcode, SOS, Battery, Privacy & Security
                 Section {
-                    ForEach(mainSectionList) { item in
+                    ForEach(model.mainSectionList) { item in
                         SettingsLink(item.title.localize(), icon: item.icon, primaryColor: item.primaryColor, secondaryColor: item.secondaryColor, content: item.content)
                     }
                 }
@@ -22,7 +24,7 @@ struct ContentView: View {
                 // MARK: Apps Section
                 // Clock, Contacts, Health, Heart, Workout
                 Section {
-                    ForEach(appSectionList) { item in
+                    ForEach(model.appSectionList) { item in
                         SettingsLink(item.title.localize(), icon: item.icon, primaryColor: item.primaryColor, secondaryColor: item.secondaryColor, content: item.content)
                     }
                 }
@@ -34,4 +36,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .environment(SettingsModel())
 }
