@@ -5,11 +5,14 @@
 
 import Foundation
 
+/// Helper functions for interacting with MobileGestalt, an internal system for device characteristics lookup.
 class MGHelper {
     /// Returns the value of the given key.
     ///
     /// - Parameter key: The key as a String
     /// - Returns: The value of the key as either a String value or nil
+    ///
+    /// - Warning: Do not use this method for public apps. Usage is not recommended as it is not publicly supported and may be unstable.
     static func read(key: String) -> String? {
         typealias MGKey = (@convention(c) (CFString) -> CFTypeRef?)
         var mgKey: MGKey?

@@ -136,9 +136,9 @@ struct NavigationData: Identifiable {
         },
         NavigationData(
             title: "ACCESSIBILITY_TITLE",
-            icon: "accessibility",
+            icon: "accessibility.fill",
             primaryColor: .white,
-            secondaryColor: .white
+            secondaryColor: .blue
         ) {
             AnyView(
                 AccessibilityView()
@@ -227,14 +227,6 @@ struct NavigationData: Identifiable {
         ) {
             AnyView(
                 HealthView()
-            )
-        },
-        NavigationData(
-            title: "Heart",
-            icon: "appleheart"
-        ) {
-            AnyView(
-                HeartView()
             )
         },
         NavigationData(
