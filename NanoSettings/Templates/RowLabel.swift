@@ -2,14 +2,16 @@
 //  RowLabel.swift
 //  NanoSettings
 //
-//  Simple VStack containing a top title text and status secondary text below it
-//
 
 import SwiftUI
 
+/// `VStack` container that displays a leading-aligned title and subtitle.
+///
+/// - Parameter title: String title.
+/// - Parameter subtitle: String subtitle, shown with a secondary foreground style.
 struct RowLabel: View {
-    var title = String()
-    var subtitle = String()
+    var title = ""
+    var subtitle = ""
     
     var body: some View {
         VStack(alignment: .leading) {
