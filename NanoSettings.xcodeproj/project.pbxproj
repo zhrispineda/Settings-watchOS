@@ -37,7 +37,6 @@
 		8339369E2B6C6B720049FDC7 /* ProfilesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8339369D2B6C6B720049FDC7 /* ProfilesView.swift */; };
 		833936A12B6C716D0049FDC7 /* FocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833936A02B6C716D0049FDC7 /* FocusView.swift */; };
 		833936A42B6C73580049FDC7 /* DoNotDisturbView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833936A32B6C73580049FDC7 /* DoNotDisturbView.swift */; };
-		833936A62B6C75D10049FDC7 /* SymbolLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833936A52B6C75D10049FDC7 /* SymbolLink.swift */; };
 		833936A82B6C77EA0049FDC7 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833936A72B6C77EA0049FDC7 /* ScheduleView.swift */; };
 		833936AB2B6C80FF0049FDC7 /* AirplaneModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833936AA2B6C80FF0049FDC7 /* AirplaneModeView.swift */; };
 		833D23152B70442A00EB3E8F /* SoundsHapticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833D23142B70442A00EB3E8F /* SoundsHapticsView.swift */; };
@@ -142,7 +141,6 @@
 		8339369D2B6C6B720049FDC7 /* ProfilesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilesView.swift; sourceTree = "<group>"; };
 		833936A02B6C716D0049FDC7 /* FocusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusView.swift; sourceTree = "<group>"; };
 		833936A32B6C73580049FDC7 /* DoNotDisturbView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoNotDisturbView.swift; sourceTree = "<group>"; };
-		833936A52B6C75D10049FDC7 /* SymbolLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolLink.swift; sourceTree = "<group>"; };
 		833936A72B6C77EA0049FDC7 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
 		833936AA2B6C80FF0049FDC7 /* AirplaneModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirplaneModeView.swift; sourceTree = "<group>"; };
 		833D23142B70442A00EB3E8F /* SoundsHapticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsHapticsView.swift; sourceTree = "<group>"; };
@@ -451,7 +449,6 @@
 				836D6ABA2B6C408C008DBB8F /* IconToggle.swift */,
 				836D6AC12B6C4428008DBB8F /* ClearRow.swift */,
 				833936952B6C68890049FDC7 /* IconLabel.swift */,
-				833936A52B6C75D10049FDC7 /* SymbolLink.swift */,
 				8353FA742B73F52C00C78938 /* RowLabel.swift */,
 			);
 			path = Templates;
@@ -760,7 +757,6 @@
 				835DE6072B6C105B00FC23C8 /* NanoSettingsModel.swift in Sources */,
 				83A4056B2E10EBBB002B588D /* ControlCenterView.swift in Sources */,
 				833936922B6C58F30049FDC7 /* BackgroundAppRefreshView.swift in Sources */,
-				833936A62B6C75D10049FDC7 /* SymbolLink.swift in Sources */,
 				83A292B32B729DE90028907F /* TimeDaylightView.swift in Sources */,
 				83A292AE2B729CFF0028907F /* HealthPermissionsView.swift in Sources */,
 				8330A57C2E6DF44900364248 /* ShowLiveActivitiesView.swift in Sources */,

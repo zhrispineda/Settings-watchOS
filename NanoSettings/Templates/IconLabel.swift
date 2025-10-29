@@ -11,9 +11,12 @@
 
 import SwiftUI
 
+/// An `HStack` container with an icon and leading title
+/// - Parameter title: String title.
+/// - Parameter icon: Icon name. (Accepts UTIs and bundle IDs)
 struct IconLabel: View {
-    var title = "Calculator"
-    var icon = "com.apple.NanoCalculator.watchkitapp"
+    var title: String
+    var icon: String
     
     var body: some View {
         HStack(spacing: 8) {
@@ -45,5 +48,5 @@ struct IconLabel: View {
 }
 
 #Preview {
-    IconLabel()
+    IconLabel(title: "Settings", icon: "com.apple.NanoSettings")
 }

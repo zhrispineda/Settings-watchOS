@@ -8,12 +8,14 @@ import SwiftUI
 /// A `NavigationLink` container with an icon and text.
 ///
 /// - Parameter title: String text to display next to the icon.
+/// - Parameter subtitle: String text to display under the title.
 /// - Parameter icon: Name of an SF Symbol or image asset. (Accepts UTIs and bundle IDs)
 /// - Parameter primaryColor: Icon color. (Defaults to `.white`)
 /// - Parameter secondaryColor: Icon background fill color. (Defaults to `.blue`)
 /// - Parameter content: Destination view to push.
 struct SettingsLink<Content: View>: View {
     let title: String
+    let subtitle: String
     let icon: String
     let primaryColor: Color
     let secondaryColor: Color
@@ -22,12 +24,14 @@ struct SettingsLink<Content: View>: View {
     
     init(
         _ title: String,
+        subtitle: String = "",
         icon: String,
         primaryColor: Color = .white,
         secondaryColor: Color = .blue,
         @ViewBuilder content: () -> Content
     ) {
         self.title = title
+        self.subtitle = subtitle
         self.icon = icon
         self.primaryColor = primaryColor
         self.secondaryColor = secondaryColor
@@ -38,7 +42,14 @@ struct SettingsLink<Content: View>: View {
         if disabledLinks.contains(title) {
             Button {} label: {
                 Label {
-                    Text(title)
+                    VStack(alignment: .leading) {
+                        Text(.init(title))
+                        if !subtitle.isEmpty {
+                            Text(.init(subtitle))
+                                .font(.footnote)
+                                .foregroundStyle(.secondary)
+                        }
+                    }
                 } icon: {
                     if UIImage(systemName: icon) != nil {
                         Image(systemName: icon)
@@ -69,7 +80,14 @@ struct SettingsLink<Content: View>: View {
                 content
             } label: {
                 Label {
-                    Text(.init(title))
+                    VStack(alignment: .leading) {
+                        Text(.init(title))
+                        if !subtitle.isEmpty {
+                            Text(.init(subtitle))
+                                .font(.footnote)
+                                .foregroundStyle(.secondary)
+                        }
+                    }
                 } icon: {
                     if UIImage(systemName: icon) != nil && icon != "accessibility" && icon != "switch.2" {
                         Image(systemName: icon)
@@ -141,4 +159,5 @@ struct CustomStyle: LabelStyle {
 
 #Preview {
     ContentView()
+        .environment(SettingsModel())
 }
