@@ -22,7 +22,7 @@ struct ContentView: View {
                             icon: item.icon,
                             primaryColor: .white,
                             secondaryColor: item.color,
-                            content: item.content
+                            content: item.destination
                         )
                     }
                 }
@@ -36,7 +36,7 @@ struct ContentView: View {
                             icon: item.icon,
                             primaryColor: .white,
                             secondaryColor: item.color,
-                            content: item.content
+                            content: item.destination
                         )
                     }
                 }

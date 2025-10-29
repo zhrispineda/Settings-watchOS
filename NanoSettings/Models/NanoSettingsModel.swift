@@ -5,188 +5,155 @@
 
 import SwiftUI
 
+/// A model representing a single settings option.
+///
+/// `SettingsItem` encapsulates the data needed to display a link using `SettingsLink`.
+///
+/// - Parameter id: A unique value for the item, automatically generated, conforming to `Identifiable`.
+/// - Parameter title: Localization key or plain string.
+/// - Parameter icon: SF Symbol or asset used to represent the item visually. (Accepts UTIs or bundle IDs)
+/// - Parameter color: Color to apply to the icon's fill background. (Default value of `.blue`)
+/// - Parameter destination: A closure that produces the destination view, wrapped in `AnyView`.
 struct SettingsItem: Identifiable {
     let id = UUID()
     let title: String
     let icon: String
     let color: Color
-    let content: () -> AnyView
+    let destination: () -> AnyView
     
     init(
         title: String,
         icon: String,
-        color: Color = Color.clear,
-        content: @escaping () -> AnyView
+        color: Color = .blue,
+        destination: @escaping () -> AnyView
     ) {
         self.title = title
         self.icon = icon
         self.color = color
-        self.content = content
+        self.destination = destination
     }
 }
 
-@Observable final class SettingsModel {
+/// An observable data model that defines the structure and navigation targets for the app.
+@Observable
+final class SettingsModel {
     let mainSectionList: [SettingsItem] = [
         SettingsItem(
             title: "NOTIFICATIONS_SETTINGS_TITLE",
             icon: "bell.badge.circle.fill",
             color: .red
         ) {
-            AnyView(
-                NotificationsView()
-            )
+            AnyView(NotificationsView())
         },
         SettingsItem(
             title: "SMART_STACK_TITLE",
-            icon: "smartstack.circle.fill",
-            color: .blue
+            icon: "smartstack.circle.fill"
         ) {
-            AnyView(
-                SmartStackView()
-            )
+            AnyView(SmartStackView())
         },
         SettingsItem(
             title: "CONTROL_CENTER_SETTINGS_TITLE",
             icon: "switch.2",
             color: .gray
         ) {
-            AnyView(
-                ControlCenterView()
-            )
+            AnyView(ControlCenterView())
         },
         SettingsItem(
             title: "GENERAL_SETTINGS_TITLE",
             icon: "gear.circle.fill",
             color: .gray
         ) {
-            AnyView(
-                GeneralView()
-            )
+            AnyView(GeneralView())
         },
         SettingsItem(
             title: "FOCUS_MODES",
             icon: "moon.circle.fill",
             color: .indigo
         ) {
-            AnyView(
-                FocusView()
-            )
+            AnyView(FocusView())
         },
         SettingsItem(
             title: "AIRPLANE_MODE_TITLE",
             icon: "airplane.circle.fill",
             color: .orange
         ) {
-            AnyView(
-                AirplaneModeView()
-            )
+            AnyView(AirplaneModeView())
         },
         SettingsItem(
             title: "WIFI_TITLE",
-            icon: "wifi.circle.fill",
-            color: .blue
+            icon: "wifi.circle.fill"
         ) {
-            AnyView(
-                EmptyView()
-            )
+            AnyView(EmptyView())
         },
         SettingsItem(
             title: "BLUETOOTH_TITLE",
-            icon: "bluetooth",
-            color: .blue
+            icon: "bluetooth"
         ) {
-            AnyView(
-                EmptyView()
-            )
+            AnyView(EmptyView())
         },
         SettingsItem(
             title: "BRIGHTNESS_TITLE",
-            icon: "sun.max.circle.fill",
-            color: .blue
+            icon: "sun.max.circle.fill"
         ) {
-            AnyView(
-                DisplayBrightnessView()
-            )
+            AnyView(DisplayBrightnessView())
         },
         SettingsItem(
             title: "APP_LAYOUT_TITLE",
-            icon: "circle.hexagongrid.circle.fill",
-            color: .blue
+            icon: "circle.hexagongrid.circle.fill"
         ) {
-            AnyView(
-                AppView()
-            )
+            AnyView(AppView())
         },
         SettingsItem(
             title: "Gestures",
-            icon: "hand.side.pinch.fill",
-            color: .blue
+            icon: "hand.side.pinch.fill"
         ) {
-            AnyView(
-                GesturesView()
-            )
+            AnyView(GesturesView())
         },
         SettingsItem(
             title: "ACCESSIBILITY_TITLE",
-            icon: "accessibility.fill",
-            color: .blue
+            icon: "accessibility.fill"
         ) {
-            AnyView(
-                AccessibilityView()
-            )
+            AnyView(AccessibilityView())
         },
         SettingsItem(
             title: "SIRI_TITLE",
             icon: "com.apple.application-icon.siri"
         ) {
-            AnyView(
-                SiriView()
-            )
+            AnyView(SiriView())
         },
         SettingsItem(
             title: "VOLUME_TITLE",
             icon: "speaker.wave.2.circle.fill",
             color: .pink
         ) {
-            AnyView(
-                SoundsHapticsView()
-            )
+            AnyView(SoundsHapticsView())
         },
         SettingsItem(
             title: "PASSCODE_TITLE",
             icon: "lock.circle.fill",
             color: .pink
         ) {
-            AnyView(
-                PasscodeView()
-            )
+            AnyView(PasscodeView())
         },
         SettingsItem(
             title: "SOS_TITLE",
             icon: "sos.circle.fill",
             color: .red
         ) {
-            AnyView(
-                SOSView()
-            )
+            AnyView(SOSView())
         },
         SettingsItem(
             title: "BATTERY_TITLE",
             icon: "bolt.circle.fill",
             color: .green
         ) {
-            AnyView(
-                EmptyView()
-            )
+            AnyView(EmptyView())
         },
         SettingsItem(
             title: "PRIVACY_TITLE",
-            icon: "hand.raised.circle.fill",
-            color: .blue
+            icon: "hand.raised.circle.fill"
         ) {
-            AnyView(
-                PrivacySecurityView()
-            )
+            AnyView(PrivacySecurityView())
         }
     ]
     
@@ -195,37 +162,30 @@ struct SettingsItem: Identifiable {
             title: "TIME_TITLE",
             icon: "appleclock"
         ) {
-            AnyView(
-                ClockView()
-            )
+            AnyView(ClockView())
         },
         SettingsItem(
             title: "CONTACTS",
             icon: "contacts"
         ) {
-            AnyView(
-                ContactsView()
-            )
+            AnyView(ContactsView())
         },
         SettingsItem(
             title: "HEALTH_SETTINGS_TITLE",
             icon: "applehealth"
         ) {
-            AnyView(
-                HealthView()
-            )
+            AnyView(HealthView())
         },
         SettingsItem(
             title: "Workout",
             icon: "appleworkout"
         ) {
-            AnyView(
-                WorkoutView()
-            )
+            AnyView(WorkoutView())
         }
     ]
 }
 
 #Preview {
     ContentView()
+        .environment(SettingsModel())
 }
