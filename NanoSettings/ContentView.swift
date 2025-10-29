@@ -17,7 +17,13 @@ struct ContentView: View {
                 // Notifications, Smart Stack, General, Focus, Airplane Mode, Wi-Fi, Bluetooth, Display & Brightness, App View, Gestures, Accessibility, Siri, Sounds & Haptics, Passcode, SOS, Battery, Privacy & Security
                 Section {
                     ForEach(model.mainSectionList) { item in
-                        SettingsLink(item.title.localized(), icon: item.icon, primaryColor: item.primaryColor, secondaryColor: item.secondaryColor, content: item.content)
+                        SettingsLink(
+                            item.title.localized(),
+                            icon: item.icon,
+                            primaryColor: .white,
+                            secondaryColor: item.color,
+                            content: item.content
+                        )
                     }
                 }
                 
@@ -25,7 +31,13 @@ struct ContentView: View {
                 // Clock, Contacts, Health, Heart, Workout
                 Section {
                     ForEach(model.appSectionList) { item in
-                        SettingsLink(item.title.localized(), icon: item.icon, primaryColor: item.primaryColor, secondaryColor: item.secondaryColor, content: item.content)
+                        SettingsLink(
+                            item.title.localized(),
+                            icon: item.icon,
+                            primaryColor: .white,
+                            secondaryColor: item.color,
+                            content: item.content
+                        )
                     }
                 }
             }

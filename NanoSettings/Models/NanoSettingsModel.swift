@@ -5,146 +5,137 @@
 
 import SwiftUI
 
-struct NavigationData: Identifiable {
+struct SettingsItem: Identifiable {
     let id = UUID()
     let title: String
     let icon: String
-    let primaryColor: Color
-    let secondaryColor: Color
+    let color: Color
     let content: () -> AnyView
     
-    init(title: String, icon: String, primaryColor: Color = Color.clear, secondaryColor: Color = Color.clear, content: @escaping () -> AnyView) {
+    init(
+        title: String,
+        icon: String,
+        color: Color = Color.clear,
+        content: @escaping () -> AnyView
+    ) {
         self.title = title
         self.icon = icon
-        self.primaryColor = primaryColor
-        self.secondaryColor = secondaryColor
+        self.color = color
         self.content = content
     }
 }
 
 @Observable final class SettingsModel {
-    let mainSectionList: [NavigationData] = [
-        NavigationData(
+    let mainSectionList: [SettingsItem] = [
+        SettingsItem(
             title: "NOTIFICATIONS_SETTINGS_TITLE",
             icon: "bell.badge.circle.fill",
-            primaryColor: .white,
-            secondaryColor: .red
+            color: .red
         ) {
             AnyView(
                 NotificationsView()
             )
         },
-        NavigationData(
+        SettingsItem(
             title: "SMART_STACK_TITLE",
             icon: "smartstack.circle.fill",
-            primaryColor: .white,
-            secondaryColor: .blue
+            color: .blue
         ) {
             AnyView(
                 SmartStackView()
             )
         },
-        NavigationData(
+        SettingsItem(
             title: "CONTROL_CENTER_SETTINGS_TITLE",
             icon: "switch.2",
-            primaryColor: .white,
-            secondaryColor: .gray
+            color: .gray
         ) {
             AnyView(
                 ControlCenterView()
             )
         },
-        NavigationData(
+        SettingsItem(
             title: "GENERAL_SETTINGS_TITLE",
             icon: "gear.circle.fill",
-            primaryColor: .white,
-            secondaryColor: .gray
+            color: .gray
         ) {
             AnyView(
                 GeneralView()
             )
         },
-        NavigationData(
+        SettingsItem(
             title: "FOCUS_MODES",
             icon: "moon.circle.fill",
-            primaryColor: .white,
-            secondaryColor: .indigo
+            color: .indigo
         ) {
             AnyView(
                 FocusView()
             )
         },
-        NavigationData(
+        SettingsItem(
             title: "AIRPLANE_MODE_TITLE",
             icon: "airplane.circle.fill",
-            primaryColor: .white,
-            secondaryColor: .orange
+            color: .orange
         ) {
             AnyView(
                 AirplaneModeView()
             )
         },
-        NavigationData(
+        SettingsItem(
             title: "WIFI_TITLE",
             icon: "wifi.circle.fill",
-            primaryColor: .white,
-            secondaryColor: .blue
+            color: .blue
         ) {
             AnyView(
                 EmptyView()
             )
         },
-        NavigationData(
+        SettingsItem(
             title: "BLUETOOTH_TITLE",
             icon: "bluetooth",
-            primaryColor: .white,
-            secondaryColor: .blue
+            color: .blue
         ) {
             AnyView(
                 EmptyView()
             )
         },
-        NavigationData(
+        SettingsItem(
             title: "BRIGHTNESS_TITLE",
             icon: "sun.max.circle.fill",
-            primaryColor: .white,
-            secondaryColor: .blue
+            color: .blue
         ) {
             AnyView(
                 DisplayBrightnessView()
             )
         },
-        NavigationData(
+        SettingsItem(
             title: "APP_LAYOUT_TITLE",
             icon: "circle.hexagongrid.circle.fill",
-            primaryColor: .white,
-            secondaryColor: .blue
+            color: .blue
         ) {
             AnyView(
                 AppView()
             )
         },
-        NavigationData(
+        SettingsItem(
             title: "Gestures",
             icon: "hand.side.pinch.fill",
-            primaryColor: .white,
-            secondaryColor: .blue
+            color: .blue
         ) {
             AnyView(
                 GesturesView()
             )
         },
-        NavigationData(
+        SettingsItem(
             title: "ACCESSIBILITY_TITLE",
             icon: "accessibility.fill",
-            primaryColor: .white,
-            secondaryColor: .blue
+            color: .blue
         ) {
             AnyView(
                 AccessibilityView()
             )
         },
-        NavigationData(
+        SettingsItem(
             title: "SIRI_TITLE",
             icon: "com.apple.application-icon.siri"
         ) {
@@ -152,51 +143,46 @@ struct NavigationData: Identifiable {
                 SiriView()
             )
         },
-        NavigationData(
+        SettingsItem(
             title: "VOLUME_TITLE",
             icon: "speaker.wave.2.circle.fill",
-            primaryColor: .white,
-            secondaryColor: .pink
+            color: .pink
         ) {
             AnyView(
                 SoundsHapticsView()
             )
         },
-        NavigationData(
+        SettingsItem(
             title: "PASSCODE_TITLE",
             icon: "lock.circle.fill",
-            primaryColor: .white,
-            secondaryColor: .pink
+            color: .pink
         ) {
             AnyView(
                 PasscodeView()
             )
         },
-        NavigationData(
+        SettingsItem(
             title: "SOS_TITLE",
             icon: "sos.circle.fill",
-            primaryColor: .white,
-            secondaryColor: .red
+            color: .red
         ) {
             AnyView(
                 SOSView()
             )
         },
-        NavigationData(
+        SettingsItem(
             title: "BATTERY_TITLE",
             icon: "bolt.circle.fill",
-            primaryColor: .white,
-            secondaryColor: .green
+            color: .green
         ) {
             AnyView(
                 EmptyView()
             )
         },
-        NavigationData(
+        SettingsItem(
             title: "PRIVACY_TITLE",
             icon: "hand.raised.circle.fill",
-            primaryColor: .white,
-            secondaryColor: .blue
+            color: .blue
         ) {
             AnyView(
                 PrivacySecurityView()
@@ -204,8 +190,8 @@ struct NavigationData: Identifiable {
         }
     ]
     
-    let appSectionList: [NavigationData] = [
-        NavigationData(
+    let appSectionList: [SettingsItem] = [
+        SettingsItem(
             title: "TIME_TITLE",
             icon: "appleclock"
         ) {
@@ -213,7 +199,7 @@ struct NavigationData: Identifiable {
                 ClockView()
             )
         },
-        NavigationData(
+        SettingsItem(
             title: "CONTACTS",
             icon: "contacts"
         ) {
@@ -221,7 +207,7 @@ struct NavigationData: Identifiable {
                 ContactsView()
             )
         },
-        NavigationData(
+        SettingsItem(
             title: "HEALTH_SETTINGS_TITLE",
             icon: "applehealth"
         ) {
@@ -229,7 +215,7 @@ struct NavigationData: Identifiable {
                 HealthView()
             )
         },
-        NavigationData(
+        SettingsItem(
             title: "Workout",
             icon: "appleworkout"
         ) {
