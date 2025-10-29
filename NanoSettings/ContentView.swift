@@ -20,7 +20,6 @@ struct ContentView: View {
                         SettingsLink(
                             item.title.localized(),
                             icon: item.icon,
-                            primaryColor: .white,
                             secondaryColor: item.color,
                             content: item.destination
                         )
@@ -34,7 +33,6 @@ struct ContentView: View {
                         SettingsLink(
                             item.title.localized(),
                             icon: item.icon,
-                            primaryColor: .white,
                             secondaryColor: item.color,
                             content: item.destination
                         )

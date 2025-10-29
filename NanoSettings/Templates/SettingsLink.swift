@@ -5,23 +5,28 @@
 
 import SwiftUI
 
-let disabledLinks: Set<String> = ["Cellular", "Wi-Fi", "Bluetooth", "Battery"]
-
-/// A NavigationLink container with an icon with symbols and images
+/// A `NavigationLink` container with an icon and text.
 ///
-/// - Parameter title: Text for the cell
-/// - Parameter icon: Name of SF Symbol or Image
-/// - Parameter primaryColor: Color of primary color
-/// - Parameter secondaryColor: (Optional) Color of secondary color
-/// - Parameter content: View for cell navigate to
+/// - Parameter title: String text to display next to the icon.
+/// - Parameter icon: Name of an SF Symbol or image asset. (Accepts UTIs and bundle IDs)
+/// - Parameter primaryColor: Icon color. (Defaults to `.white`)
+/// - Parameter secondaryColor: Icon background fill color. (Defaults to `.blue`)
+/// - Parameter content: Destination view to push.
 struct SettingsLink<Content: View>: View {
     let title: String
     let icon: String
     let primaryColor: Color
     let secondaryColor: Color
     let content: Content
+    private let disabledLinks: Set<String> = ["Cellular", "Wi-Fi", "Bluetooth", "Battery"]
     
-    init(_ title: String, icon: String, primaryColor: Color = Color.clear, secondaryColor: Color = Color.clear, @ViewBuilder content: () -> Content) {
+    init(
+        _ title: String,
+        icon: String,
+        primaryColor: Color = .white,
+        secondaryColor: Color = .blue,
+        @ViewBuilder content: () -> Content
+    ) {
         self.title = title
         self.icon = icon
         self.primaryColor = primaryColor
@@ -103,15 +108,6 @@ struct SettingsLink<Content: View>: View {
                                     .resizable()
                                     .scaledToFit()
                                     .frame(height: icon == "switch.2" ? 10 : 7)
-                            }
-                        case "bluetooth":
-                            ZStack {
-                                Image(systemName: "circle.fill")
-                                    .foregroundStyle(secondaryColor)
-                                Image(_internalSystemName: icon)
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 7)
                             }
                         case "smartstack.circle.fill", "figure.run.motion.circle.fill":
                             Image(_internalSystemName: icon)
