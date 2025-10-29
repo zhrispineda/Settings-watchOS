@@ -6,7 +6,8 @@
 import SwiftUI
 
 /// A toggle combined with an icon.
-/// - Parameter isEnabled: Boolean for if the toggle is enabled.
+///
+/// - Parameter isEnabled: If the toggle is enabled.
 /// - Parameter title: String title text.
 /// - Parameter icon: String icon name.
 struct IconToggle: View {

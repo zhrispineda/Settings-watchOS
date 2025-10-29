@@ -2,15 +2,13 @@
 //  ClearRow.swift
 //  NanoSettings
 //
-//  Template for a List row cell item with no background.
-//
-//  Parameters:
-//  title: String
-//  status: String
-//
 
 import SwiftUI
 
+/// `VStack` container with a clear background.
+///
+/// - Parameter title: String title.
+/// - Parameter subtitle: String subtitle with a secondary foreground style.
 struct ClearRow: View {
     var title: String = "Title"
     var subtitle: String = "Subtitle"
