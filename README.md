@@ -2,7 +2,7 @@
 A **work-in-progress** SwiftUI recreation of the watchOS Settings app.
 
 ## Information
-- This project is a recreation of Apple's Settings app for Apple Watch **(Simulator)** on watchOS 26.0.1 (23R8362).
+- This project is a recreation of Apple's Settings app for Apple Watch **(Simulator)** on watchOS 26.1 (23S37).
 - All features within the app are only simulations and have no effect on the device outside of the app.
 - This is based off of the Simulator and not a physical Apple Watch for now.
 
