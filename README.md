@@ -2,7 +2,7 @@
 A **work-in-progress** SwiftUI recreation of the watchOS Settings app.
 
 > [!NOTE]  
-> This project is focused on the latest public releases of iOS, iPadOS, and Xcode. Use an older branch to use older versions.
+> This project is focused on the latest public releases of watchOS and Xcode. Use an older branch to use older versions.
 
 ## Information
 - Recreation of Apple's Settings app for watchOS 26.1 (23S37).
