@@ -16,9 +16,9 @@ A **work-in-progress** SwiftUI recreation of the watchOS Settings app.
 > **Do not reuse any code from this project that relies on private methods.** Consider publicly supported alternatives instead.
 
 ## Preview
-Apple's Settings app is opened first, followed up by this project's app:
+The app for this project opens first, followed by Apple's Settings app:
 
-![A GIF displaying Apple's Settings app first, followed by this project's Settings app.](Assets/Settings.gif)
+![Project app is launched first to display layout similarities, then launches Apple's Settings app to compare.](Assets/Settings.gif)
 
 ## Usage
 Open in Xcode and run with either watchOS Simulator or a physical Apple Watch with Developer Mode enabled as a destination.
