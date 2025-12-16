@@ -1,57 +1,25 @@
 {
   "fill" : {
     "linear-gradient" : [
-      "srgb:0.66422,0.66424,0.66423,1.00000",
-      "srgb:0.37056,0.37056,0.37056,1.00000"
+      "srgb:0.65882,0.66275,0.67843,1.00000",
+      "srgb:0.37647,0.37647,0.39216,1.00000"
     ]
   },
   "groups" : [
     {
-      "blur-material-specializations" : [
-        {
-          "appearance" : "dark",
-          "value" : null
-        }
-      ],
+      "blend-mode" : "normal",
+      "blur-material" : 0.1,
       "layers" : [
         {
-          "fill-specializations" : [
-            {
-              "appearance" : "dark",
-              "value" : {
-                "automatic-gradient" : "srgb:0.92143,0.92145,0.92144,1.00000"
-              }
-            }
-          ],
-          "image-name" : "3.top.cog.svg",
-          "name" : "3.top.cog",
-          "opacity-specializations" : [
-            {
-              "value" : 1
-            },
-            {
-              "appearance" : "dark",
-              "value" : 1
-            }
-          ]
-        },
-        {
-          "image-name" : "2.low.cog.svg",
-          "name" : "2.low.cog",
-          "opacity-specializations" : [
-            {
-              "value" : 0.8
-            },
-            {
-              "appearance" : "dark",
-              "value" : 0.75
-            }
-          ]
+          "image-name" : "3.top.cog 2.svg",
+          "name" : "3.top.cog 2"
         }
       ],
+      "lighting" : "individual",
+      "name" : "3.top.cog",
       "opacity-specializations" : [
         {
-          "value" : 0.95
+          "value" : 1
         },
         {
           "appearance" : "dark",
@@ -60,29 +28,43 @@
       ],
       "shadow" : {
         "kind" : "neutral",
-        "opacity" : 0.5
+        "opacity" : 1
       },
-      "specular-specializations" : [
+      "specular" : true,
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.5
+      }
+    },
+    {
+      "blend-mode" : "normal",
+      "blur-material" : null,
+      "layers" : [
         {
-          "appearance" : "dark",
-          "value" : true
+          "image-name" : "2.low.cog 2.svg",
+          "name" : "2.low.cog 2"
         }
       ],
-      "translucency-specializations" : [
+      "lighting" : "individual",
+      "name" : "2.low.cog",
+      "opacity-specializations" : [
         {
-          "value" : {
-            "enabled" : true,
-            "value" : 0.5
-          }
+          "value" : 0.65
         },
         {
           "appearance" : "dark",
-          "value" : {
-            "enabled" : true,
-            "value" : 0.5
-          }
+          "value" : 1
         }
-      ]
+      ],
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 1
+      },
+      "specular" : true,
+      "translucency" : {
+        "enabled" : false,
+        "value" : 0.5
+      }
     }
   ],
   "supported-platforms" : {
