@@ -14,7 +14,7 @@ struct ContentView: View {
         NavigationStack {
             List {
                 // MARK: Main Section
-                // Notifications, Smart Stack, General, Focus, Airplane Mode, Wi-Fi, Bluetooth, Display & Brightness, App View, Gestures, Accessibility, Siri, Sounds & Haptics, Passcode, SOS, Battery, Privacy & Security
+                // Notifications, Smart Stack, Control Center, General, Focus, Airplane Mode, Wi-Fi, Bluetooth, Display & Brightness, App View, Gestures, Accessibility, Siri, Sounds & Haptics, Passcode, SOS, Battery, Privacy & Security
                 Section {
                     ForEach(model.mainSectionList) { item in
                         SettingsLink(
@@ -27,7 +27,7 @@ struct ContentView: View {
                 }
                 
                 // MARK: Apps Section
-                // Clock, Contacts, Health, Heart, Workout
+                // Clock, Contacts, Health, Workout
                 Section {
                     ForEach(model.appSectionList) { item in
                         SettingsLink(
