@@ -183,6 +183,30 @@ final class SettingsModel {
             AnyView(WorkoutView())
         }
     ]
+    
+    let developerSectionList: [SettingsItem] = [
+        SettingsItem(
+            title: "Developer",
+            icon: "hammer.circle.fill",
+            color: .blue
+        ) {
+            AnyView(EmptyView())
+        },
+        SettingsItem(
+            title: "Internal",
+            icon: "gear.circle.fill",
+            color: .blue
+        ) {
+            AnyView(EmptyView())
+        },
+        SettingsItem(
+            title: "Carrier Settings",
+            icon: "gear.circle.fill",
+            color: .blue
+        ) {
+            AnyView(EmptyView())
+        },
+    ]
 }
 
 #Preview {
