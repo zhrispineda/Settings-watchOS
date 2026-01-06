@@ -2,11 +2,10 @@
 //  WorkoutView.swift
 //  NanoSettings
 //
-//  Settings > Workout
-//
 
 import SwiftUI
 
+/// View for Settings > Workout
 struct WorkoutView: View {
     @AppStorage("LowPowerModeToggle") private var lowPowerModeEnabled = false
     private let fitnessPath = "/System/Library/PrivateFrameworks/FitnessUI.framework"
