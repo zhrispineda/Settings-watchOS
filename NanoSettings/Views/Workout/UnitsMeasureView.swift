@@ -8,181 +8,108 @@
 import SwiftUI
 
 struct UnitsMeasureView: View {
-    // Variables
-    @AppStorage("EnergyUnits") private var selectedEnergyUnit = "Calories"
-    @AppStorage("PoolLengthUnit") private var selectedPoolLengthUnit = "Yards"
-    @AppStorage("CyclingUnit") private var selectedCyclingWorkout = "Miles"
-    @AppStorage("WalkingRunningUnit") private var selectedWalkingRunningWorkout = "Miles"
-    @AppStorage("AutoTrackUnit") private var selectedAutoTrackDetection = "Meters"
-    @AppStorage("CrossCountryUnit") private var selectedCrossCountryWorkout = "Miles"
-    @AppStorage("DownhillSnowUnit") private var selectedDownhillSnowSportsWorkout = "Miles"
-    @AppStorage("RowingUnit") private var selectedRowingWorkout = "Kilometers"
-    @AppStorage("PaddlingUnit") private var selectedPaddlingWorkout = "Miles"
-    @AppStorage("SkatingUnit") private var selectedSkatingWorkout = "Miles"
-    let energyUnitOptions = ["Calories", "Kilocalories", "Kilojoules"]
-    let poolLengthUnitOptions = ["Yards", "Meters"]
-    let cyclingWorkoutOptions = ["Miles", "Kilometers"]
-    let walkingRunningWorkoutOptions = ["Miles", "Kilometers"]
-    let autoTrackDetectOptions = ["Miles", "Meters"]
-    let crossCountrySkiingWorkoutOptions = ["Miles", "Kilometers"]
-    let downhillSnowSportsWorkoutOptions = ["Miles", "Kilometers"]
-    let rowingWorkoutOptions = ["Miles", "Kilometers"]
-    let paddlingWorkoutOptions = ["Miles", "Kilometers"]
-    let skatingWorkoutOptions = ["Miles", "Kilometers"]
+    @AppStorage("EnergyUnits") private var selectedEnergyUnit = "ENERGY_UNITS_CALORIES_LABEL"
+    @AppStorage("PoolLengthUnit") private var selectedPoolLengthUnit = "POOL_LENGTH_YARDS_LABEL"
+    @AppStorage("CyclingUnit") private var selectedCyclingWorkout = "STANDARD_WORKOUTS_DISTANCE_UNIT_MILES_LABEL"
+    @AppStorage("WalkingRunningUnit") private var selectedWalkingRunningWorkout = "STANDARD_WORKOUTS_DISTANCE_UNIT_MILES_LABEL"
+    @AppStorage("AutoTrackUnit") private var selectedAutoTrackDetection = "POOL_LENGTH_METERS_LABEL"
+    @AppStorage("CrossCountryUnit") private var selectedCrossCountryWorkout = "STANDARD_WORKOUTS_DISTANCE_UNIT_MILES_LABEL"
+    @AppStorage("DownhillSnowUnit") private var selectedDownhillSnowSportsWorkout = "STANDARD_WORKOUTS_DISTANCE_UNIT_MILES_LABEL"
+    @AppStorage("RowingUnit") private var selectedRowingWorkout = "STANDARD_WORKOUTS_DISTANCE_UNIT_KILOMETERS_LABEL"
+    @AppStorage("PaddlingUnit") private var selectedPaddlingWorkout = "STANDARD_WORKOUTS_DISTANCE_UNIT_MILES_LABEL"
+    @AppStorage("SkatingUnit") private var selectedSkatingWorkout = "STANDARD_WORKOUTS_DISTANCE_UNIT_MILES_LABEL"
+    private let energyUnitOptions = [
+        "ENERGY_UNITS_CALORIES_LABEL",
+        "ENERGY_UNITS_KILOCALORIES_LABEL",
+        "ENERGY_UNITS_KILOJOULES_LABEL"
+    ]
+    private let poolLengthUnitOptions = [
+        "POOL_LENGTH_YARDS_LABEL",
+        "POOL_LENGTH_METERS_LABEL"
+    ]
+    private let autoTrackDetectOptions = [
+        "STANDARD_WORKOUTS_DISTANCE_UNIT_MILES_LABEL",
+        "POOL_LENGTH_METERS_LABEL"
+    ]
+    private let unitOptions = [
+        "STANDARD_WORKOUTS_DISTANCE_UNIT_MILES_LABEL",
+        "STANDARD_WORKOUTS_DISTANCE_UNIT_KILOMETERS_LABEL"
+    ]
+    private let path = "/System/Library/PreferenceBundles/WorkoutSettings.bundle"
     
     var body: some View {
         List {
-            Section("Energy Units") {
+            Picker("ENERGY_UNITS_TITLE".localized(path: path), selection: $selectedEnergyUnit) {
                 ForEach(energyUnitOptions, id: \.self) { option in
-                    Button {
-                        selectedEnergyUnit = option
-                    } label: {
-                        HStack {
-                            Text(option)
-                            Spacer()
-                            Image(systemName: "\(selectedEnergyUnit == option ? "checkmark" : "")")
-                                .foregroundStyle(.blue)
-                        }
-                    }
+                    Text(option.localized(path: path))
                 }
             }
+            .pickerStyle(.inline)
             
-            Section("Pool Length Units") {
+            Picker("POOL_LENGTH_TITLE".localized(path: path), selection: $selectedPoolLengthUnit) {
                 ForEach(poolLengthUnitOptions, id: \.self) { option in
-                    Button {
-                        selectedPoolLengthUnit = option
-                    } label: {
-                        HStack {
-                            Text(option)
-                            Spacer()
-                            Image(systemName: "\(selectedPoolLengthUnit == option ? "checkmark" : "")")
-                                .foregroundStyle(.blue)
-                        }
-                    }
+                    Text(option.localized(path: path))
                 }
             }
+            .pickerStyle(.inline)
             
-            Section("Cycling Workouts") {
-                ForEach(cyclingWorkoutOptions, id: \.self) { option in
-                    Button {
-                        selectedCyclingWorkout = option
-                    } label: {
-                        HStack {
-                            Text(option)
-                            Spacer()
-                            Image(systemName: "\(selectedCyclingWorkout == option ? "checkmark" : "")")
-                                .foregroundStyle(.blue)
-                        }
-                    }
+            Picker("CYCLING_WORKOUTS_TITLE".localized(path: path), selection: $selectedCyclingWorkout) {
+                ForEach(unitOptions, id: \.self) { option in
+                    Text(option.localized(path: path))
                 }
             }
+            .pickerStyle(.inline)
             
-            Section("Walking and Running Workouts") {
-                ForEach(walkingRunningWorkoutOptions, id: \.self) { option in
-                    Button {
-                        selectedWalkingRunningWorkout = option
-                    } label: {
-                        HStack {
-                            Text(option)
-                            Spacer()
-                            Image(systemName: "\(selectedWalkingRunningWorkout == option ? "checkmark" : "")")
-                                .foregroundStyle(.blue)
-                        }
-                    }
+            Picker("WALKING_RUNNING_WORKOUTS_TITLE".localized(path: path), selection: $selectedWalkingRunningWorkout) {
+                ForEach(unitOptions, id: \.self) { option in
+                    Text(option.localized(path: path))
                 }
             }
+            .pickerStyle(.inline)
             
-            Section("Automatic Track Detection") {
+            Picker("TRACK_WORKOUTS_TITLE".localized(path: path), selection: $selectedAutoTrackDetection) {
                 ForEach(autoTrackDetectOptions, id: \.self) { option in
-                    Button {
-                        selectedAutoTrackDetection = option
-                    } label: {
-                        HStack {
-                            Text(option)
-                            Spacer()
-                            Image(systemName: "\(selectedAutoTrackDetection == option ? "checkmark" : "")")
-                                .foregroundStyle(.blue)
-                        }
-                    }
+                    Text(option.localized(path: path))
                 }
             }
+            .pickerStyle(.inline)
             
-            Section("Cross Country Skiing Workouts") {
-                ForEach(crossCountrySkiingWorkoutOptions, id: \.self) { option in
-                    Button {
-                        selectedCrossCountryWorkout = option
-                    } label: {
-                        HStack {
-                            Text(option)
-                            Spacer()
-                            Image(systemName: "\(selectedCrossCountryWorkout == option ? "checkmark" : "")")
-                                .foregroundStyle(.blue)
-                        }
-                    }
+            Picker("CROSS_COUNTRY_SKIING_WORKOUTS_TITLE".localized(path: path), selection: $selectedCrossCountryWorkout) {
+                ForEach(unitOptions, id: \.self) { option in
+                    Text(option.localized(path: path))
                 }
             }
+            .pickerStyle(.inline)
             
-            Section("Downhill Snow Sports Workouts") {
-                ForEach(downhillSnowSportsWorkoutOptions, id: \.self) { option in
-                    Button {
-                        selectedDownhillSnowSportsWorkout = option
-                    } label: {
-                        HStack {
-                            Text(option)
-                            Spacer()
-                            Image(systemName: "\(selectedDownhillSnowSportsWorkout == option ? "checkmark" : "")")
-                                .foregroundStyle(.blue)
-                        }
-                    }
+            Picker("DOWNHILL_SNOW_SPORTS_WORKOUTS_TITLE".localized(path: path), selection: $selectedDownhillSnowSportsWorkout) {
+                ForEach(unitOptions, id: \.self) { option in
+                    Text(option.localized(path: path))
                 }
             }
+            .pickerStyle(.inline)
             
-            Section("Rowing Workouts") {
-                ForEach(rowingWorkoutOptions, id: \.self) { option in
-                    Button {
-                        selectedRowingWorkout = option
-                    } label: {
-                        HStack {
-                            Text(option)
-                            Spacer()
-                            Image(systemName: "\(selectedRowingWorkout == option ? "checkmark" : "")")
-                                .foregroundStyle(.blue)
-                        }
-                    }
+            Picker("ROWING_WORKOUTS_TITLE".localized(path: path), selection: $selectedRowingWorkout) {
+                ForEach(unitOptions, id: \.self) { option in
+                    Text(option.localized(path: path))
                 }
             }
+            .pickerStyle(.inline)
             
-            Section("Paddling Workouts") {
-                ForEach(paddlingWorkoutOptions, id: \.self) { option in
-                    Button {
-                        selectedPaddlingWorkout = option
-                    } label: {
-                        HStack {
-                            Text(option)
-                            Spacer()
-                            Image(systemName: "\(selectedPaddlingWorkout == option ? "checkmark" : "")")
-                                .foregroundStyle(.blue)
-                        }
-                    }
+            Picker("PADDLE_SPORTS_WORKOUTS_TITLE".localized(path: path), selection: $selectedPaddlingWorkout) {
+                ForEach(unitOptions, id: \.self) { option in
+                    Text(option.localized(path: path))
                 }
             }
+            .pickerStyle(.inline)
             
-            Section("Skating Workouts") {
-                ForEach(skatingWorkoutOptions, id: \.self) { option in
-                    Button {
-                        selectedSkatingWorkout = option
-                    } label: {
-                        HStack {
-                            Text(option)
-                            Spacer()
-                            Image(systemName: "\(selectedSkatingWorkout == option ? "checkmark" : "")")
-                                .foregroundStyle(.blue)
-                        }
-                    }
+            Picker("SKATING_SPORTS_WORKOUTS_TITLE".localized(path: path), selection: $selectedSkatingWorkout) {
+                ForEach(unitOptions, id: \.self) { option in
+                    Text(option.localized(path: path))
                 }
             }
+            .pickerStyle(.inline)
         }
-        .navigationTitle("Units of Measure")
+        .navigationTitle("UNITS_OF_MEASURE_PANE_TITLE".localized(path: path))
     }
 }
 
