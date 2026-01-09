@@ -47,7 +47,6 @@
 		8353FA752B73F52C00C78938 /* RowLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353FA742B73F52C00C78938 /* RowLabel.swift */; };
 		8353FA782B73F5C300C78938 /* ClockSoundsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353FA772B73F5C300C78938 /* ClockSoundsView.swift */; };
 		8353FA7A2B73F73800C78938 /* TapticTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353FA792B73F73800C78938 /* TapticTimeView.swift */; };
-		8353FA7C2B73F8E800C78938 /* SiriFaceDataSourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353FA7B2B73F8E800C78938 /* SiriFaceDataSourcesView.swift */; };
 		8353FA7E2B73FA3800C78938 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353FA7D2B73FA3800C78938 /* ContactsView.swift */; };
 		8353FA802B73FB5B00C78938 /* HealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353FA7F2B73FB5B00C78938 /* HealthView.swift */; };
 		8353FA832B73FC3200C78938 /* HealthDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353FA822B73FC3200C78938 /* HealthDetailsView.swift */; };
@@ -149,7 +148,6 @@
 		8353FA742B73F52C00C78938 /* RowLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowLabel.swift; sourceTree = "<group>"; };
 		8353FA772B73F5C300C78938 /* ClockSoundsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockSoundsView.swift; sourceTree = "<group>"; };
 		8353FA792B73F73800C78938 /* TapticTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapticTimeView.swift; sourceTree = "<group>"; };
-		8353FA7B2B73F8E800C78938 /* SiriFaceDataSourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriFaceDataSourcesView.swift; sourceTree = "<group>"; };
 		8353FA7D2B73FA3800C78938 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		8353FA7F2B73FB5B00C78938 /* HealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthView.swift; sourceTree = "<group>"; };
 		8353FA822B73FC3200C78938 /* HealthDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDetailsView.swift; sourceTree = "<group>"; };
@@ -358,7 +356,6 @@
 			children = (
 				8353FA772B73F5C300C78938 /* ClockSoundsView.swift */,
 				8353FA792B73F73800C78938 /* TapticTimeView.swift */,
-				8353FA7B2B73F8E800C78938 /* SiriFaceDataSourcesView.swift */,
 			);
 			path = Clock;
 			sourceTree = "<group>";
@@ -720,7 +717,6 @@
 				836D6AC22B6C4428008DBB8F /* ClearRow.swift in Sources */,
 				831987922B6EEC10009937B0 /* AccessibilitySiriView.swift in Sources */,
 				833936A12B6C716D0049FDC7 /* FocusView.swift in Sources */,
-				8353FA7C2B73F8E800C78938 /* SiriFaceDataSourcesView.swift in Sources */,
 				83A292A72B7294DF0028907F /* LocationServicesDetailView.swift in Sources */,
 				8319879C2B6EF808009937B0 /* VoicesDetailView.swift in Sources */,
 				83EDDA8C2B6D339900DC2F2B /* ReturnClockDetailView.swift in Sources */,
