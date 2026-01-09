@@ -12,10 +12,9 @@ struct ClockView: View {
     @AppStorage("Chimes") private var chimesEnabled = false
     @AppStorage("SpeakTime") private var speakTimeEnabled = true
     @AppStorage("WatchFaceNotifications") private var watchFaceNotificationsEnabled = true
-    @State private var selected = "Control With Silent Mode"
-    private let options = ["Control With Silent Mode", "Always Speak"]
+    @State private var selected = "TAP_TO_SPEAK_RESPECT_MUTE_LABEL"
+    private let options = ["TAP_TO_SPEAK_RESPECT_MUTE_LABEL", "TAP_TO_SPEAK_ALWAYS_LABEL"]
     private var date = Date()
-    private var calendar = Calendar.current
     private let path = "/System/Library/PreferenceBundles/NanoClockSettings.bundle"
     private let speakPath = "/System/Library/PrivateFrameworks/AXTapToSpeakTime.framework"
     private let table = "Localizable-Clock"
@@ -68,21 +67,16 @@ struct ClockView: View {
             }
             
             Section {
-                Toggle("TAP_TO_SPEAK_TITLE".localized(path: speakPath), isOn: $speakTimeEnabled.animation())
-                if speakTimeEnabled {
-                    ForEach(options, id: \.self) { option in
-                        Button {
-                            selected = option
-                        } label: {
-                            HStack {
-                                Text(option)
-                                Spacer()
-                                Image(systemName: "\(selected == option ? "checkmark" : "")")
-                                    .foregroundStyle(.green)
-                            }
+                Picker(selection: $selected) {
+                    if speakTimeEnabled {
+                        ForEach(options, id: \.self) { option in
+                            Text(option.localized(path: speakPath))
                         }
                     }
+                } label: {
+                    Toggle("TAP_TO_SPEAK_TITLE".localized(path: speakPath), isOn: $speakTimeEnabled.animation())
                 }
+                .pickerStyle(.inline)
             } footer: {
                 Text("CharacterVoicesDownloadStalledWiFi".localized(
                     path: "/System/Library/PrivateFrameworks/AXCharacterVoices.framework",
@@ -92,7 +86,10 @@ struct ClockView: View {
             
             Section {
                 NavigationLink(destination: TapticTimeView()) {
-                    RowLabel(title: "TAPTIC_TIME_TITLE".localized(path: speakPath), subtitle: "TAPTIC_TIME_DISABLED".localized(path: speakPath))
+                    RowLabel(
+                        title: "TAPTIC_TIME_TITLE".localized(path: speakPath),
+                        subtitle: "TAPTIC_TIME_DISABLED".localized(path: speakPath)
+                    )
                 }
             } footer: {
                 Text("TAPTIC_TIME_DISABLED_DESCRIPTION".localized(path: speakPath))
