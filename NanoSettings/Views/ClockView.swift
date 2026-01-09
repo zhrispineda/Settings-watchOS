@@ -2,58 +2,73 @@
 //  ClockView.swift
 //  NanoSettings
 //
-//  Settings > Clock
-//
 
 import SwiftUI
 
+/// View for Settings > Clock
 struct ClockView: View {
-    // Variables
     @AppStorage("SwipeSwitchWatchFace") private var swipeSwitchWatchFaceEnabled = false
+    @AppStorage("ShowDataWhenLocked") private var showDataWhenLocked = true
     @AppStorage("Chimes") private var chimesEnabled = false
     @AppStorage("SpeakTime") private var speakTimeEnabled = true
     @AppStorage("WatchFaceNotifications") private var watchFaceNotificationsEnabled = true
     @State private var selected = "Control With Silent Mode"
-    let options = ["Control With Silent Mode", "Always Speak"]
-    var date = Date()
-    var calendar = Calendar.current
+    private let options = ["Control With Silent Mode", "Always Speak"]
+    private var date = Date()
+    private var calendar = Calendar.current
+    private let path = "/System/Library/PreferenceBundles/NanoClockSettings.bundle"
+    private let speakPath = "/System/Library/PrivateFrameworks/AXTapToSpeakTime.framework"
+    private let table = "Localizable-Clock"
     
     var body: some View {
         List {
             Section {
-                Toggle("Swipe to Switch Watch Face", isOn: $swipeSwitchWatchFaceEnabled)
+                Toggle("FAST_FACE_SWITCHING_CELL_TITLE".localized(path: path, table: table), isOn: $swipeSwitchWatchFaceEnabled)
             } footer: {
-                Text("Switch between your watch faces by swiping left or right from the edge of the screen.")
+                Text("FACE_FACE_SWITCHING_SECTION_FOOTER".localized(path: path, table: table))
+            }
+            
+            Section {
+                Toggle("SHOW_COMPLICATION_DATA_WHEN_LOCKED_CELL_TITLE".localized(path: path, table: table), isOn: $showDataWhenLocked)
+            } header: {
+                Text("SHOW_COMPLICATION_DATA_WHEN_LOCKED_SECTION_HEADER".localized(path: path, table: table))
+            } footer: {
+                Text("SHOW_COMPLICATION_DATA_WHEN_LOCKED_SECTION_FOOTER".localized(path: path, table: table))
             }
             
             Section {} footer: {
-                Text("Set Watch Face Display Time Ahead")
+                Text("TIME_AHEAD_SECTION_TITLE".localized(path: path, table: table))
             }
             
             Section {
-                Button {} label: { // TODO: Time selection picker
-                    HStack {
-                        Text("+0 min")
-                        Spacer()
-                        Text("\(calendar.component(.hour, from: date)):\(String(format: "%02d", calendar.component(.minute, from: date)))")
-                            .foregroundStyle(.secondary)
+                Button {} label: {
+                    LabeledContent {
+                        Text(date, format: .dateTime
+                            .hour(.defaultDigits(amPM: .omitted))
+                            .minute(.twoDigits)
+                        )
+                    } label: {
+                        Text("TIME_AHEAD_CELL_FORMAT".localized(path: path, table: table, "0"))
                     }
                 }
             } footer: {
-                Text("All alerts and notifications will still come in at the correct time. The only time affected by this is what is shown on your watch faces.")
+                Text("TIME_AHEAD_SECTION_FOOTER".localized(path: path, table: table))
             }
             
             Section {
-                Toggle("Chimes", isOn: $chimesEnabled)
+                Toggle("TAPTIC_CHIMES_TITLE".localized(path: speakPath), isOn: $chimesEnabled)
                 NavigationLink(destination: ClockSoundsView()) {
-                    RowLabel(title: "Sounds", subtitle: "Bells")
+                    RowLabel(
+                        title: "TAPTIC_CHIMES_SOUNDS_TITLE".localized(path: speakPath),
+                        subtitle: "TAPTIC_CHIMES_SOUND_BELLS_LABEL".localized(path: speakPath)
+                    )
                 }
             } footer: {
-                Text("When this is on, selected sounds and haptics will play on the hour.")
+                Text("TAPTIC_CHIMES_ON_THE_HOUR_DESCRIPTION".localized(path: speakPath))
             }
             
             Section {
-                Toggle("Speak Time", isOn: $speakTimeEnabled.animation())
+                Toggle("TAP_TO_SPEAK_TITLE".localized(path: speakPath), isOn: $speakTimeEnabled.animation())
                 if speakTimeEnabled {
                     ForEach(options, id: \.self) { option in
                         Button {
@@ -69,34 +84,34 @@ struct ClockView: View {
                     }
                 }
             } footer: {
-                Text("Waiting to download. Mickey and Minnie voices will download wehn your watch is charging and connected to a Wi-Fi network.")
+                Text("CharacterVoicesDownloadStalledWiFi".localized(
+                    path: "/System/Library/PrivateFrameworks/AXCharacterVoices.framework",
+                    table: "AXCharacterVoices")
+                )
             }
             
             Section {
                 NavigationLink(destination: TapticTimeView()) {
-                    RowLabel(title: "Taptic Time", subtitle: "Off")
+                    RowLabel(title: "TAPTIC_TIME_TITLE".localized(path: speakPath), subtitle: "TAPTIC_TIME_DISABLED".localized(path: speakPath))
                 }
             } footer: {
-                Text("When this is on, Apple Watch will tap a haptic version of the time.")
+                Text("TAPTIC_TIME_DISABLED_DESCRIPTION".localized(path: speakPath))
             }
             
             Section {
-                Toggle("Watch Face Notifications", isOn: .constant(true))
+                Toggle("FACE_NOTIFICATION_CELL_TITLE".localized(path: path, table: table), isOn: .constant(true))
             } footer: {
-                Text("Receive a notification when a new watch face is available for your Apple Watch.")
+                Text("FACE_NOTIFICATION_SECTION_FOOTER".localized(path: path, table: table))
             }
             
             Section {
-                Button("Monogram") {} // TODO: Keyboard input
+                Button("MONOGRAM".localized(path: path, table: table)) {}
             } footer: {
-                Text("Choose up to five characters to appear in the monogram compilation on the Typograph, Infograph, Meridian, California, and Color watch faces.")
+                Text("MONOGRAM_SECTION_FOOTER".localized(path: path, table: table)
+                )
             }
-            
-//            Section {
-//                NavigationLink("Siri Face Data Sources", destination: SiriFaceDataSourcesView())
-//            }
         }
-        .navigationTitle("Clock")
+        .navigationTitle("STATUS_BAR_TITLE_TIME".localized(path: path, table: table))
     }
 }
 
