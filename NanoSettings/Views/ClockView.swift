@@ -10,6 +10,7 @@ struct ClockView: View {
     @AppStorage("SwipeSwitchWatchFace") private var swipeSwitchWatchFaceEnabled = false
     @AppStorage("ShowDataWhenLocked") private var showDataWhenLocked = true
     @AppStorage("Chimes") private var chimesEnabled = false
+    @AppStorage("ClockSound") private var selectedSound = "TAPTIC_CHIMES_SOUND_BELLS_LABEL"
     @AppStorage("SpeakTime") private var speakTimeEnabled = true
     @AppStorage("TapticTime") private var tapticTimeEnabled = false
     @AppStorage("TapticTimeDigits") private var selectedTapticTime = "TAPTIC_TIME_ENCODING_DECIMAL_LABEL"
@@ -61,7 +62,7 @@ struct ClockView: View {
                 NavigationLink(destination: ClockSoundsView()) {
                     RowLabel(
                         title: "TAPTIC_CHIMES_SOUNDS_TITLE".localized(path: speakPath),
-                        subtitle: "TAPTIC_CHIMES_SOUND_BELLS_LABEL".localized(path: speakPath)
+                        subtitle: selectedSound.localized(path: speakPath)
                     )
                 }
             } footer: {

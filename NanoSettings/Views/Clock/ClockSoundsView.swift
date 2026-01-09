@@ -2,31 +2,26 @@
 //  ClockSoundsView.swift
 //  NanoSettings
 //
-//  Settings > Clock > Sounds
-//
 
 import SwiftUI
 
+/// View for Settings > Clock > Sounds
 struct ClockSoundsView: View {
-    @AppStorage("ClockSound") private var selected = "Bells"
-    let options = ["Bells", "Birds"]
+    @AppStorage("ClockSound") private var selected = "TAPTIC_CHIMES_SOUND_BELLS_LABEL"
+    private let options = ["TAPTIC_CHIMES_SOUND_BELLS_LABEL", "TAPTIC_CHIMES_SOUND_BIRDS_LABEL"]
+    private let path = "/System/Library/PrivateFrameworks/AXTapToSpeakTime.framework"
     
     var body: some View {
         List {
-            ForEach(options, id: \.self) { option in
-                Button {
-                    selected = option
-                } label: {
-                    HStack {
-                        Text(option)
-                        Spacer()
-                        Image(systemName: "\(selected == option ? "checkmark" : "")")
-                            .foregroundStyle(.green)
-                    }
+            Picker("", selection: $selected) {
+                ForEach(options, id: \.self) { option in
+                    Text(option.localized(path: path))
                 }
             }
+            .pickerStyle(.inline)
+            .labelsHidden()
         }
-        .navigationTitle("Sounds")
+        .navigationTitle("TAPTIC_CHIMES_SOUNDS_TITLE".localized(path: path))
     }
 }
 
