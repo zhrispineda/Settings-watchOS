@@ -11,6 +11,8 @@ struct ClockView: View {
     @AppStorage("ShowDataWhenLocked") private var showDataWhenLocked = true
     @AppStorage("Chimes") private var chimesEnabled = false
     @AppStorage("SpeakTime") private var speakTimeEnabled = true
+    @AppStorage("TapticTime") private var tapticTimeEnabled = false
+    @AppStorage("TapticTimeDigits") private var selectedTapticTime = "TAPTIC_TIME_ENCODING_DECIMAL_LABEL"
     @AppStorage("WatchFaceNotifications") private var watchFaceNotificationsEnabled = true
     @State private var selected = "TAP_TO_SPEAK_RESPECT_MUTE_LABEL"
     private let options = ["TAP_TO_SPEAK_RESPECT_MUTE_LABEL", "TAP_TO_SPEAK_ALWAYS_LABEL"]
@@ -86,13 +88,24 @@ struct ClockView: View {
             
             Section {
                 NavigationLink(destination: TapticTimeView()) {
-                    RowLabel(
-                        title: "TAPTIC_TIME_TITLE".localized(path: speakPath),
-                        subtitle: "TAPTIC_TIME_DISABLED".localized(path: speakPath)
-                    )
+                    if tapticTimeEnabled {
+                        RowLabel(
+                            title: "TAPTIC_TIME_TITLE".localized(path: speakPath),
+                            subtitle: selectedTapticTime.localized(path: speakPath)
+                        )
+                    } else {
+                        RowLabel(
+                            title: "TAPTIC_TIME_TITLE".localized(path: speakPath),
+                            subtitle: "TAPTIC_TIME_DISABLED".localized(path: speakPath)
+                        )
+                    }
                 }
             } footer: {
-                Text("TAPTIC_TIME_DISABLED_DESCRIPTION".localized(path: speakPath))
+                if tapticTimeEnabled {
+                    Text("TAPTIC_TIME_MUTE_DESCRIPTION".localized(path: speakPath))
+                } else {
+                    Text("TAPTIC_TIME_DISABLED_DESCRIPTION".localized(path: speakPath))
+                }
             }
             
             Section {
