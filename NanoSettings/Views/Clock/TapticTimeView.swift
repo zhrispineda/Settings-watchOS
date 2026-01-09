@@ -2,49 +2,47 @@
 //  TapticTimeView.swift
 //  NanoSettings
 //
-//  Settings > Clock > Taptic Time
-//
 
 import SwiftUI
 
+/// View for Settings > Clock > Taptic Time
 struct TapticTimeView: View {
-    // Variables
     @AppStorage("TapticTime") private var tapticTimeEnabled = false
-    @AppStorage("TapticTimeDigits") private var selected = "Digits"
-    let options = ["Digits", "Terse", "Morse Code"]
+    @AppStorage("TapticTimeDigits") private var selected = "TAPTIC_TIME_ENCODING_DECIMAL_LABEL"
+    private let options = [
+        "TAPTIC_TIME_ENCODING_DECIMAL_LABEL",
+        "TAPTIC_TIME_ENCODING_TERSE_LABEL",
+        "TAPTIC_TIME_ENCODING_MORSE_LABEL"
+    ]
+    private let path = "/System/Library/PrivateFrameworks/AXTapToSpeakTime.framework"
     
     var body: some View {
         List {
             Section {
-                Toggle("Taptic Time", isOn: $tapticTimeEnabled)
-                if tapticTimeEnabled {
-                    ForEach(options, id: \.self) { option in
-                        Button {
-                            selected = option
-                        } label: {
-                            HStack {
-                                Text(option)
-                                Spacer()
-                                Image(systemName: "\(selected == option ? "checkmark" : "")")
-                                    .foregroundStyle(.green)
-                            }
+                Picker(selection: $selected) {
+                    if tapticTimeEnabled {
+                        ForEach(options, id: \.self) { option in
+                            Text(option.localized(path: path))
                         }
                     }
+                } label: {
+                    Toggle("TAPTIC_TIME_TITLE".localized(path: path), isOn: $tapticTimeEnabled)
                 }
+                .pickerStyle(.inline)
             } footer: {
                 if tapticTimeEnabled {
                     switch selected {
                     case "Digits":
-                        Text("Apple Watch will long tap every 10 hours, and short tap for each following hour. Then it will long tap for every ten minutes, and short tap for each following minute.")
+                        Text("TAPTIC_TIME_ENCODING_DECIMAL_DESCRIPTION".localized(path: path))
                     case "Terse":
-                        Text("Apple Watch will long tap for every 5 hours, then short tap for the remaining hours. Then it will long tap for each quarter hour.")
+                        Text("TAPTIC_TIME_ENCODING_TERSE_DESCRIPTION".localized(path: path))
                     default:
-                        Text("Apple Watch will tap each digit of the time in Morse code.")
+                        Text("TAPTIC_TIME_ENCODING_MORSE_DESCRIPTION".localized(path: path))
                     }
                 }
             }
         }
-        .navigationTitle("Taptic Time")
+        .navigationTitle("TAPTIC_TIME_TITLE".localized(path: path))
     }
 }
 
