@@ -58,6 +58,7 @@
 		835DE6072B6C105B00FC23C8 /* NanoSettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DE6062B6C105B00FC23C8 /* NanoSettingsModel.swift */; };
 		835DE6092B6C116100FC23C8 /* SettingsLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DE6082B6C116100FC23C8 /* SettingsLink.swift */; };
 		835DE60B2B6C134E00FC23C8 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835DE60A2B6C134E00FC23C8 /* NotificationsView.swift */; };
+		8365A9C92F14832800DEF8C4 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8365A9C82F14832800DEF8C4 /* Localizable.xcstrings */; };
 		836D6AB92B6C3FD1008DBB8F /* ShowNotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836D6AB82B6C3FD1008DBB8F /* ShowNotificationsView.swift */; };
 		836D6ABB2B6C408C008DBB8F /* IconToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836D6ABA2B6C408C008DBB8F /* IconToggle.swift */; };
 		836D6ABD2B6C42DD008DBB8F /* GeneralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836D6ABC2B6C42DD008DBB8F /* GeneralView.swift */; };
@@ -83,7 +84,6 @@
 		83B7CD3A2B7019860024307F /* LanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B7CD392B7019860024307F /* LanguageView.swift */; };
 		83B7CD3C2B701D1A0024307F /* SiriResponsesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B7CD3B2B701D1A0024307F /* SiriResponsesView.swift */; };
 		83B7CD3E2B701E420024307F /* SiriSuggestionsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B7CD3D2B701E420024307F /* SiriSuggestionsDetailView.swift */; };
-		83C45A212E5A553200FDDC13 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83C45A202E5A553200FDDC13 /* Localizable.xcstrings */; };
 		83C4E1FD2DDF7FBE002B65CA /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C4E1FC2DDF7FBE002B65CA /* String+Localization.swift */; };
 		83C4E2002DDF8063002B65CA /* MGHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C4E1FF2DDF8063002B65CA /* MGHelper.swift */; };
 		83C4E2022DDF8073002B65CA /* SettingsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C4E2012DDF8073002B65CA /* SettingsLogger.swift */; };
@@ -160,6 +160,7 @@
 		835DE6062B6C105B00FC23C8 /* NanoSettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NanoSettingsModel.swift; sourceTree = "<group>"; };
 		835DE6082B6C116100FC23C8 /* SettingsLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLink.swift; sourceTree = "<group>"; };
 		835DE60A2B6C134E00FC23C8 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		8365A9C82F14832800DEF8C4 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		836D6AB82B6C3FD1008DBB8F /* ShowNotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowNotificationsView.swift; sourceTree = "<group>"; };
 		836D6ABA2B6C408C008DBB8F /* IconToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconToggle.swift; sourceTree = "<group>"; };
 		836D6ABC2B6C42DD008DBB8F /* GeneralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralView.swift; sourceTree = "<group>"; };
@@ -185,7 +186,6 @@
 		83B7CD392B7019860024307F /* LanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageView.swift; sourceTree = "<group>"; };
 		83B7CD3B2B701D1A0024307F /* SiriResponsesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriResponsesView.swift; sourceTree = "<group>"; };
 		83B7CD3D2B701E420024307F /* SiriSuggestionsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriSuggestionsDetailView.swift; sourceTree = "<group>"; };
-		83C45A202E5A553200FDDC13 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		83C4E1FC2DDF7FBE002B65CA /* String+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
 		83C4E1FF2DDF8063002B65CA /* MGHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGHelper.swift; sourceTree = "<group>"; };
 		83C4E2012DDF8073002B65CA /* SettingsLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLogger.swift; sourceTree = "<group>"; };
@@ -515,7 +515,7 @@
 		83C4E1EC2DDF7746002B65CA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				83C45A202E5A553200FDDC13 /* Localizable.xcstrings */,
+				8365A9C82F14832800DEF8C4 /* Localizable.xcstrings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -663,8 +663,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				832895872B6C014400A9CB97 /* Preview Assets.xcassets in Resources */,
+				8365A9C92F14832800DEF8C4 /* Localizable.xcstrings in Resources */,
 				835854512EF1F7A4009972B8 /* Settings.gif in Resources */,
-				83C45A212E5A553200FDDC13 /* Localizable.xcstrings in Resources */,
 				832895842B6C014400A9CB97 /* Assets.xcassets in Resources */,
 				8358544F2EF1F4A0009972B8 /* AppIcon.icon in Resources */,
 			);
