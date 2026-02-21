@@ -5,7 +5,7 @@ A **work-in-progress** SwiftUI recreation of the watchOS Settings app.
 > This project is focused on the latest public releases of watchOS and Xcode. Use an older branch for older versions.
 
 ## Information
-- Based on watchOS 26.2.1 (23S314).
+- Based on watchOS 26.3 (23S620).
 - All features within the app are only simulations and have no effect on the device outside of the app.
 - Layout is based on Simulator and not a physical Apple Watch (for now).
 - Previous versions are available as separate branches, going as far back as 10.5. Fewer features are available in earlier versions.
