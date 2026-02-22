@@ -11,7 +11,7 @@ struct PrivacySecurityView: View {
         List {
             Section {
                 SettingsLink(
-                    "Location Services",
+                    "LOCATION_SERVICES_TITLE",
                     icon: "location.circle.fill",
                     primaryColor: .white,
                     secondaryColor: .blue,
@@ -24,7 +24,7 @@ struct PrivacySecurityView: View {
                     }
                 )
                 SettingsLink(
-                    "Calendar",
+                    "CALENDARS",
                     icon: "calendar.circle.fill",
                     primaryColor: .red,
                     secondaryColor: .white,
@@ -45,7 +45,7 @@ struct PrivacySecurityView: View {
                     }
                 )
                 SettingsLink(
-                    "Microphone",
+                    "MICROPHONE",
                     icon: "mic.circle.fill",
                     primaryColor: .white,
                     secondaryColor: .red,
@@ -57,10 +57,10 @@ struct PrivacySecurityView: View {
                     IconLabel(title: "Health", icon: "applehealth")
                 }
                 NavigationLink(destination: AppPermissionsDetailView(title: "HomeKit")) {
-                    IconLabel(title: "HomeKit", icon: "applehome")
+                    IconLabel(title: "Home", icon: "Homekit")
                 }
                 SettingsLink(
-                    "Motion & Fitness",
+                    "MOTION",
                     icon: "figure.run.motion.circle.fill",
                     primaryColor: .white,
                     secondaryColor: .green,
@@ -75,7 +75,7 @@ struct PrivacySecurityView: View {
                     )
                 }
                 SettingsLink(
-                    "Fall Detection",
+                    "SOS_SETTINGS_FALL_DETECTION",
                     icon: "figure.fall.circle.fill",
                     primaryColor: .white,
                     secondaryColor: .blue,
@@ -84,7 +84,7 @@ struct PrivacySecurityView: View {
                     }
                 )
                 SettingsLink(
-                    "Focus",
+                    "FOCUS_MODES",
                     icon: "moon.circle.fill",
                     primaryColor: .white,
                     secondaryColor: .indigo,
@@ -93,10 +93,18 @@ struct PrivacySecurityView: View {
                     }
                 )
             } footer: {
-                Text("Some privacy settings are shared between Apple Watch and iPhone. You can manage these settings in the Privacy section of iPhone settings.")
+                Text(.privacyReadOnlyInstructions)
+            }
+            
+            Button {} label: {
+                HStack {
+                    Image(systemName: "nosign.app.fill")
+                        .foregroundStyle(.white, .red)
+                    Text(.blockedContacts)
+                }
             }
         }
-        .navigationTitle("Privacy & Security")
+        .navigationTitle(.privacyTitle)
     }
 }
 
